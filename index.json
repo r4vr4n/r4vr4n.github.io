@@ -1,0 +1,88 @@
+{
+  "personalInfo": {
+    "name": "Rajeev Ranjan",
+    "contact": {
+      "email": "rajeevranjan19@outlook.com",
+      "phone": "7543898325",
+      "location": "Bengaluru, Karnataka, India"
+    }
+  },
+  "workExperience": [
+    {
+      "company": "DashClicks",
+      "position": "Frontend Engineer",
+      "period": "Nov. 2024 - Present",
+      "location": "Jaipur, Rajasthan, India · Remote",
+      "description": "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
+      "responsibilities": [
+        "Collaborating with team members to establish new coding guidelines that improve code maintainability and quality.",
+        "Delivered the activity feed feature of the fulfillment center for improved user experience.",
+        "Migrated all front-end repositories to a monorepo using Nx for streamlined development processes."
+      ]
+    },
+    {
+      "company": "Reconect.ai",
+      "position": "Frontend Consultant",
+      "period": "Aug. 2024 - Nov. 2024",
+      "location": "Bengaluru, Karnataka, India · On-site",
+      "description": "Reconect.ai is a fintech firm focused on debt collection and management solutions.",
+      "responsibilities": [
+        "Architected the front-end application for debt collections campaign management and monitoring facilitating efficient tracking and analysis."
+      ]
+    },
+    {
+      "company": "Zeitview (formerly DroneBase)",
+      "position": "Frontend Developer",
+      "period": "Mar. 2022 - Aug. 2024",
+      "location": "Bengaluru, Karnataka, India · Remote",
+      "description": "Zeitview is a global leader in providing drone services for asset management, leveraging advanced technologies.",
+      "responsibilities": [
+        "Coded DEM(digital elevation model) viewer enabling stakeholders plan out the construction projects by visualizing terrain peaks and valleys.",
+        "Coded user tagging on maps as well as panorama and redirecting tagged user to the specific coordinate where they were tagged.",
+        "Refactored the application to be modular, scalable and testable.",
+        "Mentored a team of three developers.",
+        "Oversaw the architecture and development of an analysis tool, leading the project from concept to implementation.",
+        "Coded a temperature tagging system as well as color scale adjustment for enhancing defect detection on solar panels. Reduced QA time and effort by 30% with this feature."
+      ]
+    },
+    {
+      "company": "Estate Protocol",
+      "position": "Frontend Developer",
+      "period": "Jun. 2021 - Feb. 2022",
+      "location": "Noida, Uttar Pradesh, India · Remote",
+      "description": "Estate Protocol is a blockchain-based real estate platform facilitating seamless transactions and processes.",
+      "responsibilities": [
+        "Integrated the Airdrop feature using Web3.js, enabling seamless token distribution.",
+        "Brought designs to life the company's landing page using Next.js, Framer Motion, and Material UI for a responsive and animated user experience."
+      ]
+    },
+    {
+      "company": "Solytics Partners",
+      "position": "Junior Frontend Developer",
+      "period": "Sep. 2020 - Jun. 2021",
+      "location": "Pune, Maharashtra, India · Remote",
+      "description": "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, and deep domain expertise.",
+      "responsibilities": [
+        "Contributed to the front-end development for Nimbus Duo, our in house tool for risk analysis and fraud detection.",
+        "Led the setup and feature development of the Inventory Management system."
+      ]
+    }
+  ],
+  "skills": [
+    "ReactJS",
+    "NextJS",
+    "TypeScript",
+    "Redux",
+    "REST APIs",
+    "Jest",
+    "Nx",
+    "React Query",
+    "Web Design",
+    "Software Design",
+    "Problem Solving",
+    "AWS",
+    "Webpack",
+    "Material UI",
+    "User Experience Design (UED)"
+  ]
+}
