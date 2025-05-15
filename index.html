@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rajeev Ranjan - Resume</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Garamond', serif;
+			line-height: 1.6;
+			color: #333;
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #f9f9f9;
+		}
+
+		.container {
+			background-color: #fff;
+			padding: 30px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		header {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 5px;
+		}
+
+		.contact-info {
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+
+		.divider {
+			height: 1px;
+			background-color: #000;
+			margin: 2px 0;
+		}
+
+		.section-heading {
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 20px;
+			margin-bottom: 5px;
+		}
+
+		.job {
+			margin-bottom: 15px;
+		}
+
+		.job-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: top;
+		}
+
+		.company {
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.position {
+			font-size: 16px;
+			font-style: italic;
+		}
+
+		.date {
+			font-size: 14px;
+			font-weight: bold;
+			text-align: right;
+		}
+
+		.location {
+			font-size: 14px;
+			font-style: italic;
+			text-align: right;
+		}
+
+		.description {
+			font-size: 14px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		ul {
+			list-style-position: inside;
+			margin-left: 0;
+			font-size: 14px;
+		}
+
+		li {
+			margin-bottom: 3px;
+		}
+
+		.skills-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5px;
+		}
+
+		.skill-item {
+			background-color: #f0f0f0;
+			padding: 3px 8px;
+			border-radius: 3px;
+			font-size: 14px;
+		}
+
+		@media print {
+			body {
+				background-color: #fff;
+				padding: 0;
+			}
+
+			.container {
+				box-shadow: none;
+				padding: 0;
+			}
+		}
+
+		@media (max-width: 600px) {
+			.job-header {
+				flex-direction: column;
+			}
+
+			.date,
+			.location {
+				text-align: left;
+				margin-top: 5px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1>Rajeev Ranjan</h1>
+			<div class="contact-info">
+				<span><i class="far fa-envelope"></i> rajeevranjan19@outlook.com</span> |
+				<span><i class="fas fa-phone"></i> 7543898325</span> |
+				<span><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India</span>
+			</div>
+		</header>
+
+		<div class="divider"></div>
+
+		<section>
+			<h2 class="section-heading">WORK EXPERIENCE</h2>
+			<div class="divider"></div>
+
+			<div class="job">
+				<div class="job-header">
+					<div>
+						<div class="company">DashClicks</div>
+						<div class="position">Frontend Engineer</div>
+					</div>
+					<div>
+						<div class="date">Nov. 2024 - Present</div>
+						<div class="location">Jaipur, Rajasthan, India · Remote</div>
+					</div>
+				</div>
+				<div class="description">
+					DashClicks is a technology company focused on providing software solutions that enhance business operations.
+				</div>
+				<ul>
+					<li>Collaborates on coding guidelines aiming for enhanced code maintainability and quality.</li>
+					<li>Developed activity feed feature for fulfillment center to improve UX.</li>
+					<li>Migrated frontend repositories to a monorepo using Nx for streamlined processes.</li>
+				</ul>
+			</div>
+
+			<div class="job">
+				<div class="job-header">
+					<div>
+						<div class="company">Reconect.ai</div>
+						<div class="position">Frontend Consultant</div>
+					</div>
+					<div>
+						<div class="date">Aug. 2024 - Nov. 2024</div>
+						<div class="location">Bengaluru, Karnataka, India · On-site</div>
+					</div>
+				</div>
+				<div class="description">
+					Reconect.ai is a fintech firm focused on debt collection and management solutions.
+				</div>
+				<ul>
+					<li>Architected front-end app for debt collections campaign management.</li>
+					<li>Facilitated efficient tracking and analysis of campaigns.</li>
+				</ul>
+			</div>
+
+			<div class="job">
+				<div class="job-header">
+					<div>
+						<div class="company">Zeitview (formerly DroneBase)</div>
+						<div class="position">Frontend Developer</div>
+					</div>
+					<div>
+						<div class="date">Mar. 2022 - Aug. 2024</div>
+						<div class="location">Bengaluru, Karnataka, India · Remote</div>
+					</div>
+				</div>
+				<div class="description">
+					Zeitview is a global leader in providing drone services for asset management, leveraging advanced
+					technologies.
+				</div>
+				<ul>
+					<li>Coded DEM viewer enabling stakeholders in construction planning.</li>
+					<li>Implemented user tagging and mapping features for better project tracking.</li>
+					<li>Refactored application to enhance modularity and scalability.</li>
+					<li>Mentored a team of three developers.</li>
+				</ul>
+			</div>
+
+			<div class="job">
+				<div class="job-header">
+					<div>
+						<div class="company">Estate Protocol</div>
+						<div class="position">Frontend Developer</div>
+					</div>
+					<div>
+						<div class="date">Jun. 2021 - Feb. 2022</div>
+						<div class="location">Noida, Uttar Pradesh, India · Remote</div>
+					</div>
+				</div>
+				<div class="description">
+					Estate Protocol is a blockchain-based real estate platform facilitating seamless transactions and processes.
+				</div>
+				<ul>
+					<li>Integrated Airdrop feature using Web3.js for token distribution.</li>
+					<li>Designed and developed company's landing page using Next.js and Material UI.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section>
+			<h2 class="section-heading">EDUCATION</h2>
+			<div class="divider"></div>
+
+			<div class="job">
+				<div class="job-header">
+					<div>
+						<div class="company">Biju Patnaik University of Technology, Odisha</div>
+						<div class="position">Bachelor's degree, Computer Science</div>
+					</div>
+					<div>
+						<div class="date">Mar. 2015 - Mar. 2019</div>
+						<div class="location">Odisha, India</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2 class="section-heading">SKILLS & INTERESTS</h2>
+			<div class="divider"></div>
+
+			<div style="margin-top: 10px;">
+				<strong>Skills:</strong>
+				<div class="skills-list">
+					<span class="skill-item">React.js</span>
+					<span class="skill-item">TypeScript</span>
+					<span class="skill-item">Redux.js</span>
+					<span class="skill-item">REST APIs</span>
+					<span class="skill-item">Jest</span>
+					<span class="skill-item">Nx</span>
+					<span class="skill-item">Tanstack Query</span>
+					<span class="skill-item">Web Design</span>
+					<span class="skill-item">Software Design</span>
+					<span class="skill-item">Problem Solving</span>
+					<span class="skill-item">E-Commerce</span>
+					<span class="skill-item">Amazon Web Services (AWS)</span>
+					<span class="skill-item">Webpack</span>
+					<span class="skill-item">Material UI</span>
+					<span class="skill-item">User Experience Design (UED)</span>
+				</div>
+			</div>
+
+			<div style="margin-top: 15px;">
+				<strong>Interests:</strong>
+				<div class="skills-list">
+					<span class="skill-item">Football</span>
+					<span class="skill-item">Video Games</span>
+					<span class="skill-item">Programming</span>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>
