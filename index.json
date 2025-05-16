@@ -31,7 +31,9 @@
         "Docker",
         "RTL",
         "React Hook Form",
-        "Yup"
+        "Yup",
+        "Redux Toolkit",
+        "React Table V8"
       ]
     },
     {
@@ -50,8 +52,7 @@
         "Playwright",
         "Mantine UI v7",
         "Recharts",
-        "React Table V8",
-        "Context API"
+        "React Table V8"
       ]
     },
     {
@@ -81,7 +82,6 @@
         "Mantine UI v7",
         "Recharts",
         "React Table v7",
-        "Context API",
         "Formik",
         "Yup"
       ]
