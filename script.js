@@ -73,9 +73,7 @@ function renderWorkExperience(experiences) {
 function renderSkills(skills) {
   const skillsListSection = document.getElementById("skills-list")
   skillsListSection.innerHTML = skills
-    .map((skill, index) =>
-      index === skills.length - 1 ? skill : `${skill} · `
-    )
+    .map(skill => `<span class="skill-item">${skill}</span>`)
     .join("")
 }
 
@@ -84,8 +82,33 @@ function setupDownloadButton() {
   const downloadBtn = document.getElementById("downloadBtn")
   if (downloadBtn) {
     downloadBtn.addEventListener("click", () => {
-      window.print()
-    })
+      // Create a filename based on the person's name
+      const personalInfoSection = document.getElementById("personal-info");
+      const nameElement = personalInfoSection.querySelector("h1");
+      const name = nameElement ? nameElement.textContent : "Resume";
+      const fileName = `${name.replace(/\s+/g, "_")}_Resume.pdf`;
+      
+      // Use html2pdf.js to generate and download the PDF
+      const element = document.querySelector(".container");
+      
+      // Temporarily hide the download button for the PDF generation
+      downloadBtn.style.display = "none";
+      
+      // Configure PDF options
+      const opt = {
+        margin: [10, 10, 10, 10],
+        filename: fileName,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+      
+      // Generate and download the PDF
+      html2pdf().set(opt).from(element).save().then(() => {
+        // Show the download button again
+        downloadBtn.style.display = "block";
+      });
+    });
   }
 
   // Handle keyboard shortcut (Ctrl+P)
@@ -96,3 +119,4 @@ function setupDownloadButton() {
     }
   })
 }
+
