@@ -103,8 +103,6 @@ li {
 	gap: 0.625rem;
 }
 
- 
-
 /* Download button styles */
 .download-section {
 	display: flex;
@@ -143,10 +141,5 @@ li {
 
 	.download-section {
 		display: none;
-	}
-
-	/* Show descriptions in print mode */
-	.description {
-		display: block;
 	}
 }
