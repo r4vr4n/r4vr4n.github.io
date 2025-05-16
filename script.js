@@ -167,13 +167,6 @@ function renderLiveProjects(projects) {
     const projectElement = document.createElement("div")
     projectElement.className = "project-item"
 
-    // const technologiesHTML = project.technologies
-    //   .map((tech, index) =>
-    //     index === project.technologies.length - 1 ? tech : `${tech}, `
-    //   )
-    //   .join("")
-
-    // <div class="project-name">${project.name}</div>
     projectElement.innerHTML = `
       <div class="project-header">
         <div class="project-name"><a href="${
@@ -181,12 +174,11 @@ function renderLiveProjects(projects) {
         }" target="_blank" class="project-link">${project.url.replace(
       "https://",
       ""
-    )}</a> </div> 
-         </a> 
+    )}</a>
+    </div> 
       </div>
       <div class="project-description">${project.description}</div>
       `
-    // <div class="technologies"><strong>Technologies: </strong> ${technologiesHTML}</div>
 
     projectsSection.appendChild(projectElement)
   }
