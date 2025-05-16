@@ -212,7 +212,7 @@ function setupDownloadButton() {
 
       // Configure PDF options
       const opt = {
-        margin: [1, 1, 1, 1],
+        margin: [5, 5, 5, 5],
         filename: fileName,
         image: { type: "png", quality: 1 },
         html2canvas: { scale: 2 },

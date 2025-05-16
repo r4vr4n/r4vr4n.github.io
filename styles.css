@@ -1,247 +1,246 @@
 :root {
-	/* Text colors */
-	--color-text-primary: #333;
-	--color-text-header: rgb(66, 91, 24);
-	--color-text-contact: rgb(74, 92, 69);
-	--color-text-content: rgb(85, 88, 79);
-	--color-text-heading: darkolivegreen;
-	--color-text-company: royalblue;
-	--color-text-position: cornflowerblue;
-	--color-text-date: saddlebrown;
-	--color-text-location: slategray;
-	--color-text-button: white;
+  /* Text colors */
+  --color-text-primary: #333;
+  --color-text-header: rgb(66, 91, 24);
+  --color-text-contact: rgb(74, 92, 69);
+  --color-text-content: rgb(85, 88, 79);
+  --color-text-heading: darkolivegreen;
+  --color-text-company: royalblue;
+  --color-text-position: cornflowerblue;
+  --color-text-date: saddlebrown;
+  --color-text-location: slategray;
+  --color-text-button: white;
 
-	/* Background colors */
-	--color-bg-body: #f9f9f9;
-	--color-bg-container: hsla(90, 23%, 95%, 0.506);
-	--color-bg-button: #4caf50;
-	--color-bg-button-hover: #45a049;
+  /* Background colors */
+  --color-bg-body: #f9f9f9;
+  --color-bg-container: hsla(90, 23%, 95%, 0.506);
+  --color-bg-button: #4caf50;
+  --color-bg-button-hover: #45a049;
 
-	/* Border colors */
-	--color-border: #000;
-	--color-shadow: rgba(0, 0, 0, 0.1);
+  /* Border colors */
+  --color-border: #000;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+@page {
+  size: auto; /* auto is the initial value */
+  margin: 5mm; /* this affects the margin in the printer settings */
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@page  
-{ 
-	/* auto is the initial value */ 
-    /* size: auto;    */
-    /* this affects the margin in the printer settings */ 
-    margin: 5mm 5mm 5mm 5mm;  
-} 
+
 body {
-	font-family: 'Ubuntu', sans-serif;
-	line-height: 1.6;
-	color: var(--color-text-content);
-	max-width: 800px;
-	margin: 0 auto; 
-	background-color: var(--color-bg-body);
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.6;
+  color: var(--color-text-content);
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: var(--color-bg-body);
 }
 
 .container {
-	background-color: var(--color-bg-container);
-	padding-left: 1rem;
-	padding-right: 1rem;
-	box-shadow: 0 0.125rem 0.625rem var(--color-shadow);
+  background-color: var(--color-bg-container);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 0.125rem 0.625rem var(--color-shadow);
 }
 
 header {
-	color: var(--color-text-header);
-	text-align: center;
-	margin-bottom: 1rem;
+  color: var(--color-text-header);
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 h1 {
-	font-size: 2rem;
-	margin-bottom: 0.3125rem;
+  font-size: 2rem;
+  margin-bottom: 0.3125rem;
 }
 
 .contact-info {
-	font-size: 1rem;
-	margin-bottom: 1rem;
-	color: var(--color-text-contact);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-contact);
 }
 
 .social-links {
-	display: flex;
-	justify-content: center;
-	gap:1rem
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .social-link {
-	display: flex; 
-	align-items: center; 
-	gap: 0.3125rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
 }
 
 .divider {
-	height: 0.0625rem;
-	background-color: var(--color-border);
-	margin: 0.125rem 0;
+  height: 0.0625rem;
+  background-color: var(--color-border);
+  margin: 0.125rem 0;
 }
 
 .section-heading {
-	font-size: 1.125rem;
-	font-weight: bold;
-	margin-top: 0.3125rem;
-	margin-bottom: 0.3125rem;
-	color: var(--color-text-heading);
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+  color: var(--color-text-heading);
 }
 
 .job {
-	margin-bottom: 0.875rem;
+  margin-bottom: 2rem;
 }
 
 .job-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: top;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
 }
 
 .company {
-	font-size: 1rem;
-	font-weight: bold;
-	color: var(--color-text-company);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-text-company);
 }
 
 .position {
-	font-size: 0.875rem;
-	font-style: italic;
-	color: var(--color-text-position);
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--color-text-position);
 }
 
 .period {
-	font-size: 0.875rem;
-	text-align: right;
-	color: var(--color-text-date);
+  font-size: 0.875rem;
+  text-align: right;
+  color: var(--color-text-date);
 }
 
 .location {
-	font-size: 0.875rem;
-	text-align: right;
-	color: var(--color-text-location);
+  font-size: 0.875rem;
+  text-align: right;
+  color: var(--color-text-location);
 }
 
 ul {
-	margin-left: 1.25rem;
+  margin-left: 1.25rem;
 }
 
 .technologies-list {
-	margin: 0.3125rem 0 0.625rem;
+  margin: 0.3125rem 0 0.625rem;
 }
 
- 
-
 .download-btn {
-	background-color: var(--color-bg-button);
-	color: var(--color-text-button);
-	padding: 0.625rem 1.25rem;
-	border: none;
-	border-radius: 0.25rem;
-	cursor: pointer;
-	font-size: 1rem;
-	font-weight: bold; 
-	position: fixed;
-	top:1rem;
-	right: 1rem;
+  background-color: var(--color-bg-button);
+  color: var(--color-text-button);
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
 }
 
 .download-btn:hover {
-	background-color: var(--color-bg-button-hover);
+  background-color: var(--color-bg-button-hover);
 }
 
 /* Education styles */
 .education-item {
-	margin-bottom: 0.875rem;
+  margin-bottom: 0.875rem;
 }
 
 .education-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: top;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
 }
 
 .degree {
-	font-size: 1rem;
-	font-weight: bold;
-	color: var(--color-text-company);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-text-company);
 }
 
 .institution {
-	font-size: 0.875rem;
-	font-style: italic;
-	color: var(--color-text-position);
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--color-text-position);
 }
 
 /* Certification styles */
 .certification-item {
-	margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .certification-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: top;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
 }
 
 .cert-name {
-	font-size: 1rem;
-	font-weight: bold;
-	color: var(--color-text-company);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-text-company);
 }
 
 .cert-issuer {
-	font-size: 0.875rem;
-	font-style: italic;
-	color: var(--color-text-position);
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--color-text-position);
 }
 
 /* Project styles */
 .project-item {
-	margin-bottom: 0.875rem;
+  margin-bottom: 0.875rem;
 }
 
 .project-name {
-	font-size: 1rem;
-	font-weight: bold;
-	color: var(--color-text-company);
-	margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-text-company);
+  margin-bottom: 0.25rem;
 }
 
 .project-description {
-	font-size: 0.875rem;
-	margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
 }
 
 .technologies {
-	font-size: 0.875rem;
+  font-size: 0.875rem;
 }
-
 
 /* Interests styles */
 .interests-list {
-	margin: 0.3125rem 0 0.625rem;
+  margin: 0.3125rem 0 0.625rem;
 }
 
 /* Print styles */
 @media print {
-	body {
-		margin: 0;
-		padding: 0;
-		background: none;
-	}
+  body {
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
 
-	.container {
-		box-shadow: none;
-		padding: 0;
-	}
+  .container {
+    box-shadow: none;
+    padding: 0;
+    background-color: transparent;
+  }
 
-	.download-section {
-		display: none;
-	}
+  .download-btn {
+    display: none;
+  }
 }
