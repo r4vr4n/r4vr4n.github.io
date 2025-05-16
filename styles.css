@@ -1,3 +1,25 @@
+:root {
+	/* Text colors */
+	--color-text-primary: #333;
+	--color-text-accent: darkolivegreen;
+	--color-text-heading: darkolivegreen;
+	--color-text-company: royalblue;
+	--color-text-position: cornflowerblue;
+	--color-text-date: saddlebrown;
+	--color-text-location: slategray;
+	--color-text-button: white;
+
+	/* Background colors */
+	--color-bg-body: #f9f9f9;
+	--color-bg-container: hsla(90, 23%, 95%, 0.506);
+	--color-bg-button: #4caf50;
+	--color-bg-button-hover: #45a049;
+
+	/* Border colors */
+	--color-border: #000;
+	--color-shadow: rgba(0, 0, 0, 0.1);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -7,18 +29,17 @@
 body {
 	font-family: "Garamond", serif;
 	line-height: 1.6;
-	color: #333;
+	color: var(--color-text-accent);
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 1rem;
-	background-color: #f9f9f9; 
-	color:darkolivegreen;
+	background-color: var(--color-bg-body);
 }
 
 .container {
-	background-color: #fff;
+	background-color: var(--color-bg-container);
 	padding: 1rem;
-	box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0.125rem 0.625rem var(--color-shadow);
 }
 
 header {
@@ -38,7 +59,7 @@ h1 {
 
 .divider {
 	height: 0.0625rem;
-	background-color: #000;
+	background-color: var(--color-border);
 	margin: 0.125rem 0;
 }
 
@@ -47,6 +68,7 @@ h1 {
 	font-weight: bold;
 	margin-top: 0.3125rem;
 	margin-bottom: 0.3125rem;
+	color: var(--color-text-heading);
 }
 
 .job {
@@ -62,27 +84,27 @@ h1 {
 .company {
 	font-size: 1rem;
 	font-weight: bold;
-	color: royalblue;
+	color: var(--color-text-company);
 }
 
 .position {
 	font-size: 0.875rem;
 	font-style: italic;
-	color: cornflowerblue;
+	color: var(--color-text-position);
 }
 
 .date {
 	font-size: 0.875rem;
 	font-weight: bold;
 	text-align: right;
-	color: saddlebrown;
+	color: var(--color-text-date);
 }
 
 .location {
 	font-size: 0.875rem;
 	font-style: italic;
 	text-align: right;
-	color: slategray;
+	color: var(--color-text-location);
 }
 
 .description {
@@ -122,8 +144,8 @@ li {
 	position: fixed;
 	top: 1rem;
 	right: 1rem;
-	background-color: #4caf50;
-	color: white;
+	background-color: var(--color-bg-button);
+	color: var(--color-text-button);
 	border: none;
 	padding: 8px 16px;
 	font-size: 14px;
@@ -134,7 +156,7 @@ li {
 }
 
 .download-btn:hover {
-	background-color: #45a049;
+	background-color: var(--color-bg-button-hover);
 }
 
 /* Print styles */
