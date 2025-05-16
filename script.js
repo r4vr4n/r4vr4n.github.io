@@ -198,35 +198,8 @@ function setupDownloadButton() {
   const downloadBtn = document.getElementById("downloadBtn")
   if (downloadBtn) {
     downloadBtn.addEventListener("click", () => {
-      // Create a filename based on the person's name
-      const personalInfoSection = document.getElementById("personal-info")
-      const nameElement = personalInfoSection.querySelector("h1")
-      const name = nameElement ? nameElement.textContent : "Resume"
-      const fileName = `${name.replace(/\s+/g, "_")}_Resume.pdf`
-
-      // Use html2pdf.js to generate and download the PDF
-      const element = document.querySelector(".container")
-
-      // Temporarily hide the download button for the PDF generation
-      downloadBtn.style.display = "none"
-
-      // Configure PDF options
-      const opt = {
-        margin: [5, 5, 5, 5],
-        filename: fileName,
-        image: { type: "png", quality: 1 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-      }
-
-      // Generate and download the PDF
-      html2pdf()
-        .set(opt)
-        .from(element)
-        .save()
-        .then(() => {
-          downloadBtn.style.display = "block"
-        })
+      // Show print dialog using browser's built-in functionality
+      window.print()
     })
   }
 
