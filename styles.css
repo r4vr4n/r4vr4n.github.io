@@ -11,7 +11,8 @@ body {
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 1rem;
-	background-color: #f9f9f9;
+	background-color: #f9f9f9; 
+	color:darkolivegreen;
 }
 
 .container {
