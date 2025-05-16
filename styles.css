@@ -67,13 +67,13 @@ h1 {
 .position {
 	font-size: 0.875rem;
 	font-style: italic;
-	color:cornflowerblue
+	color: cornflowerblue;
 }
 
 .date {
 	font-size: 0.875rem;
 	font-weight: bold;
-	text-align: right; 
+	text-align: right;
 	color: saddlebrown;
 }
 
@@ -105,24 +105,8 @@ li {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.625rem;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
-}
-
-.skill-item {
-	background-color: #f2f2f2;
-	padding: 0.25rem 0.625rem;
-	border-radius: 4px;
-	font-size: 0.875rem;
-	color: #444;
-	margin-bottom: 0.5rem;
-	border: 1px solid #e0e0e0;
-	transition: all 0.2s ease;
-}
-
-.skill-item:hover {
-	background-color: #e8f0fe;
-	border-color: #b8d4fe;
 }
 
 /* Download button styles */
