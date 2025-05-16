@@ -59,25 +59,29 @@ h1 {
 }
 
 .company {
-	font-size: 1.125rem;
+	font-size: 1rem;
 	font-weight: bold;
+	color: royalblue;
 }
 
 .position {
-	font-size: 1rem;
+	font-size: 0.875rem;
 	font-style: italic;
+	color:cornflowerblue
 }
 
 .date {
 	font-size: 0.875rem;
 	font-weight: bold;
-	text-align: right;
+	text-align: right; 
+	color: saddlebrown;
 }
 
 .location {
 	font-size: 0.875rem;
 	font-style: italic;
 	text-align: right;
+	color: slategray;
 }
 
 .description {
@@ -111,6 +115,9 @@ li {
 }
 
 .download-btn {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
 	background-color: #4caf50;
 	color: white;
 	border: none;
