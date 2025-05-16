@@ -91,7 +91,7 @@ function renderWorkExperience(experiences) {
           <div class="period">${job.period}</div>
           <div class="location">${job.location}</div>
         </div>
-      </div> 
+      </div>  
       <ul>
         ${responsibilitiesHTML}
       </ul>

@@ -18,7 +18,7 @@
       "description": "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
       "responsibilities": [
         "Collaborating with team members to establish new coding guidelines that improve code maintainability and quality.",
-        "Delivered the activity feed feature of the  <strong>Fulfillment Center</strong>  for improved user experience.",
+        "Delivered the activity feed feature of the <strong>Fulfillment Center</strong> for improved user experience.",
         "Migrating all front-end repositories to a monorepo using Nx for streamlined development processes."
       ],
       "technologies": [
@@ -111,7 +111,7 @@
       "location": "Pune, MH · Remote",
       "description": "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, and deep domain expertise.",
       "responsibilities": [
-        "Contributed to the front-end development for Nimbus Duo, our in house tool for risk analysis and fraud detection.",
+        "Contributed to the development for <strong>Nimbus Duo</strong>, our in house tool for risk analysis & fraud detection.",
         "Led the setup and feature development of the Inventory Management system."
       ],
       "technologies": [
