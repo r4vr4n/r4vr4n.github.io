@@ -50,11 +50,10 @@ function renderPersonalInfo(personalInfo) {
       
       <span class='social-link'>
       <img src="./LinkedInIcon.svg" alt="LinkedIn" class="social-icon">
-      <a href='https://www.linkedin.com/in/r4vr4n'> ${personalInfo.contact.linkedin}</a>
       </span>
       <span class='social-link'>
       <img src="./GithubIcon.svg" alt="GitHub" class="social-icon">
-      <a href='https://www.github.com/r4vr4n'>${personalInfo.contact.github}</a>
+      <a href='https://www.github.com/r4vr4n' target="_blank">${personalInfo.contact.github}</a>
       </span>
       </div>
     </div>
@@ -115,6 +114,7 @@ function renderCertifications(certifications) {
         <div>
           <div class="cert-name">${cert.name}</div>
           <div class="cert-issuer">${cert.issuer}</div>
+          <div class="cert-id">Credential ID: <a href=${cert.url} target='_blank'>${cert.id}</a></div>
         </div>
         <div class="period">${cert.period}</div>
       </div>
@@ -183,8 +183,8 @@ function renderLiveProjects(projects) {
     )}</a> 
       </div>
       <div class="project-description">${project.description}</div>
-      <div class="technologies"><strong>Technologies: </strong> ${technologiesHTML}</div>
-    `
+      `
+    // <div class="technologies"><strong>Technologies: </strong> ${technologiesHTML}</div>
 
     projectsSection.appendChild(projectElement)
   }
