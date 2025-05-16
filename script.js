@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Render skills
     renderSkills(resumeData.skills)
+
+    // Set up download button functionality
+    setupDownloadButton()
   } catch (error) {
     console.error("Error loading resume data:", error)
     document.body.innerHTML =
@@ -38,7 +41,7 @@ function renderWorkExperience(experiences) {
   const workExperienceSection = document.getElementById("work-experience")
   workExperienceSection.innerHTML = ""
 
-  experiences.forEach((job) => {
+  for (const job of experiences) {
     const jobElement = document.createElement("div")
     jobElement.className = "job"
 
@@ -57,20 +60,39 @@ function renderWorkExperience(experiences) {
           <div class="date">${job.period}</div>
           <div class="location">${job.location}</div>
         </div>
-      </div>
-      <div class="description">
-        ${job.description}
-      </div>
+      </div> 
       <ul>
         ${responsibilitiesHTML}
       </ul>
     `
 
     workExperienceSection.appendChild(jobElement)
-  })
+  }
 }
 
 function renderSkills(skills) {
   const skillsListSection = document.getElementById("skills-list")
-  skillsListSection.innerHTML = skills.join("\n· ")
+  skillsListSection.innerHTML = skills
+    .map((skill, index) =>
+      index === skills.length - 1 ? skill : `${skill} · `
+    )
+    .join("")
+}
+
+// PDF download and print functionality
+function setupDownloadButton() {
+  const downloadBtn = document.getElementById("downloadBtn")
+  if (downloadBtn) {
+    downloadBtn.addEventListener("click", () => {
+      window.print()
+    })
+  }
+
+  // Handle keyboard shortcut (Ctrl+P)
+  document.addEventListener("keydown", (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === "p") {
+      e.preventDefault()
+      window.print()
+    }
+  })
 }
