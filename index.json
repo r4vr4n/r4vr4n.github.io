@@ -18,8 +18,8 @@
       "description": "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
       "responsibilities": [
         "Collaborating with team members to establish new coding guidelines that improve code maintainability and quality.",
-        "Delivered the activity feed feature of the fulfillment center for improved user experience.",
-        "Migrated all front-end repositories to a monorepo using Nx for streamlined development processes."
+        "Delivered the activity feed feature of the  <strong>Fulfillment Center</strong>  for improved user experience.",
+        "Migrating all front-end repositories to a monorepo using Nx for streamlined development processes."
       ],
       "technologies": [
         "React v19",
@@ -30,7 +30,7 @@
         "Cypress",
         "Docker",
         "RTL",
-        "React Hook Form",
+        "RHF",
         "Yup",
         "Redux Toolkit",
         "React Table V8"
@@ -43,14 +43,13 @@
       "location": "Bengaluru, KA · On-site",
       "description": "Reconect.ai is a fintech firm focused on debt collection using digital channels.",
       "responsibilities": [
-        "Architected the front-end application for debt collections campaign management & monitoring facilitating efficient tracking."
+        "Engineered the front-end application for debt collections campaign management."
       ],
       "technologies": [
         "React 18",
-        "MUI v6",
+        "Mantine UI",
         "React Query v5",
         "Playwright",
-        "Mantine UI v7",
         "Recharts",
         "React Table V8"
       ]
@@ -64,9 +63,9 @@
       "responsibilities": [
         "Coded DEM (digital elevation model) viewer enabling stakeholders plan out the construction projects by visualizing terrains.",
         "Coded user tagging on maps as well as panorama and redirecting tagged user to the specific coordinate where they were tagged.",
-        "Refactored the application to be modular, scalable and testable.",
+        "Refactored <strong>Construction Monitoring</strong> to be modular, scalable and testable.",
         "Mentored a team of three developers.",
-        "Oversaw the architecture and development of an analysis tool, leading the project from concept to implementation.",
+        "Engineered  <strong>Analysis Tool</strong>, leading the project from concept to implementation.",
         "Developed thermal annotation system that improved panel defect detection, resulting in a 30% reduction in QA processing time."
       ],
       "technologies": [
@@ -79,11 +78,12 @@
         "React-Konva",
         "kr-pano",
         "Playwright",
-        "Mantine UI v7",
+        "Mantine UI",
         "Recharts",
         "React Table v7",
         "Formik",
-        "Yup"
+        "Yup",
+        "Redux Toolkit"
       ]
     },
     {
@@ -98,7 +98,7 @@
       ],
       "technologies": [
         "NextJS",
-        "Material UI v5",
+        "Tailwind CSS",
         "Context API",
         "Framer motion",
         "Web3.js"
@@ -201,7 +201,9 @@
     "Formik",
     "Context API",
     "Yup",
-    "React Hook Form"
+    "React Hook Form (RHF)",
+    "React Testing Library (RTL)",
+    "Framer motion"
   ],
 
   "interests": [

@@ -76,7 +76,9 @@ function renderWorkExperience(experiences) {
 
     // Create skills HTML
     const skillsHTML = job.technologies
-      ? `<strong>Technologies:</strong> ${job.technologies.join(" · ")} `
+      ? `<div class="technologies"><strong>Technologies: </strong>${job.technologies.join(
+          " · "
+        )} </div>`
       : ""
 
     jobElement.innerHTML = `
@@ -147,7 +149,6 @@ function renderEducation(education) {
   }
 }
 
-
 function renderTechnologies(technologies) {
   const technologiesListSection = document.getElementById("technologies-list")
   technologiesListSection.innerHTML = technologies
@@ -174,10 +175,15 @@ function renderLiveProjects(projects) {
     projectElement.innerHTML = `
       <div class="project-header">
         <div class="project-name">${project.name}</div> 
-          <a href="${project.url}" target="_blank" class="project-link">${project.url.replace('https://','')}</a> 
+          <a href="${
+            project.url
+          }" target="_blank" class="project-link">${project.url.replace(
+      "https://",
+      ""
+    )}</a> 
       </div>
       <div class="project-description">${project.description}</div>
-      <div class="project-technologies"><span>Technologies:</span> ${technologiesHTML}</div>
+      <div class="technologies"><strong>Technologies: </strong> ${technologiesHTML}</div>
     `
 
     projectsSection.appendChild(projectElement)
