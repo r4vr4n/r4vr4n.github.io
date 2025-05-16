@@ -4,7 +4,7 @@
     "contact": {
       "email": "rajeevranjan19@outlook.com",
       "phone": "7543898325",
-      "location": "Bengaluru, KA, IN"
+      "location": "Bengaluru, KA, India"
     }
   },
   "workExperience": [
@@ -12,7 +12,7 @@
       "company": "DashClicks",
       "position": "Frontend Engineer",
       "period": "Nov. 2024 - Present",
-      "location": "Jaipur, RJ, IN · Remote",
+      "location": "Jaipur, RJ · Remote",
       "description": "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
       "responsibilities": [
         "Collaborating with team members to establish new coding guidelines that improve code maintainability and quality.",
@@ -24,7 +24,7 @@
       "company": "Reconect.ai",
       "position": "Frontend Consultant",
       "period": "Aug. 2024 - Nov. 2024",
-      "location": "Bengaluru, KA, IN · On-site",
+      "location": "Bengaluru, KA · On-site",
       "description": "Reconect.ai is a fintech firm focused on debt collection and management solutions.",
       "responsibilities": [
         "Architected the front-end application for debt collections campaign management & monitoring facilitating efficient tracking."
@@ -34,7 +34,7 @@
       "company": "Zeitview (formerly DroneBase)",
       "position": "Frontend Developer",
       "period": "Mar. 2022 - Aug. 2024",
-      "location": "Bengaluru, KA, IN · Remote",
+      "location": "Bengaluru, KA · Remote",
       "description": "Zeitview is a global leader in providing drone services for asset management, leveraging advanced technologies.",
       "responsibilities": [
         "Coded DEM(digital elevation model) viewer enabling stakeholders plan out the construction projects by visualizing terrains.",
@@ -49,7 +49,7 @@
       "company": "Estate Protocol",
       "position": "Frontend Developer",
       "period": "Jun. 2021 - Feb. 2022",
-      "location": "Noida, UP, IN · Remote",
+      "location": "Noida, UP · Remote",
       "description": "Estate Protocol is a blockchain-based real estate platform facilitating seamless transactions and processes.",
       "responsibilities": [
         "Integrated the Airdrop feature using Web3.js, enabling seamless token distribution.",
@@ -60,7 +60,7 @@
       "company": "Solytics Partners",
       "position": "Junior Frontend Developer",
       "period": "Sep. 2020 - Jun. 2021",
-      "location": "Pune, MH, IN · Remote",
+      "location": "Pune, MH · Remote",
       "description": "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, and deep domain expertise.",
       "responsibilities": [
         "Contributed to the front-end development for Nimbus Duo, our in house tool for risk analysis and fraud detection.",
