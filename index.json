@@ -4,7 +4,9 @@
     "contact": {
       "email": "rajeevranjan19@outlook.com",
       "phone": "7543898325",
-      "location": "Bengaluru, KA, India"
+      "location": "Bengaluru, KA, India",
+      "linkedin": "linkedin.com/in/r4vr4n",
+      "github": "github.com/r4vr4n"
     }
   },
   "workExperience": [
@@ -18,6 +20,18 @@
         "Collaborating with team members to establish new coding guidelines that improve code maintainability and quality.",
         "Delivered the activity feed feature of the fulfillment center for improved user experience.",
         "Migrated all front-end repositories to a monorepo using Nx for streamlined development processes."
+      ],
+      "technologies": [
+        "React v19",
+        "MUI v5",
+        "React Query v3",
+        "Nx",
+        "Jest",
+        "Cypress",
+        "Docker",
+        "RTL",
+        "React Hook Form",
+        "Yup"
       ]
     },
     {
@@ -25,9 +39,19 @@
       "position": "Frontend Consultant",
       "period": "Aug. 2024 - Nov. 2024",
       "location": "Bengaluru, KA · On-site",
-      "description": "Reconect.ai is a fintech firm focused on debt collection and management solutions.",
+      "description": "Reconect.ai is a fintech firm focused on debt collection using digital channels.",
       "responsibilities": [
         "Architected the front-end application for debt collections campaign management & monitoring facilitating efficient tracking."
+      ],
+      "technologies": [
+        "React 18",
+        "MUI v6",
+        "React Query v5",
+        "Playwright",
+        "Mantine UI v7",
+        "Recharts",
+        "React Table V8",
+        "Context API"
       ]
     },
     {
@@ -37,12 +61,29 @@
       "location": "Bengaluru, KA · Remote",
       "description": "Zeitview is a global leader in providing drone services for asset management, leveraging advanced technologies.",
       "responsibilities": [
-        "Coded DEM(digital elevation model) viewer enabling stakeholders plan out the construction projects by visualizing terrains.",
+        "Coded DEM (digital elevation model) viewer enabling stakeholders plan out the construction projects by visualizing terrains.",
         "Coded user tagging on maps as well as panorama and redirecting tagged user to the specific coordinate where they were tagged.",
         "Refactored the application to be modular, scalable and testable.",
         "Mentored a team of three developers.",
         "Oversaw the architecture and development of an analysis tool, leading the project from concept to implementation.",
         "Developed thermal annotation system that improved panel defect detection, resulting in a 30% reduction in QA processing time."
+      ],
+      "technologies": [
+        "React 17",
+        "MUI v5",
+        "React Query v4",
+        "Redux",
+        "MapBox",
+        "CesiumJS",
+        "React-Konva",
+        "kr-pano",
+        "Playwright",
+        "Mantine UI v7",
+        "Recharts",
+        "React Table v7",
+        "Context API",
+        "Formik",
+        "Yup"
       ]
     },
     {
@@ -54,25 +95,76 @@
       "responsibilities": [
         "Integrated the Airdrop feature using Web3.js, enabling seamless token distribution.",
         "Brought designs to life the company's landing page."
+      ],
+      "technologies": [
+        "NextJS",
+        "Material UI v5",
+        "Context API",
+        "Framer motion",
+        "Web3.js"
       ]
     },
     {
       "company": "Solytics Partners",
-      "position": "Jr Frontend Developer",
+      "position": "Jr. Frontend Developer",
       "period": "Sep. 2020 - Jun. 2021",
       "location": "Pune, MH · Remote",
       "description": "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, and deep domain expertise.",
       "responsibilities": [
         "Contributed to the front-end development for Nimbus Duo, our in house tool for risk analysis and fraud detection.",
         "Led the setup and feature development of the Inventory Management system."
+      ],
+      "technologies": [
+        "React",
+        "Redux",
+        "Redux Saga",
+        "Material UI v4",
+        "Bootstrap v4",
+        "React Table v6",
+        "Plotly JS"
       ]
     }
   ],
-  "skills": [
-    "ReactJS",
+  "certifications": [
+    {
+      "name": "Certified MERN stack developer",
+      "issuer": "AttainU",
+      "period": "July. 2019 - May. 2020",
+      "id": "AUFS004052"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology in Computer Science and Engineering",
+      "institution": "Biju Patnaik University of Technology",
+      "location": "Odisha, OD",
+      "period": "Mar. 2015 - Mar. 2019"
+    }
+  ],
+
+  "liveProjects": [
+    {
+      "name": "Cexdex",
+      "description": "Cexdex is a decentralized exchange platform that allows users to trade cryptocurrencies in a secure and efficient manner.",
+      "url": "https://stake.cexdex.app",
+      "technologies": ["Web3.js", "React", "Context API"]
+    },
+    {
+      "name": "Estate Protocol",
+      "description": "Estate Protocol is a platform that uses blockchain to tokenize and fractionalize real estate properties, allowing people to invest in them with cryptocurrencies.",
+      "url": "https://estateprotocol.com",
+      "technologies": ["Web3.js", "NextJS", "Framer motion", "Material UI"]
+    }
+  ],
+  "technologies": [
+    "axios",
+    "React",
     "NextJS",
     "TypeScript",
+    "React Query",
     "Redux",
+    "Redux Saga",
+    "Redux Toolkit",
     "REST APIs",
     "Web Design",
     "AWS",
@@ -81,6 +173,7 @@
     "Git",
     "HTML",
     "CSS",
+    "SCSS",
     "JavaScript",
     "Node.js",
     "Express.js",
@@ -96,6 +189,26 @@
     "Material UI",
     "Tailwind CSS",
     "Styled Components",
-    "Docker"
+    "Docker",
+    "Recharts",
+    "Plotly JS",
+    "Socket.io",
+    "MapBox",
+    "CesiumJS",
+    "React-Konva",
+    "kr-pano",
+    "React Table",
+    "Formik",
+    "Context API",
+    "Yup",
+    "React Hook Form"
+  ],
+
+  "interests": [
+    "Football",
+    "Video Games",
+    "Stock Market",
+    "Artificial Intelligence",
+    "Web Development"
   ]
 }

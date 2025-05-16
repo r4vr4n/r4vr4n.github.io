@@ -13,8 +13,20 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Render work experience
     renderWorkExperience(resumeData.workExperience)
 
-    // Render skills
-    renderSkills(resumeData.skills)
+    // Render education
+    renderEducation(resumeData.education)
+
+    // Render certifications
+    renderCertifications(resumeData.certifications)
+
+    // Render technologies
+    renderTechnologies(resumeData.technologies)
+
+    // Render projects
+    renderLiveProjects(resumeData.liveProjects)
+
+    // Render interests
+    renderInterests(resumeData.interests)
 
     // Set up download button functionality
     setupDownloadButton()
@@ -33,6 +45,18 @@ function renderPersonalInfo(personalInfo) {
       <span>${personalInfo.contact.email}</span> |
       <span>${personalInfo.contact.phone}</span> |
       <span>${personalInfo.contact.location}</span>
+
+      <div class="social-links">
+      
+      <span class='social-link'>
+      <img src="./LinkedInIcon.svg" alt="LinkedIn" class="social-icon">
+      <a href='https://www.linkedin.com/in/r4vr4n'> ${personalInfo.contact.linkedin}</a>
+      </span>
+      <span class='social-link'>
+      <img src="./GithubIcon.svg" alt="GitHub" class="social-icon">
+      <a href='https://www.github.com/r4vr4n'>${personalInfo.contact.github}</a>
+      </span>
+      </div>
     </div>
   `
 }
@@ -50,31 +74,121 @@ function renderWorkExperience(experiences) {
       .map((responsibility) => `<li>${responsibility}</li>`)
       .join("")
 
+    // Create skills HTML
+    const skillsHTML = job.technologies
+      ? `<strong>Technologies:</strong> ${job.technologies.join(" · ")} `
+      : ""
+
     jobElement.innerHTML = `
-      <div class="job-header">
+      <div class="job-header"> 
+      <div>
+      <div class="company">${job.company}</div> 
+      <div class="position">${job.position}</div> 
+      </div>
         <div>
-          <div class="company">${job.company}</div>
-          <div class="position">${job.position}</div>
-        </div>
-        <div>
-          <div class="date">${job.period}</div>
+          <div class="period">${job.period}</div>
           <div class="location">${job.location}</div>
         </div>
       </div> 
       <ul>
         ${responsibilitiesHTML}
       </ul>
+      ${skillsHTML}
     `
 
     workExperienceSection.appendChild(jobElement)
   }
 }
 
-function renderSkills(skills) {
-  const skillsListSection = document.getElementById("skills-list")
-  skillsListSection.innerHTML = skills
+function renderCertifications(certifications) {
+  const certificationsSection = document.getElementById("certifications")
+  certificationsSection.innerHTML = ""
+
+  for (const cert of certifications) {
+    const certElement = document.createElement("div")
+    certElement.className = "certification-item"
+
+    certElement.innerHTML = `
+      <div class="certification-header">
+        <div>
+          <div class="cert-name">${cert.name}</div>
+          <div class="cert-issuer">${cert.issuer}</div>
+        </div>
+        <div class="period">${cert.period}</div>
+      </div>
+    `
+
+    certificationsSection.appendChild(certElement)
+  }
+}
+
+function renderEducation(education) {
+  const educationSection = document.getElementById("education")
+  educationSection.innerHTML = ""
+
+  for (const edu of education) {
+    const eduElement = document.createElement("div")
+    eduElement.className = "education-item"
+
+    eduElement.innerHTML = `
+      <div class="education-header">
+        <div>
+          <div class="degree">${edu.degree}</div>
+          <div class="institution">${edu.institution}</div>
+        </div>
+        <div>
+          <div class="period">${edu.period}</div>
+          <div class="location">${edu.location}</div>
+        </div>
+      </div>
+    `
+
+    educationSection.appendChild(eduElement)
+  }
+}
+
+
+function renderTechnologies(technologies) {
+  const technologiesListSection = document.getElementById("technologies-list")
+  technologiesListSection.innerHTML = technologies
     .map((skill, index) =>
-      index === skills.length - 1 ? skill : `${skill} · `
+      index === technologies.length - 1 ? skill : `${skill} · `
+    )
+    .join("")
+}
+
+function renderLiveProjects(projects) {
+  const projectsSection = document.getElementById("projects")
+  projectsSection.innerHTML = ""
+
+  for (const project of projects) {
+    const projectElement = document.createElement("div")
+    projectElement.className = "project-item"
+
+    const technologiesHTML = project.technologies
+      .map((tech, index) =>
+        index === project.technologies.length - 1 ? tech : `${tech}, `
+      )
+      .join("")
+
+    projectElement.innerHTML = `
+      <div class="project-header">
+        <div class="project-name">${project.name}</div> 
+          <a href="${project.url}" target="_blank" class="project-link">${project.url.replace('https://','')}</a> 
+      </div>
+      <div class="project-description">${project.description}</div>
+      <div class="project-technologies"><span>Technologies:</span> ${technologiesHTML}</div>
+    `
+
+    projectsSection.appendChild(projectElement)
+  }
+}
+
+function renderInterests(interests) {
+  const interestsSection = document.getElementById("interests")
+  interestsSection.innerHTML = interests
+    .map((interest, index) =>
+      index === interests.length - 1 ? interest : `${interest} · `
     )
     .join("")
 }
@@ -98,9 +212,9 @@ function setupDownloadButton() {
 
       // Configure PDF options
       const opt = {
-        margin: [10, 10, 10, 10],
+        margin: [2, 2, 2, 2],
         filename: fileName,
-        image: { type: "jpeg", quality: 0.98 },
+        image: { type: "png", quality: 1 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
       }
@@ -111,7 +225,6 @@ function setupDownloadButton() {
         .from(element)
         .save()
         .then(() => {
-          // Show the download button again
           downloadBtn.style.display = "block"
         })
     })
