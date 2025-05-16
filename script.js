@@ -50,6 +50,7 @@ function renderPersonalInfo(personalInfo) {
       
       <span class='social-link'>
       <img src="./LinkedInIcon.svg" alt="LinkedIn" class="social-icon">
+      <a href='https://www.linkedin.com/in/r4vr4n'> ${personalInfo.contact.linkedin}</a>
       </span>
       <span class='social-link'>
       <img src="./GithubIcon.svg" alt="GitHub" class="social-icon">
@@ -166,21 +167,22 @@ function renderLiveProjects(projects) {
     const projectElement = document.createElement("div")
     projectElement.className = "project-item"
 
-    const technologiesHTML = project.technologies
-      .map((tech, index) =>
-        index === project.technologies.length - 1 ? tech : `${tech}, `
-      )
-      .join("")
+    // const technologiesHTML = project.technologies
+    //   .map((tech, index) =>
+    //     index === project.technologies.length - 1 ? tech : `${tech}, `
+    //   )
+    //   .join("")
 
+    // <div class="project-name">${project.name}</div>
     projectElement.innerHTML = `
       <div class="project-header">
-        <div class="project-name">${project.name}</div> 
-          <a href="${
-            project.url
-          }" target="_blank" class="project-link">${project.url.replace(
+        <div class="project-name"><a href="${
+          project.url
+        }" target="_blank" class="project-link">${project.url.replace(
       "https://",
       ""
-    )}</a> 
+    )}</a> </div> 
+         </a> 
       </div>
       <div class="project-description">${project.description}</div>
       `
@@ -218,7 +220,7 @@ function setupDownloadButton() {
 
       // Configure PDF options
       const opt = {
-        margin: [2, 2, 2, 2],
+        margin: [1, 1, 1, 1],
         filename: fileName,
         image: { type: "png", quality: 1 },
         html2canvas: { scale: 2 },
