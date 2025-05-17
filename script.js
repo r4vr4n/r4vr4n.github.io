@@ -42,8 +42,9 @@ function renderPersonalInfo(personalInfo) {
   personalInfoSection.innerHTML = `
     <h1>${personalInfo.name}</h1>
     <div class="contact-info">
-      <span>${personalInfo.contact.email}</span> |
-      <span>${personalInfo.contact.phone}</span> |
+      <span><a href="mailto:${personalInfo.contact.email}">${personalInfo.contact.email}</a></span> |
+<span><a href="tel:${personalInfo.contact.phone}">${personalInfo.contact.phone}</a></span>
+ |
       <span>${personalInfo.contact.location}</span>
 
       <div class="social-links">
