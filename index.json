@@ -44,7 +44,7 @@
       "location": "Bengaluru, KA · On-site",
       "description": "Reconect.ai is a fintech firm focused on debt collection using digital channels.",
       "responsibilities": [
-        "Engineered the front-end application for debt collections campaign management."
+        "Integrated campaign management increasing concurrent campaign capacity from 1-3 to 10+ campaigns, eliminating 20+ hours weekly of manual trigger setup."
       ],
       "technologies": [
         "React 18",
@@ -62,12 +62,11 @@
       "location": "Bengaluru, KA · Remote",
       "description": "Zeitview is a global leader in providing drone services for asset management, leveraging advanced technologies.",
       "responsibilities": [
-        "Coded DEM (digital elevation model) viewer enabling stakeholders plan out the construction projects by visualizing terrains.",
-        "Coded user tagging on maps as well as panorama and redirecting tagged user to the specific coordinate where they were tagged.",
-        "Refactored <strong>Construction Monitoring</strong> to be modular, scalable and testable.",
-        "Mentored a team of three developers.",
-        "Engineered  <strong>Analysis Tool</strong>, leading the project from concept to implementation.",
-        "Developed thermal annotation system that improved panel defect detection, resulting in a 30% reduction in QA processing time."
+        "Built interactive DEM terrain visualization tool reducing project planning time from 3 weeks to 1 week and improving site assessment accuracy by 80% through 3D elevation modeling.",
+        "Implemented coordinate-based tagging with notification workflow that reduced manual communication overhead by 75%, improved field issue tracking by 80%.",
+        "Restructured Construction Monitoring codebase to prevent unnecessary renders, resulting in 75% performance improvement, reducing component re-render cycles by 85%, and achieving 3x faster page load times through optimized state management",
+        "Provided technical mentorship to 3 developers, resulting in 70% improvement in their pull request approval rate.",
+        "Directed development of all-in-one Analysis Tool supporting 3 different analysis methodologies, enabling analysts to complete end-to-end workflows 65% faster without external application dependencies."
       ],
       "technologies": [
         "React v17",
@@ -220,14 +219,5 @@
     "Artificial Intelligence"
   ],
 
-  "softSkills": [
-    "Problem Solving",
-    "Communication",
-    "Teamwork",
-    "Adaptability",
-    "Leadership",
-    "Critical Thinking",
-    "Attention to Detail",
-    "Mentoring"
-  ]
+  "softSkills": ["Teamwork", "Mentoring", "Leadership", "Communication"]
 }
