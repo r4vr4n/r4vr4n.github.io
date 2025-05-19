@@ -17,9 +17,8 @@
       "location": "Jaipur, RJ · Remote",
       "description": "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
       "responsibilities": [
-        "Collaborating with team members to establish new coding guidelines that improve code maintainability and quality.",
-        "Delivered the activity feed feature of the <strong>Fulfillment Center</strong> for improved user experience.",
-        "Migrating all front-end repositories to a monorepo using Nx & set up CI/CD pipelines."
+        "Automated code quality checks & style guidelines, improving pull request approval time by 30% & achieving 80% adherence rate across all team projects within 5 months",
+        "Delivered activity feed feature providing transparent order tracking, which reduced client follow-up communications by 80% & enabled support team to handle 50% more cases per day."
       ],
       "technologies": [
         "React v19",
@@ -71,7 +70,7 @@
         "Developed thermal annotation system that improved panel defect detection, resulting in a 30% reduction in QA processing time."
       ],
       "technologies": [
-        "React 17",
+        "React v17",
         "MUI v5",
         "React Query v4",
         "Redux",
@@ -96,8 +95,8 @@
       "location": "Noida, UP · Remote",
       "description": "Estate Protocol is a blockchain-based real estate platform facilitating seamless transactions and processes.",
       "responsibilities": [
-        "Integrated the Airdrop feature using Web3.js, enabling seamless token distribution.",
-        "Brought designs to life the company's landing page."
+        "Integrated Airdrop system using Web3.js serving 2,000+ claimants, achieving 90% delivery success rate.",
+        "Implemented pixel-perfect landing page design achieving 90+ Lighthouse performance score."
       ],
       "technologies": [
         "NextJS",
