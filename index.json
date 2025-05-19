@@ -17,11 +17,11 @@
       "location": "Jaipur, RJ · Remote",
       "description": "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
       "responsibilities": [
-        "Automated code quality checks & style guidelines, improving pull request approval time by 30% & achieving 80% adherence rate across all team projects within 5 months",
-        "Delivered activity feed feature providing transparent order tracking, which reduced client follow-up communications by 80% & enabled support team to handle 50% more cases per day."
+        "Automated code quality checks & style guidelines, improving pull request approval time by 30%.",
+        "Delivered activity feed which reduced client follow-up comms. by 80% & enabled support team to handle 50% more cases."
       ],
       "technologies": [
-        "React v19",
+        "ReactJS v19",
         "MUI v5",
         "React Query v3",
         "Nx",
@@ -44,10 +44,10 @@
       "location": "Bengaluru, KA · On-site",
       "description": "Reconect.ai is a fintech firm focused on debt collection using digital channels.",
       "responsibilities": [
-        "Integrated campaign management increasing concurrent campaign capacity from 1-3 to 10+ campaigns, eliminating 20+ hours weekly of manual trigger setup."
+        "Engineered campaign management for eliminating 20+ hours of manual trigger setup  and monitoring each week."
       ],
       "technologies": [
-        "React 18",
+        "ReactJS v18",
         "Mantine UI",
         "React Query v5",
         "Playwright",
@@ -62,14 +62,14 @@
       "location": "Bengaluru, KA · Remote",
       "description": "Zeitview is a global leader in providing drone services for asset management, leveraging advanced technologies.",
       "responsibilities": [
-        "Built interactive DEM terrain visualization tool reducing project planning time from 3 weeks to 1 week and improving site assessment accuracy by 80% through 3D elevation modeling.",
-        "Implemented coordinate-based tagging with notification workflow that reduced manual communication overhead by 75%, improved field issue tracking by 80%.",
-        "Restructured Construction Monitoring codebase to prevent unnecessary renders, resulting in 75% performance improvement, reducing component re-render cycles by 85%, and achieving 3x faster page load times through optimized state management",
+        "Engineered DEM viewer reducing project planning time while improving site assessment accuracy by 90%.",
+        "Implemented coordinate-based tagging with notification workflow that reduced manual communication overhead & improved field issue tracking by 80%.",
+        "Restructured Construction Monitoring codebase resulting in reduced unnecessary component re-renders thus improving overall responsiveness and performance by 75%.",
         "Provided technical mentorship to 3 developers, resulting in 70% improvement in their pull request approval rate.",
-        "Directed development of all-in-one Analysis Tool supporting 3 different analysis methodologies, enabling analysts to complete end-to-end workflows 65% faster without external application dependencies."
+        "Directed development of all-in-one Analysis Tool supporting 3 different analysis methodologies, enabling analysts to complete end-to-end workflows 60% faster without external application dependencies."
       ],
       "technologies": [
-        "React v17",
+        "ReactJS v17",
         "MUI v5",
         "React Query v4",
         "Redux",
@@ -116,7 +116,7 @@
         "Led the setup and feature development of the Inventory Management system."
       ],
       "technologies": [
-        "React",
+        "ReactJS v16",
         "Redux",
         "Redux Saga",
         "Material UI v4",
@@ -161,7 +161,7 @@
   ],
   "technologies": [
     "axios",
-    "React",
+    "ReactJS",
     "NextJS",
     "TypeScript",
     "React Query",

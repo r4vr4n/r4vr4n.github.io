@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderLiveProjects(resumeData.liveProjects)
 
     // Render interests
-    renderInterests(resumeData.interests)
+    // renderInterests(resumeData.interests)
 
     // Render soft skills
     renderSoftSkills(resumeData.softSkills)
