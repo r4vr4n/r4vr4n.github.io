@@ -3,7 +3,7 @@
     "name": "Rajeev Ranjan",
     "contact": {
       "email": "rajeevranjan19@outlook.com",
-      "phone": "7543898325",
+      "phone": "+91 7543898325",
       "location": "Bengaluru, KA, India",
       "linkedin": "linkedin.com/in/r4vr4n",
       "github": "github.com/r4vr4n"
@@ -19,7 +19,7 @@
       "responsibilities": [
         "Collaborating with team members to establish new coding guidelines that improve code maintainability and quality.",
         "Delivered the activity feed feature of the <strong>Fulfillment Center</strong> for improved user experience.",
-        "Migrating all front-end repositories to a monorepo using Nx and set up CI/CD pipelines."
+        "Migrating all front-end repositories to a monorepo using Nx & set up CI/CD pipelines."
       ],
       "technologies": [
         "React v19",
@@ -218,5 +218,16 @@
     "Stock Market",
     "Web Development",
     "Artificial Intelligence"
+  ],
+
+  "softSkills": [
+    "Problem Solving",
+    "Communication",
+    "Teamwork", 
+    "Adaptability",
+    "Leadership",
+    "Critical Thinking", 
+    "Attention to Detail",
+    "Mentoring"
   ]
 }
