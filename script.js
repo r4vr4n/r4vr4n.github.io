@@ -198,13 +198,13 @@ function renderLiveProjects(projects) {
       <div class="project-header">
         <div class="project-name"><a href="${
           project.url
-        } " target="_blank" class="project-link">${project.url.replace(
+        }" target="_blank" class="project-link">${project.url.replace(
       "https://",
       ""
     )}</a>
     </div> 
-    <i class="project-description">: ${project.description}</i>
       </div>
+      <div class="project-description">- ${project.description}</div>
       `
 
     projectsSection.appendChild(projectElement)
