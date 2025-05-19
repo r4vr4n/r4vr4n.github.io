@@ -62,15 +62,15 @@ body {
 
 header {
 	color: var(--color-text-header);
-	text-align: center; 
+	text-align: center;
 }
 
 h1 {
-	font-size: 2rem; 
+	font-size: 2rem;
 }
 
 .contact-info {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	margin-bottom: 1rem;
 	color: var(--color-text-contact);
 	margin-top: 1rem;
@@ -126,7 +126,7 @@ h1 {
 }
 
 .period {
-	font-size: 0.875rem;
+	font-size: 0.75rem;
 	text-align: right;
 	color: var(--color-text-date);
 }

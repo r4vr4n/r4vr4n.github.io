@@ -33,7 +33,7 @@
         "React Hook Form",
         "Yup",
         "Redux Toolkit",
-        "React Table V8",
+        "React Table v8",
         "Github Actions",
         "CI/CD"
       ]
@@ -53,7 +53,7 @@
         "React Query v5",
         "Playwright",
         "Recharts",
-        "React Table V8"
+        "React Table v8"
       ]
     },
     {
@@ -134,14 +134,15 @@
       "issuer": "AttainU",
       "period": "July.'19 - May.'20",
       "id": "AUFS004052",
-      "url": "'https://drive.google.com/file/d/1nXaNlu_RY5WGe2-9mIHVXUFUOnAGRBme/view'"
+      "url": "'https://drive.google.com/file/d/1nXaNlu_RY5WGe2-9mIHVXUFUOnAGRBme/view'",
+      "location": "Bangalore, KA"
     }
   ],
   "education": [
     {
       "degree": "B.Tech in Computer Science & Engineering",
       "institution": "Biju Patnaik University of Technology",
-      "location": "Odisha, OD",
+      "location": "Bhubaneswar, OD",
       "period": "Mar.'15 - Mar.'19"
     }
   ],
@@ -149,13 +150,13 @@
   "liveProjects": [
     {
       "name": "Cexdex",
-      "description": "Cexdex is a decentralized exchange platform that allows users to trade cryptocurrencies in a secure and efficient manner.",
+      "description": "Cexdex allows users to trade cryptocurrencies in a secure and efficient manner.",
       "url": "https://stake.cexdex.app",
       "technologies": ["Web3.js", "React", "Context API"]
     },
     {
       "name": "Estate Protocol",
-      "description": "Estate Protocol is a platform that uses blockchain to tokenize and fractionalize real estate properties, allowing people to invest in them with cryptocurrencies.",
+      "description": "Estate Protocol uses blockchain to tokenize & fractionalize real estate properties, allowing people to invest in them with cryptocurrencies.",
       "url": "https://estateprotocol.com",
       "technologies": ["Web3.js", "NextJS", "Framer motion", "Material UI"]
     }
@@ -223,10 +224,10 @@
   "softSkills": [
     "Problem Solving",
     "Communication",
-    "Teamwork", 
+    "Teamwork",
     "Adaptability",
     "Leadership",
-    "Critical Thinking", 
+    "Critical Thinking",
     "Attention to Detail",
     "Mentoring"
   ]

@@ -47,9 +47,10 @@ function renderPersonalInfo(personalInfo) {
   <h3>
   React Engineer 
   </h3>
-  <span>${personalInfo.contact.location}</span>
+  <span class="location">
+    ${personalInfo.contact.location}
+    </span>
   <div class="contact-info">
-    
     <div class="social-links">
     <div>
     <span class="social-link"
@@ -99,7 +100,7 @@ function renderWorkExperience(experiences) {
 
     // Create skills HTML
     const skillsHTML = job.technologies
-      ? `<div class="technologies"><strong>Technologies: </strong>${job.technologies.join(
+      ? `<div class="technologies"><strong>Tech. Stack: </strong>${job.technologies.join(
           " · "
         )} </div>`
       : ""
@@ -140,7 +141,10 @@ function renderCertifications(certifications) {
           <div class="cert-issuer">${cert.issuer}</div>
           <div class="cert-id">Credential ID: <a href=${cert.url} target='_blank'>${cert.id}</a></div>
         </div>
+        <div>
         <div class="period">${cert.period}</div>
+        <div class="location">${cert.location}</div>
+        </div>
       </div>
     `
 
