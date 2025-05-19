@@ -18,7 +18,7 @@
       "description": "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
       "responsibilities": [
         "Automated code quality checks & style guidelines, improving pull request approval time by 30%.",
-        "Delivered activity feed which reduced client follow-up comms. by 80% & enabled support team to handle 50% more cases."
+        "Delivered activity feed which streamline client follow-ups & enabled support team to handle 70% more cases."
       ],
       "technologies": [
         "ReactJS v19",
@@ -63,7 +63,7 @@
       "description": "Zeitview is a global leader in providing drone services for asset management, leveraging advanced technologies.",
       "responsibilities": [
         "Engineered DEM viewer reducing project planning time while improving site assessment accuracy by 90%.",
-        "Implemented coordinate-based tagging with notification workflow that reduced manual communication overhead & improved field issue tracking by 80%.",
+        "Implemented coordinate-based tagging with notification workflow that simplified communication overhead & improved field issue tracking by 80%.",
         "Restructured Construction Monitoring codebase resulting in reduced unnecessary component re-renders thus improving overall responsiveness and performance by 75%.",
         "Provided technical mentorship to 3 developers, resulting in 70% improvement in their pull request approval rate.",
         "Directed development of all-in-one Analysis Tool supporting 3 different analysis methodologies, enabling analysts to complete end-to-end workflows 60% faster without external application dependencies."
