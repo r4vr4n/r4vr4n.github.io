@@ -19,7 +19,7 @@
       "responsibilities": [
         "Collaborating with team members to establish new coding guidelines that improve code maintainability and quality.",
         "Delivered the activity feed feature of the <strong>Fulfillment Center</strong> for improved user experience.",
-        "Migrating all front-end repositories to a monorepo using Nx for streamlined development processes."
+        "Migrating all front-end repositories to a monorepo using Nx and set up CI/CD pipelines."
       ],
       "technologies": [
         "React v19",
@@ -30,10 +30,12 @@
         "Cypress",
         "Docker",
         "RTL",
-        "RHF",
+        "React Hook Form",
         "Yup",
         "Redux Toolkit",
-        "React Table V8"
+        "React Table V8",
+        "Github Actions",
+        "CI/CD"
       ]
     },
     {
@@ -83,7 +85,8 @@
         "React Table v7",
         "Formik",
         "Yup",
-        "Redux Toolkit"
+        "Redux Toolkit",
+        "CI/CD"
       ]
     },
     {
@@ -172,8 +175,8 @@
     "Figma",
     "Agile Methodologies",
     "Git",
-    "HTML",
-    "CSS",
+    "HTML5",
+    "CSS3",
     "SCSS",
     "JavaScript",
     "Node.js",
@@ -202,16 +205,18 @@
     "Formik",
     "Context API",
     "Yup",
-    "React Hook Form (RHF)",
+    "React Hook Form",
     "React Testing Library (RTL)",
-    "Framer motion"
+    "Framer motion",
+    "Github Actions",
+    "CI/CD"
   ],
 
   "interests": [
     "Football",
     "Video Games",
     "Stock Market",
-    "Artificial Intelligence",
-    "Web Development"
+    "Web Development",
+    "Artificial Intelligence"
   ]
 }
