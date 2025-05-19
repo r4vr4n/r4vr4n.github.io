@@ -30,11 +30,11 @@
         "Docker",
         "RTL",
         "React Hook Form",
-        "Yup",
-        "Redux Toolkit",
+        "Yup", 
         "React Table v8",
         "Github Actions",
-        "CI/CD"
+        "CI/CD",
+        "Socket.io"
       ]
     },
     {
@@ -71,8 +71,7 @@
       "technologies": [
         "ReactJS v17",
         "MUI v5",
-        "React Query v4",
-        "Redux",
+        "React Query v4", 
         "MapBox",
         "CesiumJS",
         "React-Konva",
@@ -81,9 +80,7 @@
         "Mantine UI",
         "Recharts",
         "React Table v7",
-        "Formik",
-        "Yup",
-        "Redux Toolkit",
+        "Formik", 
         "CI/CD"
       ]
     },
@@ -122,7 +119,8 @@
         "Material UI v4",
         "Bootstrap v4",
         "React Table v6",
-        "Plotly JS"
+        "Plotly JS",
+        "Jest"
       ]
     }
   ],
@@ -154,7 +152,7 @@
     },
     {
       "name": "Estate Protocol",
-      "description": "Estate Protocol uses blockchain to tokenize & fractionalize real estate properties, allowing people to invest in them with cryptocurrencies.",
+      "description": "Estate Protocol tokenizes real estate on blockchain for crypto investment.",
       "url": "https://estateprotocol.com",
       "technologies": ["Web3.js", "NextJS", "Framer motion", "Material UI"]
     }

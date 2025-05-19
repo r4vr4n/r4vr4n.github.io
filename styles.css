@@ -210,6 +210,16 @@ ul {
 }
 
 /* Project styles */
+.project-header {
+  display: flex;
+  gap: 0.005rem;
+  align-items: center;
+  /* justify-content: space-between; */
+
+  /* justify-content: space-between; 
+   */
+}
+
 .project-item {
 	margin-bottom: 0.875rem;
 }
@@ -222,8 +232,8 @@ ul {
 }
 
 .project-description {
-	font-size: 0.875rem;
-	margin-bottom: 0.25rem;
+	font-size: 0.5rem;
+	/* margin-bottom: 0.25rem; */
 }
 
 .technologies { 
