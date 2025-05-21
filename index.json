@@ -19,7 +19,7 @@
       "responsibilities": [
         "Automated code quality checks & style guidelines, improving pull request approval time by 30%.",
         "Delivered activity feed which streamline client follow-ups & enabled support team to handle 70% more cases.",
-        "Consolidating all frontend codebases into a single monorepo, enhancing code maintainability & sharing."
+        "Reduced bundle size by 40% using vanilla JS & CSS, enhancing performance & user experience for <strong>Conversation Plugin</strong>."
       ],
       "technologies": [
         "ReactJS v19",
@@ -29,9 +29,7 @@
         "Jest",
         "Cypress",
         "Docker",
-        "RTL",
         "React Hook Form",
-        "Yup",
         "React Table v8",
         "Github Actions",
         "CI/CD",
@@ -93,8 +91,7 @@
       "description": "Estate Protocol is a blockchain-based real estate platform facilitating seamless transactions & processes.",
       "responsibilities": [
         "Integrated Airdrop system using Web3.js serving 2,000+ claimants, achieving 90% delivery success rate.",
-        "Implemented pixel-perfect landing page design achieving 90+ Lighthouse performance score.",
-        "Contributed to the development of Property Store, a marketplace for buying & selling real estate NFTs."
+        "Implemented pixel-perfect landing page design achieving 90+ Lighthouse performance score."
       ],
       "technologies": [
         "NextJS",
@@ -111,8 +108,8 @@
       "location": "Pune, MH · Remote",
       "description": "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, & deep domain expertise.",
       "responsibilities": [
-        "Contributed to the development for <strong>Nimbus Duo</strong>, our in house tool for risk analysis & fraud detection.",
-        "Led the setup & feature development of the Inventory Management system."
+        "Successfully delivered 8 critical modules for <strong>Nimbus Duo</strong>, completing 100% of assigned requirements on schedule and with zero critical defects during UAT",
+        "Setup & Delivered Inventory Management system MVP in 2 weeks."
       ],
       "technologies": [
         "ReactJS v16",

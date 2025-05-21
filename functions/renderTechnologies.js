@@ -5,7 +5,7 @@
 export function renderTechnologies(technologies) {
   const technologiesListSection = document.getElementById("technologies-list")
   technologiesListSection.innerHTML = technologies
-    .map((skill, index) =>
+    ?.map((skill, index) =>
       index === technologies.length - 1 ? skill : `${skill} · `
     )
     .join("")

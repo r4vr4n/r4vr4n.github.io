@@ -10,15 +10,12 @@ export function renderLiveProjects(projects) {
     const projectElement = document.createElement("div")
     projectElement.className = "project-item"
 
-    // Sort technologies alphabetically if they exist
-    const sortedTechnologies = project.technologies
-      ? [...project.technologies].sort()
-      : []
-
-    const techStackHtml = sortedTechnologies.length
+    const techStackHTML = project.technologies.length
       ? `<div class="tech-stack">
           <span class="tech-stack-label">Tech Stack:</span>
-          <span class="tech-stack-items">${sortedTechnologies.join(", ")}</span>
+          <span class="tech-stack-items">${project.technologies.join(
+            ", "
+          )}</span>
         </div>`
       : ""
 
@@ -33,7 +30,7 @@ export function renderLiveProjects(projects) {
     </div> 
 		<div class="project-description"> - ${project.description}</div>
       </div>
-      ${techStackHtml}
+      ${techStackHTML}
       `
 
     projectsSection.appendChild(projectElement)
