@@ -54,32 +54,26 @@ body {
 
 .container {
 	background-color: var(--color-bg-container);
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-bottom: 1rem;
+	padding : 1rem; 
 	box-shadow: 0 0.125rem 0.625rem var(--color-shadow);
 }
 
 header {
 	color: var(--color-text-header);
-	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 h1 {
 	font-size: 2rem;
 }
 
-.contact-info {
-	font-size: 0.8rem;
-	margin-bottom: 1rem;
-	color: var(--color-text-contact);
-	margin-top: 1rem;
-}
-
 .social-links {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	gap: 1rem;
+	gap: 0.25rem;
 	justify-content: space-between;
 }
 

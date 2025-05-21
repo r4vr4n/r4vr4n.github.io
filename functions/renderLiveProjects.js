@@ -33,7 +33,7 @@ export function renderLiveProjects(projects) {
     </div> 
 		<div class="project-description"> - ${project.description}</div>
       </div>
-      
+      ${techStackHtml}
       `
 
     projectsSection.appendChild(projectElement)

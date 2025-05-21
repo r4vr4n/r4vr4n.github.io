@@ -18,7 +18,8 @@
       "description": "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
       "responsibilities": [
         "Automated code quality checks & style guidelines, improving pull request approval time by 30%.",
-        "Delivered activity feed which streamline client follow-ups & enabled support team to handle 70% more cases."
+        "Delivered activity feed which streamline client follow-ups & enabled support team to handle 70% more cases.",
+        "Consolidating all frontend codebases into a single monorepo, enhancing code maintainability & sharing."
       ],
       "technologies": [
         "ReactJS v19",
@@ -44,7 +45,7 @@
       "location": "Bengaluru, KA · On-site",
       "description": "Reconect.ai is a fintech firm focused on debt collection using digital channels.",
       "responsibilities": [
-        "Engineered campaign management for eliminating 20+ hours of manual trigger setup  and monitoring each week."
+        "Engineered campaign management for eliminating 20+ hours of manual trigger setup  & monitoring each week."
       ],
       "technologies": [
         "ReactJS v18",
@@ -64,7 +65,7 @@
       "responsibilities": [
         "Engineered DEM viewer for reducing project planning time while improving site assessment accuracy by 90%.",
         "Improved field issue tracking by 80% using coordinate-based tagging which simplified communication",
-        "Optimized Construction Monitoring codebase, slashing re-renders and boosting performance by 75%.",
+        "Optimized Construction Monitoring codebase, slashing re-renders & boosting performance by 75%.",
         "Provided technical mentorship to 3 developers, resulting in 70% improvement in their pull request approval rate.",
         "Spearheaded Analysis Tool development which eliminated external dependencies, accelerating analyst workflows by 50%."
       ],
@@ -89,10 +90,11 @@
       "position": "Frontend Developer",
       "period": "Jun.'21 - Feb.'22",
       "location": "Noida, UP · Remote",
-      "description": "Estate Protocol is a blockchain-based real estate platform facilitating seamless transactions and processes.",
+      "description": "Estate Protocol is a blockchain-based real estate platform facilitating seamless transactions & processes.",
       "responsibilities": [
         "Integrated Airdrop system using Web3.js serving 2,000+ claimants, achieving 90% delivery success rate.",
-        "Implemented pixel-perfect landing page design achieving 90+ Lighthouse performance score."
+        "Implemented pixel-perfect landing page design achieving 90+ Lighthouse performance score.",
+        "Contributed to the development of Property Store, a marketplace for buying & selling real estate NFTs."
       ],
       "technologies": [
         "NextJS",
@@ -107,10 +109,10 @@
       "position": "Jr. Frontend Developer",
       "period": "Jun.'20 - Jun.'21",
       "location": "Pune, MH · Remote",
-      "description": "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, and deep domain expertise.",
+      "description": "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, & deep domain expertise.",
       "responsibilities": [
         "Contributed to the development for <strong>Nimbus Duo</strong>, our in house tool for risk analysis & fraud detection.",
-        "Led the setup and feature development of the Inventory Management system."
+        "Led the setup & feature development of the Inventory Management system."
       ],
       "technologies": [
         "ReactJS v16",
@@ -145,28 +147,25 @@
 
   "achievements": [
     {
-      "title": "Top Performer Award",
-      "description": "Recognized for outstanding contributions to the Construction Monitoring codebase optimization project.",
-      "date": "Dec.'23"
-    },
-    {
-      "title": "Technical Excellence Award",
-      "description": "Awarded for engineering the DEM viewer which improved site assessment accuracy by 90%.",
-      "date": "Jul.'23"
-    },
-    {
-      "title": "Leadership Recognition",
-      "description": "Acknowledged for mentoring 3 junior developers, resulting in 70% improvement in pull request approval rates.",
-      "date": "Feb.'23"
+      "title": "Resourceful Employee Of Year",
+      "description": "Awarded for innovative problem-solving and delivering high-impact solutions with limited resources.",
+      "date": "Dec.'24"
     }
   ],
 
   "liveProjects": [
     {
       "name": "Cexdex",
-      "description": "Cexdex allows users to trade cryptocurrencies in a secure and efficient manner.",
+      "description": "Cexdex allows users to trade cryptocurrencies in a secure & efficient manner.",
       "url": "https://stake.cexdex.app",
-      "technologies": ["Web3.js", "React", "Context API"]
+      "technologies": [
+        "Web3.js",
+        "React",
+        "Context API",
+        "NodeJS",
+        "ExpressJS",
+        "MongoDB"
+      ]
     },
     {
       "name": "Estate Protocol",

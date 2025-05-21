@@ -1,3 +1,4 @@
+import { renderTechnologies } from "./renderTechnologies.js"
 /**
  * Renders the work experience section
  * @param {Array} experiences - Work experience data
@@ -16,12 +17,7 @@ export function renderWorkExperience(experiences) {
       .join("")
 
     // Create skills HTML
-    const skillsHTML = job.technologies
-      ? `<div class="tech-stack">
-          <span class="tech-stack-label">Tech Stack:</span>
-          <span class="tech-stack-items">${job.technologies.join(", ")}</span>
-        </div>`
-      : ""
+    const techStackHTML = renderTechnologies(job.technologies)
 
     jobElement.innerHTML = `
       <div class="job-header"> 
@@ -37,7 +33,7 @@ export function renderWorkExperience(experiences) {
       <ul>
         ${responsibilitiesHTML}
       </ul>
-      ${skillsHTML}
+      ${techStackHTML}
     `
 
     workExperienceSection.appendChild(jobElement)

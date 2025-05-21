@@ -35,10 +35,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderTechnologies(resumeData.technologies)
 
     // Render achievements (if they exist)
-    if (resumeData.achievements) {
-      renderAchievements(resumeData.achievements)
-    }
-
+    // renderAchievements(resumeData.achievements)
+    
     // Render projects
     renderLiveProjects(resumeData.liveProjects)
 
