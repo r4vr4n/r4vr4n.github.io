@@ -8,10 +8,10 @@ export function renderPersonalInfo(personalInfo) {
 	<div>
   <h1>${personalInfo.name}</h1>
   <h3>
-  React Engineer 
-  </h3>
+  ${personalInfo.title}
+  </h3> 
 	</div>
- <div class="social-links">
+<div class="social-links">
     <div>
     <span class="social-link">
     <img src="./AtIcon.svg" alt="LinkedIn" class="social-icon" width="16px" height="16px" /><a href="mailto:${personalInfo.contact.email}"
@@ -27,13 +27,13 @@ export function renderPersonalInfo(personalInfo) {
     <div>
     <span class="social-link">
     <img src="./LinkedInIcon.svg" alt="LinkedIn" class="social-icon" width="16px" height="16px" />
-    <a href="https://www.linkedin.com/in/r4vr4n">
+    <a href=  ${personalInfo.contact.linkedin}>
     ${personalInfo.contact.linkedin}</a
     >
     </span>
     <span class="social-link">
     <img src="./LocationPinIcon.svg" alt="Location" class="social-icon" width="16px" height="16px"  />
-     ${personalInfo.contact.location}
+    ${personalInfo.contact.location}
     </span>
     </div>
   </div>

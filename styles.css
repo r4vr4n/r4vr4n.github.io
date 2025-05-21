@@ -54,7 +54,7 @@ body {
 
 .container {
 	background-color: var(--color-bg-container);
-	padding : 1rem; 
+	padding: 1rem;
 	box-shadow: 0 0.125rem 0.625rem var(--color-shadow);
 }
 

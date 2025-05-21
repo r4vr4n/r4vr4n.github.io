@@ -1,11 +1,13 @@
 {
   "personalInfo": {
     "name": "Rajeev Ranjan",
+    "title": "Frontend Engineer",
+    "hiddenTitle": "Frontend Engineer | ReactJS | TypeScript | Redux | Agile | React JS Developer | Senior Frontend Developer | Software Engineer | Web Developer | UI Developer | UI Engineer | ReactJS Developer | ReactJS Engineer | ReactJS Consultant | ReactJS Expert | ReactJS Specialist | ReactJS Architect | ReactJS Programmer | ReactJS Designer | ReactJS Trainer | ReactJS Mentor | ReactJS Coach | ReactJS Instructor | ReactJS Tutor | ReactJS Teacher | ReactJS Guide | ReactJS Advisor | ReactJS Consultant | ReactJS Specialist | ReactJS Architect | ReactJS Programmer | ReactJS Designer | ReactJS Trainer | ReactJS Mentor | ReactJS Coach | ReactJS Instructor | ReactJS Tutor | ReactJS Teacher | ReactJS Guide | ReactJS Advisor | React.JS Developer | React.JS Engineer | React.JS Consultant | React.JS Expert | React.JS Specialist | React.JS Architect | React.JS Programmer | React.JS Designer | React.JS Trainer | React.JS Mentor | React.JS Coach | React.JS Instructor | React.JS Tutor | React.JS Teacher | React.JS Guide | React.JS Advisor",
     "contact": {
       "email": "rajeevranjan19@outlook.com",
       "phone": "+91 7543898325",
       "location": "Bengaluru, KA, India",
-      "linkedin": "linkedin.com/in/r4vr4n",
+      "linkedin": "https://www.linkedin.com/in/r4vr4n",
       "github": "github.com/r4vr4n"
     }
   },
@@ -13,7 +15,7 @@
     {
       "company": "DashClicks",
       "position": "Frontend Engineer",
-      "period": "Nov.'24 - Present",
+      "period": "11/2024 - Present",
       "location": "Jaipur, RJ · Remote",
       "description": "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
       "responsibilities": [
@@ -39,7 +41,7 @@
     {
       "company": "Reconect.ai",
       "position": "Frontend Consultant",
-      "period": "Aug.'24 - Nov.'24",
+      "period": "08/2024 - 11/2024",
       "location": "Bengaluru, KA · On-site",
       "description": "Reconect.ai is a fintech firm focused on debt collection using digital channels.",
       "responsibilities": [
@@ -57,7 +59,7 @@
     {
       "company": "Zeitview",
       "position": "Frontend Developer",
-      "period": "Mar.'22 - Aug. '24",
+      "period": "03/2022 - 08/2024",
       "location": "Bengaluru, KA · Remote",
       "description": "Zeitview is a global leader in providing drone services for asset management, leveraging advanced technologies.",
       "responsibilities": [
@@ -80,13 +82,14 @@
         "Recharts",
         "React Table v7",
         "Formik",
-        "CI/CD"
+        "CI/CD",
+        "Vitest"
       ]
     },
     {
       "company": "Estate Protocol",
       "position": "Frontend Developer",
-      "period": "Jun.'21 - Feb.'22",
+      "period": "06/2021 - 02/2022",
       "location": "Noida, UP · Remote",
       "description": "Estate Protocol is a blockchain-based real estate platform facilitating seamless transactions & processes.",
       "responsibilities": [
@@ -104,7 +107,7 @@
     {
       "company": "Solytics Partners",
       "position": "Jr. Frontend Developer",
-      "period": "Jun.'20 - Jun.'21",
+      "period": "06/2020 - 06/2021",
       "location": "Pune, MH · Remote",
       "description": "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, & deep domain expertise.",
       "responsibilities": [
@@ -127,7 +130,7 @@
     {
       "name": "Certified MERN stack developer",
       "issuer": "AttainU",
-      "period": "July.'19 - May.'20",
+      "period": "07/2019 - 05/2020",
       "id": "AUFS004052",
       "url": "'https://drive.google.com/file/d/1nXaNlu_RY5WGe2-9mIHVXUFUOnAGRBme/view'",
       "location": "Bangalore, KA"
@@ -138,7 +141,7 @@
       "degree": "B.Tech in Computer Science & Engineering",
       "institution": "Biju Patnaik University of Technology",
       "location": "Bhubaneswar, OD",
-      "period": "Mar.'15 - Mar.'19"
+      "period": "03/2015 - 03/2019"
     }
   ],
 
@@ -146,7 +149,7 @@
     {
       "title": "Resourceful Employee Of Year",
       "description": "Awarded for innovative problem-solving and delivering high-impact solutions with limited resources.",
-      "date": "Dec.'24"
+      "date": "12/2024"
     }
   ],
 
@@ -220,7 +223,24 @@
     "TypeScript",
     "Web Design",
     "Web3.js",
-    "Yup"
+    "Yup",
+    "Zustand",
+    "Flux",
+    "UI design",
+    "UX design",
+    "Performance Optimization",
+    "Cross-Browser Compatibility",
+    "Responsive Web Design",
+    "Progressive Web Apps (PWAs)",
+    "Single Page Applications (SPAs)",
+    "Performance Testing",
+    "Unit Testing",
+    "Integration Testing",
+    "End-to-End Testing (E2E)",
+    "Test-Driven Development (TDD)",
+    "Vite",
+    "Vitest",
+    "Webpack"
   ],
 
   "interests": [
