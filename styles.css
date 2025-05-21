@@ -24,7 +24,7 @@
 
 @page {
 	size: auto; /* auto is the initial value */
-	margin: 10mm 5mm 5mm 5mm; /* this affects the margin in the printer settings */
+	margin: 5mm 5mm 5mm 5mm; /* this affects the margin in the printer settings */
 }
 
 * {
@@ -104,7 +104,7 @@ h1 {
 }
 
 .job {
-	margin-bottom: 1rem;
+	margin-bottom: 0.75rem;
 }
 
 .job-header {
@@ -228,6 +228,23 @@ ul {
 	/* margin-bottom: 0.25rem; */
 }
 
+.tech-stack {
+	font-size: 0.7rem;
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+	padding-left: 1rem;
+}
+
+.tech-stack-label {
+	font-weight: bold;
+	color: var(--color-text-position);
+}
+
+.tech-stack-items {
+	font-style: italic;
+	color: var(--color-text-content);
+}
+
 .technologies {
 	font-size: 0.625rem;
 	margin-top: 0.25rem;
@@ -241,6 +258,36 @@ ul {
 /* Soft Skills styles */
 .soft-skills-list {
 	margin: 0.3125rem 0 0.625rem;
+}
+
+/* Achievement styles */
+.achievement-item {
+	margin-bottom: 0.75rem;
+	list-style-type: none;
+}
+
+.achievement-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.achievement-title {
+	font-size: 1rem;
+	font-weight: bold;
+	color: var(--color-text-company);
+}
+
+.achievement-description {
+	font-size: 0.875rem;
+	color: var(--color-text-content);
+}
+
+.achievement-date {
+	font-size: 0.75rem;
+	font-style: italic;
+	color: var(--color-text-date);
+	text-align: right;
 }
 
 /* Print styles */

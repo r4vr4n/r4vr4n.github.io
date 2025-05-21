@@ -1,5 +1,6 @@
 // Import functions from the functions directory
 import {
+  renderAchievements,
   renderCertifications,
   renderEducation,
   renderLiveProjects,
@@ -33,6 +34,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Render technologies
     renderTechnologies(resumeData.technologies)
+
+    // Render achievements (if they exist)
+    if (resumeData.achievements) {
+      renderAchievements(resumeData.achievements)
+    }
 
     // Render projects
     renderLiveProjects(resumeData.liveProjects)

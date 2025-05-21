@@ -10,6 +10,18 @@ export function renderLiveProjects(projects) {
     const projectElement = document.createElement("div")
     projectElement.className = "project-item"
 
+    // Sort technologies alphabetically if they exist
+    const sortedTechnologies = project.technologies
+      ? [...project.technologies].sort()
+      : []
+
+    const techStackHtml = sortedTechnologies.length
+      ? `<div class="tech-stack">
+          <span class="tech-stack-label">Tech Stack:</span>
+          <span class="tech-stack-items">${sortedTechnologies.join(", ")}</span>
+        </div>`
+      : ""
+
     projectElement.innerHTML = `
       <div class="project-header">
         <div class="project-name"><a href="${
@@ -21,6 +33,7 @@ export function renderLiveProjects(projects) {
     </div> 
 		<div class="project-description"> - ${project.description}</div>
       </div>
+      
       `
 
     projectsSection.appendChild(projectElement)

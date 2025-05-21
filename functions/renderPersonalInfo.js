@@ -9,9 +9,6 @@ export function renderPersonalInfo(personalInfo) {
   <h3>
   React Engineer 
   </h3>
-  <span class="location">
-    ${personalInfo.contact.location}
-    </span>
   <div class="contact-info">
     <div class="social-links">
     <div>
@@ -36,10 +33,8 @@ export function renderPersonalInfo(personalInfo) {
     >
     </span>
     <span class="social-link">
-    <img src="./GithubIcon.svg" alt="GitHub" class="social-icon" width="16px" height="16px"  />
-    <a href="https://www.github.com/r4vr4n" target="_blank"
-    >${personalInfo.contact.github}</a
-    >
+    <img src="./LocationPinIcon.svg" alt="Location" class="social-icon" width="16px" height="16px"  />
+     ${personalInfo.contact.location}
     </span>
     </div>
     </div>

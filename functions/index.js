@@ -1,4 +1,5 @@
 // Export all functions from their individual files
+export { renderAchievements } from "./renderAchievements.js"
 export { renderCertifications } from "./renderCertifications.js"
 export { renderEducation } from "./renderEducation.js"
 export { renderInterests } from "./renderInterests.js"
