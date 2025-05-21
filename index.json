@@ -1,7 +1,7 @@
 {
   "personalInfo": {
     "name": "Rajeev Ranjan",
-    "title": "Frontend Engineer",
+    "title": "Frontend Developer",
     "hiddenTitle": "Frontend Engineer | ReactJS | TypeScript | Redux | Agile | React JS Developer | Senior Frontend Developer | Software Engineer | Web Developer | UI Developer | UI Engineer | ReactJS Developer | ReactJS Engineer | ReactJS Consultant | ReactJS Expert | ReactJS Specialist | ReactJS Architect | ReactJS Programmer | ReactJS Designer | ReactJS Trainer | ReactJS Mentor | ReactJS Coach | ReactJS Instructor | ReactJS Tutor | ReactJS Teacher | ReactJS Guide | ReactJS Advisor | ReactJS Consultant | ReactJS Specialist | ReactJS Architect | ReactJS Programmer | ReactJS Designer | ReactJS Trainer | ReactJS Mentor | ReactJS Coach | ReactJS Instructor | ReactJS Tutor | ReactJS Teacher | ReactJS Guide | ReactJS Advisor | React.JS Developer | React.JS Engineer | React.JS Consultant | React.JS Expert | React.JS Specialist | React.JS Architect | React.JS Programmer | React.JS Designer | React.JS Trainer | React.JS Mentor | React.JS Coach | React.JS Instructor | React.JS Tutor | React.JS Teacher | React.JS Guide | React.JS Advisor",
     "contact": {
       "email": "rajeevranjan19@outlook.com",
@@ -14,7 +14,7 @@
   "workExperience": [
     {
       "company": "DashClicks",
-      "position": "Frontend Engineer",
+      "position": "Frontend Developer",
       "period": "11/2024 - Present",
       "location": "Jaipur, RJ · Remote",
       "description": "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
@@ -182,7 +182,11 @@
     "CesiumJS",
     "CI/CD",
     "Context API",
+    "CSS",
     "CSS3",
+    "SCSS",
+    "SASS",
+    "Less",
     "Cypress",
     "Docker",
     "Express.js",
@@ -191,6 +195,7 @@
     "Framer motion",
     "Git",
     "Github Actions",
+    "HTML",
     "HTML5",
     "JavaScript",
     "Jest",
@@ -226,8 +231,8 @@
     "Yup",
     "Zustand",
     "Flux",
-    "UI design",
-    "UX design",
+    "User Interface design (UI design)",
+    "User Experience design (UX design)",
     "Performance Optimization",
     "Cross-Browser Compatibility",
     "Responsive Web Design",
@@ -240,7 +245,22 @@
     "Test-Driven Development (TDD)",
     "Vite",
     "Vitest",
-    "Webpack"
+    "Webpack",
+    "Web Accessibility (a11y)",
+    "Web Applications",
+    "Troubleshooting",
+    "Debugging",
+    "Version Control System (Git)",
+    "Front-end Development",
+    "Web Security",
+    "Scalability",
+    "Maintainability",
+    "Code Reviews",
+    "Code Refactoring",
+    "Responsive Design",
+    "Communication",
+    "Problem Solving",
+    "Collaboration"
   ],
 
   "interests": [
