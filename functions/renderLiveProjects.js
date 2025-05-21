@@ -28,7 +28,7 @@ export function renderLiveProjects(projects) {
       ""
     )}</a>
     </div> 
-		<div class="project-description"> - ${project.description}</div>
+		<div class="project-description">&nbsp;- ${project.description}</div>
       </div>
       ${techStackHTML}
       `
