@@ -19,8 +19,8 @@ export function renderLiveProjects(projects) {
       ""
     )}</a>
     </div> 
+		<div class="project-description"> - ${project.description}</div>
       </div>
-      <div class="project-description">- ${project.description}</div>
       `
 
     projectsSection.appendChild(projectElement)

@@ -64,7 +64,7 @@
       "responsibilities": [
         "Engineered DEM viewer for reducing project planning time while improving site assessment accuracy by 90%.",
         "Improved field issue tracking by 80% using coordinate-based tagging which simplified communication",
-        "Restructured Construction Monitoring codebase resulting in reduced unnecessary component re-renders thus improving overall responsiveness and performance by 75%.",
+        "Restructured Construction Monitoring codebase for reduced unnecessary re-renders thus improving overall responsiveness and performance by 75%.",
         "Provided technical mentorship to 3 developers, resulting in 70% improvement in their pull request approval rate.",
         "Directed development of all-in-one Analysis Tool supporting 3 different analysis methodologies, enabling analysts to complete end-to-end workflows 60% faster without external application dependencies."
       ],
@@ -105,7 +105,7 @@
     {
       "company": "Solytics Partners",
       "position": "Jr. Frontend Developer",
-      "period": "Sep.'20 - Jun.'21",
+      "period": "Jun.'20 - Jun.'21",
       "location": "Pune, MH · Remote",
       "description": "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, and deep domain expertise.",
       "responsibilities": [
