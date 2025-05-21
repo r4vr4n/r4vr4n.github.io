@@ -23,7 +23,7 @@
         "Delivered activity feed which streamlined client follow-ups & enabled support team to handle 70% more cases.",
         "Reduced bundle size by 40% using vanilla JS & CSS, enhancing performance & user experience for <strong>Conversation Plugin</strong>."
       ],
-      "technologies": [
+      "tech_stack": [
         "ReactJS v19",
         "MUI v5",
         "React Query v3",
@@ -47,7 +47,7 @@
       "responsibilities": [
         "Engineered campaign management for eliminating 20+ hours of manual trigger setup  & monitoring each week."
       ],
-      "technologies": [
+      "tech_stack": [
         "ReactJS v18",
         "Mantine UI",
         "React Query v5",
@@ -69,7 +69,7 @@
         "Provided technical mentorship to 3 developers, resulting in 70% improvement in their pull request approval rate.",
         "Spearheaded Analysis Tool development which eliminated external dependencies, accelerating analyst workflows by 50%."
       ],
-      "technologies": [
+      "tech_stack": [
         "ReactJS v17",
         "MUI v5",
         "React Query v4",
@@ -96,7 +96,7 @@
         "Integrated Airdrop system using Web3.js serving 2,000+ claimants, achieving 90% delivery success rate.",
         "Implemented pixel-perfect landing page design achieving a 90+ Lighthouse performance score."
       ],
-      "technologies": [
+      "tech_stack": [
         "NextJS",
         "Tailwind CSS",
         "Context API",
@@ -114,7 +114,7 @@
         "Successfully delivered 8 critical modules for <strong>Nimbus Duo</strong>, completing 100% of assigned requirements on schedule and with zero critical defects during UAT.",
         "Set Up & Delivered Inventory Management system MVP in 2 weeks."
       ],
-      "technologies": [
+      "tech_stack": [
         "ReactJS v16",
         "Redux",
         "Redux Saga",
@@ -158,7 +158,7 @@
       "name": "Cexdex",
       "description": "Cexdex allows users to trade cryptocurrencies in a secure & efficient manner.",
       "url": "https://stake.cexdex.app",
-      "technologies": [
+      "tech_stack": [
         "Web3.js",
         "React",
         "Context API",
@@ -171,7 +171,7 @@
       "name": "Estate Protocol",
       "description": "Estate Protocol tokenizes real estate on the blockchain for crypto investment.",
       "url": "https://estateprotocol.com",
-      "technologies": ["Web3.js", "NextJS", "Framer motion", "Material UI"]
+      "tech_stack": ["Web3.js", "NextJS", "Framer motion", "Material UI"]
     }
   ],
   "technologies": [

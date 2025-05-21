@@ -10,10 +10,10 @@ export function renderLiveProjects(projects) {
     const projectElement = document.createElement("div")
     projectElement.className = "project-item"
 
-    const techStackHTML = project.technologies.length
+    const techStackHTML = project.tech_stack.length
       ? `<div class="tech-stack">
           <span class="tech-stack-label">Tech Stack:</span>
-          <span class="tech-stack-items">${project.technologies.join(
+          <span class="tech-stack-items">${project.tech_stack.join(
             ", "
           )}</span>
         </div>`

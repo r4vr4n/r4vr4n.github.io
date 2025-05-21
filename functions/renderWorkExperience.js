@@ -16,10 +16,10 @@ export function renderWorkExperience(experiences) {
       .join("")
 
     // Create skills HTML
-    const techStackHTML = job.technologies.length
+    const techStackHTML = job.tech_stack.length
       ? `<div class="tech-stack">
           <span class="tech-stack-label">Tech Stack:</span>
-          <span class="tech-stack-items">${job.technologies.join(", ")}</span>
+          <span class="tech-stack-items">${job.tech_stack.join(", ")}</span>
         </div>`
       : ""
 
