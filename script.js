@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // renderInterests(resumeData.interests)
 
     // Render soft skills
-    renderSoftSkills(resumeData.softSkills)
+    // renderSoftSkills(resumeData.softSkills)
 
     // Set up download button functionality
     setupDownloadButton()

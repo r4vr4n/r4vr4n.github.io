@@ -64,9 +64,9 @@
       "responsibilities": [
         "Engineered DEM viewer for reducing project planning time while improving site assessment accuracy by 90%.",
         "Improved field issue tracking by 80% using coordinate-based tagging which simplified communication",
-        "Restructured Construction Monitoring codebase for reduced unnecessary re-renders thus improving overall responsiveness and performance by 75%.",
+        "Optimized Construction Monitoring codebase, slashing re-renders and boosting performance by 75%.",
         "Provided technical mentorship to 3 developers, resulting in 70% improvement in their pull request approval rate.",
-        "Directed development of all-in-one Analysis Tool supporting 3 different analysis methodologies, enabling analysts to complete end-to-end workflows 60% faster without external application dependencies."
+        "Spearheaded Analysis Tool development which eliminated external dependencies, accelerating analyst workflows by 50%."
       ],
       "technologies": [
         "ReactJS v17",
