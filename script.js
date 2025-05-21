@@ -5,7 +5,6 @@ import {
   renderEducation,
   renderLiveProjects,
   renderPersonalInfo,
-  renderSoftSkills,
   renderTechnologies,
   renderWorkExperience,
   setupDownloadButton,
