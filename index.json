@@ -45,7 +45,7 @@
       "location": "Bengaluru, KA · On-site",
       "description": "Reconect.ai is a fintech firm focused on debt collection using digital channels.",
       "responsibilities": [
-        "Engineered campaign management for eliminating 20+ hours of manual trigger setup  & monitoring each week."
+        "Programmed campaign management for eliminating 20+ hours of manual trigger setup  & monitoring each week."
       ],
       "tech_stack": [
         "ReactJS v18",
@@ -63,11 +63,11 @@
       "location": "Bengaluru, KA · Remote",
       "description": "Zeitview is a global leader in providing drone services for asset management, leveraging advanced technologies.",
       "responsibilities": [
-        "Engineered DEM viewer for reducing project planning time while improving site assessment accuracy by 90%.",
+        "Crafted DEM viewer for reducing project planning time while improving site assessment accuracy by 90%.",
         "Improved field issue tracking by 80% using coordinate-based tagging which simplified communication.",
-        "Optimized Construction Monitoring codebase, slashing re-renders & boosting performance by 75%.",
-        "Provided technical mentorship to 3 developers, resulting in 70% improvement in their pull request approval rate.",
-        "Spearheaded Analysis Tool development which eliminated external dependencies, accelerating analyst workflows by 50%."
+        "Optimized <strong>Construction Monitoring</strong> codebase, slashing re-renders & boosting performance by 75%.",
+        "Provided technical mentorship to 3 developers, resulting in 70% improvement in their PR approval rate.",
+        "Spearheaded <strong>Analysis Tool's</strong>  development which eliminated external dependencies, accelerating analyst workflows by 50%."
       ],
       "tech_stack": [
         "ReactJS v17",
