@@ -42,8 +42,9 @@ a:hover {
 }
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: "Rubik", sans-serif;
 	line-height: 1.4;
+	letter-spacing: 0.3px;
 	color: var(--color-text-content);
 	max-width: 50rem;
 	margin: 0 auto;
