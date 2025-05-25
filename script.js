@@ -9,47 +9,41 @@ import {
   setupDownloadButton,
 } from "./functions/index.js"
 
-document.addEventListener("DOMContentLoaded", async () => {
-  try {
-    // Fetch the JSON data
-    const response = await fetch("index.json")
-    if (!response.ok) {
-      throw new Error("Failed to fetch resume data")
-    }
-    const resumeData = await response.json()
+// Import constants containing the data
+import {
+  CERTIFICATIONS,
+  EDUCATION,
+  LIVE_PROJECTS,
+  PERSONAL_INFO,
+  WORK_EXPERIENCE,
+} from "./constants.js"
+import { SKILLS } from "./skills.js"
 
+document.addEventListener("DOMContentLoaded", () => {
+  try {
     // Render personal information
-    renderPersonalInfo(resumeData.personalInfo)
+    renderPersonalInfo(PERSONAL_INFO)
 
     // Render work experience
-    renderWorkExperience(resumeData.workExperience)
+    renderWorkExperience(WORK_EXPERIENCE)
 
     // Render education
-    renderEducation(resumeData.education)
+    renderEducation(EDUCATION)
 
     // Render certifications
-    renderCertifications(resumeData.certifications)
+    renderCertifications(CERTIFICATIONS)
 
     // Render technologies
-    renderTechnologies(resumeData.technologies)
-
-    // Render achievements (if they exist)
-    // renderAchievements(resumeData.achievements)
+    renderTechnologies(SKILLS)
 
     // Render projects
-    renderLiveProjects(resumeData.liveProjects)
-
-    // Render interests
-    // renderInterests(resumeData.interests)
-
-    // Render soft skills
-    // renderSoftSkills(resumeData.softSkills)
+    renderLiveProjects(LIVE_PROJECTS)
 
     // Set up download button functionality
     setupDownloadButton()
   } catch (error) {
-    console.error("Error loading resume data:", error)
+    console.error("Error initializing resume:", error)
     document.body.innerHTML =
-      '<div class="error">Failed to load resume data. Please try again later.</div>'
+      '<div class="error">Failed to initialize resume. Please try again later.</div>'
   }
 })
