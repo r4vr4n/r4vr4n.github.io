@@ -33,14 +33,13 @@
         "Docker",
         "React Hook Form",
         "React Table v8",
-        "Github Actions",
         "CI/CD",
         "Socket.io"
       ]
     },
     {
       "company": "Reconect.ai",
-      "position": "Frontend Engineer (Contract)",
+      "position": "Frontend Engineer - Contract",
       "period": "08/2024 - 11/2024",
       "location": "Bengaluru, KA · On-site",
       "description": "Reconect.ai is a fintech firm focused on debt collection using digital channels.",
@@ -111,7 +110,7 @@
       "location": "Pune, MH · Remote",
       "description": "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, & deep domain expertise.",
       "responsibilities": [
-        "Successfully delivered 8 critical modules for <strong>Nimbus Duo</strong>, completing 100% of assigned requirements on schedule and with zero critical defects during UAT.",
+        "Successfully delivered 8 critical modules for <strong>Nimbus Duo</strong>, completing 100% of assigned requirements on schedule & with zero critical defects during UAT.",
         "Set Up & Delivered <strong>Inventory Management</strong> system MVP in 2 weeks."
       ],
       "tech_stack": [
@@ -129,7 +128,7 @@
   "certifications": [
     {
       "name": "Certified MERN stack developer",
-      "issuer": "AttainU",
+      "issuer": "AttainU - Online Bootcamp",
       "period": "07/2019 - 05/2020",
       "id": "AUFS004052",
       "url": "'https://drive.google.com/file/d/1nXaNlu_RY5WGe2-9mIHVXUFUOnAGRBme/view'",
@@ -148,7 +147,7 @@
   "achievements": [
     {
       "title": "Resourceful Employee Of Year",
-      "description": "Awarded for innovative problem-solving and delivering high-impact solutions with limited resources.",
+      "description": "Awarded for innovative problem-solving & delivering high-impact solutions with limited resources.",
       "date": "12/2024"
     }
   ],
@@ -186,11 +185,9 @@
     "CSS3",
     "SCSS",
     "SASS",
-    "Less",
     "Cypress",
     "Docker",
-    "Express.js",
-    "Figma",
+    "ExpressJS", 
     "Formik",
     "Framer motion",
     "Git",
@@ -199,17 +196,15 @@
     "HTML5",
     "JavaScript",
     "Jest",
-    "Jira",
     "kr-pano",
     "Mantine UI",
     "MapBox",
     "Material UI",
     "MongoDB",
     "NextJS",
-    "Node.js",
+    "NodeJS",
     "Nx",
-    "Playwright",
-    "Plotly JS",
+    "Playwright", 
     "React Hook Form",
     "React Query",
     "React Table",
@@ -221,7 +216,6 @@
     "Redux Saga",
     "Redux Toolkit",
     "REST APIs",
-    "SCSS",
     "Socket.io",
     "Styled Components",
     "Tailwind CSS",
@@ -261,15 +255,5 @@
     "Communication",
     "Problem Solving",
     "Collaboration"
-  ],
-
-  "interests": [
-    "Football",
-    "Video Games",
-    "Stock Market",
-    "Web Development",
-    "Artificial Intelligence"
-  ],
-
-  "softSkills": ["Teamwork", "Mentoring", "Leadership", "Communication"]
+  ]
 }

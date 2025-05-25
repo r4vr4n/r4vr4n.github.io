@@ -1,28 +1,33 @@
 :root {
 	/* Text colors */
-	--color-text-primary: #333;
-	--color-text-header: rgb(66, 91, 24);
-	--color-text-contact: rgb(74, 92, 69);
-	--color-text-content: rgb(85, 88, 79);
-	--color-text-heading: darkolivegreen;
-	--color-text-company: royalblue;
-	--color-text-position: rgb(16, 67, 31);
-	--color-text-date: saddlebrown;
-	--color-text-location: rgb(16, 67, 31);
+	--color-text-primary: rgb(18, 79, 68);
+	--color-text-secondary: rgb(60, 179, 113) ;
+	--color-text-tertiary: rgb(62, 62, 62);
+	--color-text-alternate: rgb(196, 136, 28);
+	--color-text-highlight: rgb(86, 172, 242);
+	--color-text: rgb(25, 39, 60);
+
+	/* Content color (using tertiary) */
+	--color-text-content: var(--color-text-tertiary);
+	--color-text-heading: var(--color-text-primary);
+	--color-text-position: var(--color-text-tertiary);
+	--color-text-date: var(--color-text-tertiary);
+	--color-text-location: var(--color-text-tertiary);
 	--color-text-button: white;
+	--color-text-header: var(--color-text-primary);
 
 	/* Background colors */
 	--color-bg-body: #f9f9f9;
 	--color-bg-container: hsla(90, 23%, 95%, 0.506);
 	--color-bg-secondary: #f5f7f5;
-	--color-bg-button: #4caf50;
-	--color-bg-button-hover: #45a049;
+	--color-bg-button: var(--color-text-secondary);
+	--color-bg-button-hover: var(--color-text-primary);
 
 	/* Primary colors */
-	--color-primary: #4caf50;
+	--color-primary: var(--color-text-secondary);
 
 	/* Border colors */
-	--color-border: #625b5b;
+	--color-border: var(--color-text-tertiary);
 	--color-shadow: rgba(0, 0, 0, 0.1);
 }
 
@@ -49,7 +54,7 @@ body {
 	font-family: "Rubik", sans-serif;
 	line-height: 1.4;
 	letter-spacing: 0.3px;
-	color: var(--color-text-content);
+	color: var(--color-text-tertiary);
 	max-width: 50rem;
 	margin: 0 auto;
 	padding: 1rem;
@@ -65,7 +70,7 @@ body {
 }
 
 header {
-	color: var(--color-text-header);
+	color: var(--color-text-primary);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -74,9 +79,11 @@ header {
 h1 {
 	font-size: 38px;
 	/* font-size: 2rem; */
+	color: var(--color-text-primary);
 }
 h3{
-	font-size: 19px
+	font-size: 19px;
+	color:var(--color-text-secondary)
 }
 .social-links {
 	display: flex;
@@ -93,6 +100,11 @@ h3{
 	gap: 0.3125rem;
 }
 
+.social-icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+
 .divider {
 	/* height: 0.0625rem; */
 	height: 3px;
@@ -106,7 +118,7 @@ h3{
 	font-weight: bold;
 	margin-top: 0.3125rem;
 	margin-bottom: 0.3125rem;
-	color: var(--color-text-heading);
+	color: var(--color-text-primary);
 }
 
 .job {
@@ -120,30 +132,31 @@ h3{
 }
 
 .company {
-	font-size: 1rem;
+	/* font-size: 1rem; */
+	font-size: 14px;
 	font-weight: bold;
-	color: var(--color-text-company);
+	color: var(--color-text-secondary);
 }
 
 .position {
 	/* font-size: 0.65rem; */
 	font-size: 18px;
-	font-style: italic;
-	color: var(--color-text-position);
+	/* font-style: italic; */
+	color: var(--color-text-tertiary);
 }
 
 .period {
 	/* font-size: 0.75rem; */
 	font-size: 14px;
 	text-align: right;
-	color: var(--color-text-date);
+	color: var(--color-text-alternate);
 }
 
 .location {
 	/* font-size: 0.65rem; */
 	font-size: 12px;
 	text-align: right;
-	color: var(--color-text-location);
+	color: var(--color-text-tertiary);
 }
 
 ul {
@@ -162,12 +175,12 @@ ul {
 .tech-category-title {
 	font-size: 1.1rem;
 	font-weight: 600;
-	color: var(--color-text-heading);
+	color: var(--color-text-primary);
 	/* margin-bottom: 0.5rem; */
 }
 
 .tech-badge {
-	color: var(--color-text-content);
+	color: var(--color-text-tertiary);
 	font-size: 0.75rem;
 	margin-right: 0.25rem;
 }
@@ -175,7 +188,7 @@ ul {
 .tech-badge:not(:last-child)::after {
 	content: "•";
 	margin-left: 0.25rem;
-	color: var(--color-text-heading);
+	color: var(--color-text-primary);
 	font-weight: bold;
 }
 
@@ -211,13 +224,13 @@ ul {
 .degree {
 	font-size: 1rem;
 	font-weight: bold;
-	color: var(--color-text-company);
+	color: var(--color-text-secondary);
 }
 
 .institution {
 	font-size: 0.875rem;
 	font-style: italic;
-	color: var(--color-text-position);
+	color: var(--color-text-tertiary);
 }
 
 /* Certification styles */
@@ -234,13 +247,13 @@ ul {
 .cert-name {
 	font-size: 1rem;
 	font-weight: bold;
-	color: var(--color-text-company);
+	color: var(--color-text-secondary);
 }
 
 .cert-issuer {
 	font-size: 0.875rem;
 	font-style: italic;
-	color: var(--color-text-position);
+	color: var(--color-text-tertiary);
 }
 
 /* Project styles */
@@ -253,7 +266,7 @@ ul {
 .project-name {
 	font-size: 1rem;
 	font-weight: bold;
-	color: var(--color-text-company); 
+	color: var(--color-text-secondary); 
 }
 
 .project-description {
@@ -270,12 +283,12 @@ ul {
 
 .tech-stack-label {
 	font-weight: bold;
-	color: var(--color-text-position);
+	color: var(--color-text-primary);
 }
 
 .tech-stack-items {
 	font-style: italic;
-	color: var(--color-text-content);
+	color: var(--color-text-tertiary);
 }
 
 .technologies {
@@ -308,18 +321,18 @@ ul {
 .achievement-title {
 	font-size: 1rem;
 	font-weight: bold;
-	color: var(--color-text-company);
+	color: var(--color-text-secondary);
 }
 
 .achievement-description {
 	font-size: 0.875rem;
-	color: var(--color-text-content);
+	color: var(--color-text-tertiary);
 }
 
 .achievement-date {
 	font-size: 0.75rem;
 	font-style: italic;
-	color: var(--color-text-date);
+	color: var(--color-text-tertiary);
 	text-align: right;
 }
 
