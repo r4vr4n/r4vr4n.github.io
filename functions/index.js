@@ -1,11 +1,8 @@
 // Export all functions from their individual files
-export { renderAchievements } from "./renderAchievements.js"
 export { renderCertifications } from "./renderCertifications.js"
 export { renderEducation } from "./renderEducation.js"
-export { renderInterests } from "./renderInterests.js"
 export { renderLiveProjects } from "./renderLiveProjects.js"
 export { renderPersonalInfo } from "./renderPersonalInfo.js"
-export { renderSoftSkills } from "./renderSoftSkills.js"
 export { renderTechnologies } from "./renderTechnologies.js"
 export { renderWorkExperience } from "./renderWorkExperience.js"
 export { setupDownloadButton } from "./setupDownloadButton.js"
