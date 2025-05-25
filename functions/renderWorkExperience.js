@@ -26,8 +26,8 @@ export function renderWorkExperience(experiences) {
     jobElement.innerHTML = `
       <div class="job-header"> 
       <div>
-      <div class="company">${job.company}</div> 
       <div class="position">${job.position}</div> 
+      <div class="company">${job.company}</div> 
       </div>
         <div>
           <div class="period">${job.period}</div>

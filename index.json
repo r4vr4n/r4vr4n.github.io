@@ -1,7 +1,7 @@
 {
   "personalInfo": {
     "name": "Rajeev Ranjan",
-    "title": "Frontend Developer",
+    "title": "Senior Frontend Engineer",
     "hiddenTitle": "Frontend Engineer | ReactJS | TypeScript | Redux | Agile | React JS Developer | Senior Frontend Developer | Software Engineer | Web Developer | UI Developer | UI Engineer | ReactJS Developer | ReactJS Engineer | ReactJS Consultant | ReactJS Expert | ReactJS Specialist | ReactJS Architect | ReactJS Programmer | ReactJS Designer | ReactJS Trainer | ReactJS Mentor | ReactJS Coach | ReactJS Instructor | ReactJS Tutor | ReactJS Teacher | ReactJS Guide | ReactJS Advisor | ReactJS Consultant | ReactJS Specialist | ReactJS Architect | ReactJS Programmer | ReactJS Designer | ReactJS Trainer | ReactJS Mentor | ReactJS Coach | ReactJS Instructor | ReactJS Tutor | ReactJS Teacher | ReactJS Guide | ReactJS Advisor | React.JS Developer | React.JS Engineer | React.JS Consultant | React.JS Expert | React.JS Specialist | React.JS Architect | React.JS Programmer | React.JS Designer | React.JS Trainer | React.JS Mentor | React.JS Coach | React.JS Instructor | React.JS Tutor | React.JS Teacher | React.JS Guide | React.JS Advisor",
     "contact": {
       "email": "rajeevranjan19@outlook.com",
@@ -14,14 +14,14 @@
   "workExperience": [
     {
       "company": "DashClicks",
-      "position": "Frontend Developer",
+      "position": "Senior Frontend Engineer",
       "period": "11/2024 - Present",
       "location": "Jaipur, RJ · Remote",
       "description": "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
       "responsibilities": [
         "Automated code quality checks & style guidelines, improving pull request approval time by 30%.",
         "Delivered activity feed which streamlined client follow-ups & enabled support team to handle 70% more cases.",
-        "Reduced bundle size by 40% using vanilla JS & CSS, enhancing performance & user experience for <strong>Conversation Plugin</strong>."
+        "Reduced bundle size by 40% using vanilla JS & CSS, enhancing performance & UX for <strong>Conversation Plugin</strong>."
       ],
       "tech_stack": [
         "ReactJS v19",
@@ -40,7 +40,7 @@
     },
     {
       "company": "Reconect.ai",
-      "position": "Frontend Consultant",
+      "position": "Frontend Engineer (Contract)",
       "period": "08/2024 - 11/2024",
       "location": "Bengaluru, KA · On-site",
       "description": "Reconect.ai is a fintech firm focused on debt collection using digital channels.",
@@ -58,12 +58,12 @@
     },
     {
       "company": "Zeitview",
-      "position": "Frontend Developer",
+      "position": "Senior Frontend Engineer",
       "period": "03/2022 - 08/2024",
       "location": "Bengaluru, KA · Remote",
       "description": "Zeitview is a global leader in providing drone services for asset management, leveraging advanced technologies.",
       "responsibilities": [
-        "Crafted DEM viewer for reducing project planning time while improving site assessment accuracy by 90%.",
+        "Crafted <strong>DEM viewer</strong> for reducing project planning time while improving site assessment accuracy by 90%.",
         "Improved field issue tracking by 80% using coordinate-based tagging which simplified communication.",
         "Optimized <strong>Construction Monitoring</strong> codebase, slashing re-renders & boosting performance by 75%.",
         "Provided technical mentorship to 3 developers, resulting in 70% improvement in their PR approval rate.",
@@ -88,7 +88,7 @@
     },
     {
       "company": "Estate Protocol",
-      "position": "Frontend Developer",
+      "position": "Frontend Engineer",
       "period": "06/2021 - 02/2022",
       "location": "Noida, UP · Remote",
       "description": "Estate Protocol is a blockchain-based real estate platform facilitating seamless transactions & processes.",
@@ -106,7 +106,7 @@
     },
     {
       "company": "Solytics Partners",
-      "position": "Jr. Frontend Developer",
+      "position": "Jr. Frontend Engineer",
       "period": "06/2020 - 06/2021",
       "location": "Pune, MH · Remote",
       "description": "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, & deep domain expertise.",

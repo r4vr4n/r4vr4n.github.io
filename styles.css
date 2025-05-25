@@ -14,11 +14,15 @@
 	/* Background colors */
 	--color-bg-body: #f9f9f9;
 	--color-bg-container: hsla(90, 23%, 95%, 0.506);
+	--color-bg-secondary: #f5f7f5;
 	--color-bg-button: #4caf50;
 	--color-bg-button-hover: #45a049;
 
+	/* Primary colors */
+	--color-primary: #4caf50;
+
 	/* Border colors */
-	--color-border: #000;
+	--color-border: #625b5b;
 	--color-shadow: rgba(0, 0, 0, 0.1);
 }
 
@@ -50,7 +54,8 @@ body {
 	margin: 0 auto;
 	padding: 1rem;
 	background-color: var(--color-bg-body);
-	font-size: 0.8125rem;
+	/* font-size: 0.8125rem; */
+	font-size: 13px;
 }
 
 .container {
@@ -67,15 +72,19 @@ header {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 38px;
+	/* font-size: 2rem; */
 }
-
+h3{
+	font-size: 19px
+}
 .social-links {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 0.25rem;
 	justify-content: space-between;
+	font: 12px;
 }
 
 .social-link {
@@ -85,13 +94,15 @@ h1 {
 }
 
 .divider {
-	height: 0.0625rem;
+	/* height: 0.0625rem; */
+	height: 3px;
 	background-color: var(--color-border);
 	margin: 0.125rem 0;
 }
 
 .section-heading {
-	font-size: 1.25rem;
+	font-size: 22px;
+	/* font-size: 1.25rem; */
 	font-weight: bold;
 	margin-top: 0.3125rem;
 	margin-bottom: 0.3125rem;
@@ -115,19 +126,22 @@ h1 {
 }
 
 .position {
-	font-size: 0.65rem;
+	/* font-size: 0.65rem; */
+	font-size: 18px;
 	font-style: italic;
 	color: var(--color-text-position);
 }
 
 .period {
-	font-size: 0.75rem;
+	/* font-size: 0.75rem; */
+	font-size: 14px;
 	text-align: right;
 	color: var(--color-text-date);
 }
 
 .location {
-	font-size: 0.65rem;
+	/* font-size: 0.65rem; */
+	font-size: 12px;
 	text-align: right;
 	color: var(--color-text-location);
 }
@@ -138,6 +152,31 @@ ul {
 
 .technologies-list {
 	margin: 0.3125rem 0 0.625rem;
+}
+
+/* Technology Categories */
+.tech-category {
+	margin-bottom: .25rem;
+}
+
+.tech-category-title {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: var(--color-text-heading);
+	/* margin-bottom: 0.5rem; */
+}
+
+.tech-badge {
+	color: var(--color-text-content);
+	font-size: 0.75rem;
+	margin-right: 0.25rem;
+}
+
+.tech-badge:not(:last-child)::after {
+	content: "•";
+	margin-left: 0.25rem;
+	color: var(--color-text-heading);
+	font-weight: bold;
 }
 
 .download-btn {
@@ -214,8 +253,7 @@ ul {
 .project-name {
 	font-size: 1rem;
 	font-weight: bold;
-	color: var(--color-text-company);
-	margin-bottom: 0.25rem;
+	color: var(--color-text-company); 
 }
 
 .project-description {
@@ -226,7 +264,7 @@ ul {
 .tech-stack {
 	font-size: 0.7rem;
 	margin-top: 0.25rem;
-	margin-bottom: 0.5rem;
+	/* margin-bottom: 0.5rem; */
 	padding-left: 1rem;
 }
 
