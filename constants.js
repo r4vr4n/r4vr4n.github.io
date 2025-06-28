@@ -15,12 +15,12 @@ export const WORK_EXPERIENCE = [
   {
     company: "DashClicks",
     position: "Senior Frontend Engineer",
-    period: "11/2024 - Present",
+    period: "11/2024 - 06/2025",
     location: "Jaipur, RJ · Remote",
     description:
       "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
     responsibilities: [
-      "Automated code quality checks & style guidelines, improving pull request approval time by 30%.",
+      "Set up CI pipeline eliminating ~5 mins. of pre-commit hook processing per commit, saving ~8 hrs. of devs' time weekly.",
       "Delivered activity feed which streamlined client follow-ups & enabled support team to handle 70% more cases.",
       "Reduced bundle size by 40% using vanilla JS & CSS, enhancing performance & UX for <strong>Conversation Plugin</strong>.",
     ],
@@ -40,7 +40,7 @@ export const WORK_EXPERIENCE = [
   },
   {
     company: "Reconect.ai",
-    position: "Frontend Engineer - Contract",
+    position: "Contract Engineer",
     period: "08/2024 - 11/2024",
     location: "Bengaluru, KA · On-site",
     description:
@@ -69,12 +69,10 @@ export const WORK_EXPERIENCE = [
       "Improved field issue tracking by 80% using coordinate-based tagging which simplified communication.",
       "Optimized <strong>Construction Monitoring</strong> codebase, slashing re-renders & boosting performance by 75%.",
       "Provided technical mentorship to 3 developers, resulting in 70% improvement in their PR approval rate.",
-      "Spearheaded <strong>Analysis Tool's</strong>  development which eliminated external dependencies, accelerating analyst workflows by 50%.",
+      "Spearheaded <strong>Analysis Tool's</strong>  development eliminating external dependencies, accelerating analyst workflows by 50%.",
     ],
-    tech_stack: [
-      "ReactJS v17",
-      "MUI v5",
-      "React Query v4",
+    tech_stack: [ 
+      "MUI v5", 
       "MapBox",
       "CesiumJS",
       "React-Konva",
@@ -115,7 +113,7 @@ export const WORK_EXPERIENCE = [
     description:
       "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, & deep domain expertise.",
     responsibilities: [
-      "Successfully delivered 8 critical modules for <strong>Nimbus Duo</strong>, completing 100% of assigned requirements on schedule & with zero critical defects during UAT.",
+      "Successfully delivered 8 critical modules for <strong>Nimbus Duo</strong>, completing 100% of assigned requirements on schedule.",
       "Set Up & Delivered <strong>Inventory Management</strong> system MVP in 2 weeks.",
     ],
     tech_stack: [
