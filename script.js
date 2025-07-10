@@ -15,9 +15,9 @@ import {
   EDUCATION,
   LIVE_PROJECTS,
   PERSONAL_INFO,
-  WORK_EXPERIENCE,
 } from "./constants.js"
 import { SKILLS } from "./skills.js"
+import { WORK_EXPERIENCE } from "./work-experience.js"
 
 document.addEventListener("DOMContentLoaded", () => {
   try {
