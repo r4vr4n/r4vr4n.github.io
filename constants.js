@@ -7,7 +7,7 @@ export const PERSONAL_INFO = {
     phone: "+91 7543898325",
     location: "Bengaluru, KA, IN",
     linkedin: "https://www.linkedin.com/in/r4vr4n",
-    github: "github.com/r4vr4n",
+    github: "https://www.github.com/r4vr4n",
   },
 }
 
@@ -24,7 +24,7 @@ export const CERTIFICATIONS = [
 
 export const EDUCATION = [
   {
-    degree: "B.Tech in Computer Science & Engineering",
+    degree: "Bachelor in Computer Science & Engineering",
     institution: "Biju Patnaik University of Technology",
     location: "Bhubaneswar, OD",
     period: "03/2015 - 03/2019",
