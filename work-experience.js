@@ -101,7 +101,7 @@ export const WORK_EXPERIENCE = [
       "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, & deep domain expertise.",
     responsibilities: [
       "Successfully delivered 8 critical modules for <strong>Nimbus Duo</strong>, completing 100% of assigned requirements on schedule.",
-      "Set Up & Delivered <strong>Inventory Management</strong> system MVP in 2 weeks.",
+      // "Set Up & Delivered <strong>Inventory Management</strong> system MVP in 2 weeks.",
     ],
     tech_stack: [
       "ReactJS v16",
