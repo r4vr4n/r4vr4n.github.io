@@ -12,6 +12,7 @@ export const SKILLS = [
   "ExpressJS",
   "Formik",
   "Framer motion",
+  'Frontend Performance Optimization',
   "Git",
   "Github Actions",
   "HTML",
