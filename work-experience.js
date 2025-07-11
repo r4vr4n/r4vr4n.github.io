@@ -8,8 +8,8 @@ export const WORK_EXPERIENCE = [
       "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
     responsibilities: [
       "Set up CI pipeline eliminating ~5 mins. of pre-commit hook processing per commit, saving ~8 hrs. of devs' time weekly.",
-      "Delivered activity feed which streamlined client follow-ups & enabled support team to handle 70% more cases.",
-      "Reduced bundle size by 40% using vanilla JS & CSS, enhancing performance & UX for <strong>Conversation Plugin</strong>.",
+      "Launched an activity feed that enhanced client follow-ups & increased support team efficiency by 70%.",
+      "Reduced bundle size by 40% using vanilla JS & Tailwind CSS, enhancing performance & UX for <strong>Conversation Plugin</strong>.",
     ],
     tech_stack: [
       "ReactJS v19",
@@ -20,7 +20,7 @@ export const WORK_EXPERIENCE = [
       "Cypress",
       "Docker",
       "React Hook Form",
-      "React Table v8",
+      "React Table",
       "CI/CD",
       "Socket.io",
     ],
@@ -41,7 +41,7 @@ export const WORK_EXPERIENCE = [
       "React Query v5",
       "Playwright",
       "Recharts",
-      "React Table v8",
+      "React Table",
     ],
   },
   {
@@ -67,7 +67,7 @@ export const WORK_EXPERIENCE = [
       "Playwright",
       "Mantine UI",
       "Recharts",
-      "React Table v7",
+      "React Table",
       "Formik",
       "CI/CD",
       "Vitest",
@@ -101,7 +101,7 @@ export const WORK_EXPERIENCE = [
       "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, & deep domain expertise.",
     responsibilities: [
       "Successfully delivered 8 critical modules for <strong>Nimbus Duo</strong>, completing 100% of assigned requirements on schedule.",
-      "Set Up & Delivered <strong>Inventory Management</strong> system MVP in 2 weeks.",
+      "Built <strong>Inventory Management</strong> system MVP in 2 weeks.",
     ],
     tech_stack: [
       "ReactJS v16",
