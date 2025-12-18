@@ -1,9 +1,11 @@
 // Import functions from the functions directory
 import {
+  renderAchievements,
   renderCertifications,
   renderEducation,
   renderLiveProjects,
   renderPersonalInfo,
+  renderSummary,
   renderTechnologies,
   renderWorkExperience,
   setupDownloadButton,
@@ -11,10 +13,12 @@ import {
 
 // Import constants containing the data
 import {
+  ACHIEVEMENTS,
   CERTIFICATIONS,
   EDUCATION,
   LIVE_PROJECTS,
   PERSONAL_INFO,
+  SUMMARY,
 } from "./constants.js"
 import { SKILLS } from "./skills.js"
 import { WORK_EXPERIENCE } from "./work-experience.js"
@@ -24,8 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // Render personal information
     renderPersonalInfo(PERSONAL_INFO)
 
+    // Render summary
+    // renderSummary(SUMMARY)
+
     // Render work experience
     renderWorkExperience(WORK_EXPERIENCE)
+
+    // Render achievements
+    renderAchievements(ACHIEVEMENTS)
 
     // Render education
     renderEducation(EDUCATION)

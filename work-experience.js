@@ -1,7 +1,7 @@
 export const WORK_EXPERIENCE = [
   {
     company: "DashClicks",
-    position: "Sr. Frontend Engineer",
+    position: "Senior Frontend Engineer",
     period: "11/2024 - 06/2025",
     location: "Jaipur, RJ · Remote",
     description:
@@ -33,7 +33,9 @@ export const WORK_EXPERIENCE = [
     description:
       "Reconect.ai is a fintech firm focused on debt collection using digital channels.",
     responsibilities: [
-      "Programmed campaign management for eliminating 20+ hours of manual trigger setup  & monitoring each week.",
+      "Programmed campaign management system eliminating 20+ hours of manual trigger setup & monitoring each week.",
+      "Built real-time analytics dashboards using <strong>Recharts</strong> for tracking debt collection performance metrics.",
+      "Implemented automated testing with <strong>Playwright</strong>, achieving 85%+ code coverage for critical workflows.",
     ],
     tech_stack: [
       "ReactJS v18",
@@ -46,7 +48,7 @@ export const WORK_EXPERIENCE = [
   },
   {
     company: "Zeitview",
-    position: "Sr. Frontend Engineer",
+    position: "Senior Frontend Engineer",
     period: "03/2022 - 08/2024",
     location: "Bengaluru, KA · Remote",
     description:
@@ -94,7 +96,7 @@ export const WORK_EXPERIENCE = [
   },
   {
     company: "Solytics Partners",
-    position: "Jr. Frontend Engineer",
+    position: "Junior Frontend Engineer",
     period: "06/2020 - 06/2021",
     location: "Pune, MH · Remote",
     description:

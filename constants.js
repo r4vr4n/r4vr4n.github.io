@@ -1,4 +1,7 @@
 // Constants with actual data from index.json
+export const SUMMARY =
+  "Senior Frontend Engineer with 5+ years of experience building scalable web applications using React, Next.js, and TypeScript. Proven track record in full-stack development with Node.js, MongoDB, and Web3 technologies. Passionate about performance optimization, mentoring developers, and delivering high-impact solutions that drive business results."
+
 export const PERSONAL_INFO = {
   name: "Rajeev Ranjan",
   title: "Senior Frontend Engineer",
@@ -17,7 +20,7 @@ export const CERTIFICATIONS = [
     issuer: "AttainU - Online Bootcamp",
     period: "07/2019 - 05/2020",
     id: "AUFS004052",
-    url: "'https://drive.google.com/file/d/1nXaNlu_RY5WGe2-9mIHVXUFUOnAGRBme/view'",
+    url: "https://drive.google.com/file/d/1nXaNlu_RY5WGe2-9mIHVXUFUOnAGRBme/view",
     location: "Bangalore, KA",
   },
 ]
@@ -33,7 +36,7 @@ export const EDUCATION = [
 
 export const ACHIEVEMENTS = [
   {
-    title: "Resourceful Employee Of Year",
+    title: "Resourceful Employee Of The Year (Zeitview)",
     description:
       "Awarded for innovative problem-solving & delivering high-impact solutions with limited resources.",
     date: "12/2024",
