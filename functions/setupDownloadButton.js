@@ -38,6 +38,9 @@ async function generatePDF() {
   downloadBtn.textContent = "Generating..."
   downloadBtn.disabled = true
 
+  // Add PDF export class for print-friendly styles
+  container.classList.add("pdf-export")
+
   try {
     // Check if html2pdf is available
     if (typeof html2pdf === "undefined") {
@@ -53,7 +56,8 @@ async function generatePDF() {
     // Fallback to browser print
     window.print()
   } finally {
-    // Restore button state
+    // Remove PDF export class and restore button state
+    container.classList.remove("pdf-export")
     downloadBtn.textContent = originalText
     downloadBtn.disabled = false
   }

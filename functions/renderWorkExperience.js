@@ -20,6 +20,13 @@ export function renderWorkExperience(experiences) {
     const responsibilitiesHTML = createListItemsHTML(job.responsibilities)
     const techStackHTML = createTechStackHTML(job.techStack)
 
+    const achievementHTML = job.achievement
+      ? `<div class="job-achievement">
+          <span class="achievement-badge">🏆 ${job.achievement.title}</span>
+          <span class="achievement-desc">— ${job.achievement.description}</span>
+        </div>`
+      : ""
+
     jobElement.innerHTML = `
       <div class="job-header">
         <div>
@@ -31,6 +38,7 @@ export function renderWorkExperience(experiences) {
           <div class="location">${job.location}</div>
         </div>
       </div>
+      ${achievementHTML}
       <ul>
         ${responsibilitiesHTML}
       </ul>

@@ -2,7 +2,6 @@
  * Central export file for all render functions
  */
 
-export { renderAchievements } from "./renderAchievements.js"
 export { renderCertifications } from "./renderCertifications.js"
 export { renderEducation } from "./renderEducation.js"
 export { renderPersonalInfo } from "./renderPersonalInfo.js"

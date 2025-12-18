@@ -104,6 +104,11 @@ export const RESUME_DATA = {
         "CI/CD",
         "Vitest",
       ],
+      achievement: {
+        title: "Resourceful Employee Of The Year",
+        description: "Awarded for innovative problem-solving & delivering high-impact solutions with limited resources.",
+        date: "12/2024",
+      },
     },
     {
       company: "Estate Protocol",
@@ -161,13 +166,14 @@ export const RESUME_DATA = {
       "Context API",
       "React Query",
     ],
-    "UI Libraries": [
+    "UI & Styling": [
       "Material UI",
       "Mantine UI",
       "Tailwind CSS",
-      "Bootstrap",
+      "Sass/SCSS",
       "Styled Components",
       "Framer Motion",
+      "Storybook",
     ],
     Testing: [
       "Jest",
@@ -185,6 +191,8 @@ export const RESUME_DATA = {
       "Nx",
       "Webpack",
       "Vite",
+      "Sentry",
+      "Figma",
     ],
     "Databases & APIs": ["MongoDB", "REST APIs", "WebSockets", "Socket.io"],
     Other: [
@@ -192,23 +200,18 @@ export const RESUME_DATA = {
       "Cross-Browser Compatibility",
       "Web Security",
       "Web Accessibility (a11y)",
+      "i18n",
       "PWA",
       "SPA",
       "AWS",
     ],
+    Methodologies: [
+      "Agile/Scrum",
+      "Code Review",
+      "Technical Documentation",
+      "System Design",
+    ],
   },
-
-  // =========================================
-  // Achievements
-  // =========================================
-  achievements: [
-    {
-      title: "Resourceful Employee Of The Year (Zeitview)",
-      description:
-        "Awarded for innovative problem-solving & delivering high-impact solutions with limited resources.",
-      date: "12/2024",
-    },
-  ],
 
   // =========================================
   // Projects

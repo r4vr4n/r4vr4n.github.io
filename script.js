@@ -4,7 +4,6 @@
  */
 
 import {
-  renderAchievements,
   renderCertifications,
   renderEducation,
   renderPersonalInfo,
@@ -22,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const {
       personalInfo,
       workExperience,
-      achievements,
       skills,
       projects,
       education,
@@ -32,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Render all sections
     renderPersonalInfo(personalInfo)
     renderWorkExperience(workExperience)
-    renderAchievements(achievements)
     renderSkills(skills)
     renderProjects(projects)
     renderEducation(education)
