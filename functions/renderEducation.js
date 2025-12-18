@@ -1,16 +1,18 @@
+import { DOM_IDS } from "../constants/dom-ids.js"
+import { getAndClearElement, createElement } from "../utils/dom.js"
+
 /**
  * Renders the education section
  * @param {Array} education - Education data
  */
 export function renderEducation(education) {
-  const educationSection = document.getElementById("education")
-  educationSection.innerHTML = ""
+  const section = getAndClearElement(DOM_IDS.EDUCATION)
+  if (!section) return
 
   for (const edu of education) {
-    const eduElement = document.createElement("div")
-    eduElement.className = "education-item"
+    const element = createElement("div", "education-item")
 
-    eduElement.innerHTML = `
+    element.innerHTML = `
       <div class="education-header">
         <div>
           <div class="degree">${edu.degree}</div>
@@ -23,6 +25,6 @@ export function renderEducation(education) {
       </div>
     `
 
-    educationSection.appendChild(eduElement)
+    section.appendChild(element)
   }
 }

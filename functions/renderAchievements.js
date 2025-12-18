@@ -1,16 +1,18 @@
+import { DOM_IDS } from "../constants/dom-ids.js"
+import { getAndClearElement, createElement } from "../utils/dom.js"
+
 /**
  * Renders the achievements section
  * @param {Array} achievements - Achievements data
  */
 export function renderAchievements(achievements) {
-  const achievementsSection = document.getElementById("achievements")
-  achievementsSection.innerHTML = ""
+  const section = getAndClearElement(DOM_IDS.ACHIEVEMENTS)
+  if (!section) return
 
   for (const achievement of achievements) {
-    const achievementElement = document.createElement("div")
-    achievementElement.className = "achievement-item"
+    const element = createElement("div", "achievement-item")
 
-    achievementElement.innerHTML = `
+    element.innerHTML = `
       <div class="achievement-content">
         <div class="achievement-header">
           <span class="achievement-title">${achievement.title}</span>
@@ -20,7 +22,6 @@ export function renderAchievements(achievements) {
       </div>
     `
 
-    achievementsSection.appendChild(achievementElement)
+    section.appendChild(element)
   }
 }
-

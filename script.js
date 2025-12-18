@@ -1,55 +1,44 @@
-// Import functions from the functions directory
+/**
+ * Main entry point for the resume application
+ * Initializes all sections on page load
+ */
+
 import {
   renderAchievements,
   renderCertifications,
   renderEducation,
-  renderLiveProjects,
   renderPersonalInfo,
-  renderSummary,
-  renderTechnologies,
+  renderProjects,
+  renderSkills,
   renderWorkExperience,
   setupDownloadButton,
 } from "./functions/index.js"
 
-// Import constants containing the data
-import {
-  ACHIEVEMENTS,
-  CERTIFICATIONS,
-  EDUCATION,
-  LIVE_PROJECTS,
-  PERSONAL_INFO,
-  SUMMARY,
-} from "./constants.js"
-import { SKILLS } from "./skills.js"
-import { WORK_EXPERIENCE } from "./work-experience.js"
+import { RESUME_DATA } from "./data/resume-data.js"
 
 document.addEventListener("DOMContentLoaded", () => {
   try {
-    // Render personal information
-    renderPersonalInfo(PERSONAL_INFO)
+    // Destructure data for cleaner access
+    const {
+      personalInfo,
+      workExperience,
+      achievements,
+      skills,
+      projects,
+      education,
+      certifications,
+    } = RESUME_DATA
 
-    // Render summary
-    // renderSummary(SUMMARY)
+    // Render all sections
+    renderPersonalInfo(personalInfo)
+    renderWorkExperience(workExperience)
+    renderAchievements(achievements)
+    renderSkills(skills)
+    renderProjects(projects)
+    renderEducation(education)
+    renderCertifications(certifications)
 
-    // Render work experience
-    renderWorkExperience(WORK_EXPERIENCE)
-
-    // Render achievements
-    renderAchievements(ACHIEVEMENTS)
-
-    // Render education
-    renderEducation(EDUCATION)
-
-    // Render certifications
-    renderCertifications(CERTIFICATIONS)
-
-    // Render technologies
-    renderTechnologies(SKILLS)
-
-    // Render projects
-    renderLiveProjects(LIVE_PROJECTS)
-
-    // Set up download button functionality
+    // Setup interactive elements
     setupDownloadButton()
   } catch (error) {
     console.error("Error initializing resume:", error)

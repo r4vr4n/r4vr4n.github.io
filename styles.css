@@ -1,41 +1,40 @@
+/* ===========================================
+  1. CSS Variables / Theme
+   =========================================== */
+
 :root {
   /* Text colors */
-  /* --color-text-primary: rgb(18, 79, 68);  */
-  --color-text-primary: rgb(117, 77, 152); 
+  --color-text-primary: rgb(117, 77, 152);
   --color-text-secondary: rgb(51, 51, 51);
   --color-text-tertiary: rgb(62, 62, 62);
   --color-text-alternate: rgb(13, 52, 97);
   --color-text-highlight: hsl(232, 95%, 23%);
-  --color-text: rgb(25, 39, 60);
 
-  /* Content color (using tertiary) */
+  /* Semantic text colors */
   --color-text-content: var(--color-text-tertiary);
   --color-text-heading: var(--color-text-primary);
-  --color-text-position: var(--color-text-tertiary);
-  --color-text-date: var(--color-text-tertiary);
-  --color-text-location: var(--color-text-tertiary);
   --color-text-button: white;
-  --color-text-header: var(--color-text-primary);
 
   /* Background colors */
   --color-bg-body: #f9f9f9;
   --color-bg-container: hsla(90, 23%, 95%, 0.506);
-  --color-bg-secondary: #f5f7f5;
   --color-bg-button: var(--color-text-secondary);
   --color-bg-button-hover: var(--color-text-primary);
 
-  /* Primary colors */
-  --color-primary: var(--color-text-secondary);
-
-  /* Border colors */
+  /* Border & Shadow */
   --color-border: var(--color-text-tertiary);
   --color-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Typography */
+  --font-family: "Rubik", Helvetica, sans-serif;
+  --font-size-base: 0.625rem;
+  --line-height: 1.4;
+  --letter-spacing: 0.3px;
 }
 
-@page {
-  size: auto; /* auto is the initial value */
-  margin: 5mm 5mm 5mm 5mm; /* this affects the margin in the printer settings */
-}
+/* ===========================================
+  2. Reset & Base Styles
+   =========================================== */
 
 * {
   margin: 0;
@@ -47,6 +46,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -56,22 +56,47 @@ strong {
 }
 
 body {
-  font-family: "Rubik", Helvetica, sans-serif;
-  line-height: 1.4;
-  letter-spacing: 0.3px;
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
   color: var(--color-text-tertiary);
   max-width: 50rem;
   margin: 0 auto;
   padding: 1rem;
   background-color: var(--color-bg-body);
-  font-size: 0.625rem;
+  font-size: var(--font-size-base);
 }
+
+ul {
+  margin-left: 1.25rem;
+}
+
+/* ===========================================
+  3. Layout Components
+   =========================================== */
 
 .container {
   background-color: var(--color-bg-container);
   padding: 1rem;
   box-shadow: 0 0.125rem 0.625rem var(--color-shadow);
 }
+
+.divider {
+  height: 2px;
+  background-color: var(--color-border);
+  margin: 0.125rem 0;
+}
+
+.section-heading {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: var(--color-text-primary);
+}
+
+/* ===========================================
+  4. Header / Personal Info
+   =========================================== */
 
 header {
   color: var(--color-text-primary);
@@ -81,32 +106,20 @@ header {
   margin-bottom: 0.5rem;
 }
 
-/* Summary styles */
-.summary-section {
-  margin-bottom: 0.5rem;
-}
-
-.summary-text {
-  font-size: 0.75rem;
-  line-height: 1.5;
-  color: var(--color-text-tertiary);
-  text-align: justify;
-}
-
 h1 {
   font-size: 2rem;
   color: var(--color-text-primary);
 }
+
 h3 {
   font-size: 1.25rem;
   color: var(--color-text-secondary);
 }
+
 .social-links {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 0.25rem;
-  justify-content: space-between;
   font-size: 12px;
 }
 
@@ -121,18 +134,9 @@ h3 {
   vertical-align: middle;
 }
 
-.divider {
-  height: 2px;
-  background-color: var(--color-border);
-  margin: 0.125rem 0;
-}
-
-.section-heading {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-top: 0.5rem; 
-  color: var(--color-text-primary);
-}
+/* ===========================================
+  5. Work Experience Section
+   =========================================== */
 
 .job {
   margin-bottom: 1rem;
@@ -141,11 +145,11 @@ h3 {
 .job-header {
   display: flex;
   justify-content: space-between;
-  align-items: top;
+  align-items: flex-start;
 }
 
 .company {
-  font-size: 0.75rem; 
+  font-size: 0.75rem;
   font-weight: 500;
   color: var(--color-text-highlight);
 }
@@ -167,15 +171,14 @@ h3 {
   color: var(--color-text-tertiary);
 }
 
-ul {
-  margin-left: 1.25rem;
-}
+/* ===========================================
+  6. Skills Section
+   =========================================== */
 
 .technologies-list {
   margin: 0.3125rem 0 0.625rem;
 }
 
-/* Technology Categories */
 .tech-category {
   margin-bottom: 0.25rem;
 }
@@ -184,7 +187,6 @@ ul {
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--color-text-primary);
-  /* margin-bottom: 0.5rem; */
 }
 
 .tech-badge {
@@ -200,86 +202,7 @@ ul {
   font-weight: 500;
 }
 
-.download-btn {
-  background-color: var(--color-bg-button);
-  color: var(--color-text-button);
-  padding: 0.625rem 1.25rem;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  font-size: 1rem; 
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-}
-
-.download-btn:hover {
-  background-color: var(--color-bg-button-hover);
-}
-
-/* Education styles */
-.education-item {
-  margin-bottom: 0.875rem;
-}
-
-.education-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: top;
-}
-
-.degree {
-  font-size: 0.65rem;
-  font-weight: 500;
-  color: var(--color-text-secondary);
-}
-
-.institution {
-  font-size: 0.65rem;
-  font-style: italic;
-  color: var(--color-text-tertiary);
-}
-
-/* Certification styles */
-.certification-item {
-  margin-bottom: 0.25rem;
-}
-
-.certification-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: top;
-}
-
-.cert-name {
-  font-size: 0.65rem;
-  font-weight: 500;
-  color: var(--color-text-secondary);
-}
-
-.cert-issuer {
-  font-size: 0.65rem;
-  font-style: italic;
-  color: var(--color-text-tertiary);
-}
-
-/* Project styles */
-.project-header {
-  display: flex;
-  gap: 0.005rem;
-  align-items: center;
-}
-
-.project-name {
-  font-size: .8rem;
-  font-weight: 500;
-  color: var(--color-text-secondary);
-}
-
-.project-description {
-  font-size: 0.75rem;
-}
-
+/* Tech stack (used in Experience & Projects) */
 .tech-stack {
   font-size: 0.6rem;
   margin-top: 0.25rem;
@@ -296,22 +219,10 @@ ul {
   color: var(--color-text-tertiary);
 }
 
-.technologies {
-  font-size: 0.625rem;
-  margin-top: 0.25rem;
-}
+/* ===========================================
+  7. Achievements Section
+   =========================================== */
 
-/* Interests styles */
-.interests-list {
-  margin: 0.3125rem 0 0.625rem;
-}
-
-/* Soft Skills styles */
-.soft-skills-list {
-  margin: 0.3125rem 0 0.625rem;
-}
-
-/* Achievement styles */
 .achievement-item {
   margin-bottom: 0.5rem;
 }
@@ -346,7 +257,129 @@ ul {
   color: var(--color-text-alternate);
 }
 
-/* Print styles */
+/* ===========================================
+  8. Projects Section
+   =========================================== */
+
+.project-item {
+  margin-bottom: 0.5rem;
+}
+
+.project-header {
+  display: flex;
+  gap: 0.005rem;
+  align-items: center;
+}
+
+.project-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.project-description {
+  font-size: 0.75rem;
+}
+
+/* ===========================================
+  9. Education Section
+   =========================================== */
+
+.education-item {
+  margin-bottom: 0.875rem;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.degree {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.institution {
+  font-size: 0.65rem;
+  font-style: italic;
+  color: var(--color-text-tertiary);
+}
+
+/* ===========================================
+  10. Certifications Section
+   =========================================== */
+
+.certification-item {
+  margin-bottom: 0.25rem;
+}
+
+.certification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cert-name {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.cert-issuer {
+  font-size: 0.65rem;
+  font-style: italic;
+  color: var(--color-text-tertiary);
+}
+
+.cert-id {
+  font-size: 0.6rem;
+  color: var(--color-text-tertiary);
+}
+
+/* ===========================================
+  11. Interactive Elements
+   =========================================== */
+
+.download-btn {
+  background-color: var(--color-bg-button);
+  color: var(--color-text-button);
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: var(--color-bg-button-hover);
+}
+
+/* ===========================================
+  12. Error State
+   =========================================== */
+
+.error {
+  padding: 2rem;
+  text-align: center;
+  color: #dc3545;
+  font-size: 1rem;
+}
+
+/* ===========================================
+  13. Print Styles
+   =========================================== */
+
+@page {
+  size: auto;
+  margin: 5mm;
+}
+
 @media print {
   body {
     margin: 0;

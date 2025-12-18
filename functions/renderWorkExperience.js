@@ -1,45 +1,42 @@
+import { DOM_IDS } from "../constants/dom-ids.js"
+import {
+  getAndClearElement,
+  createElement,
+  createTechStackHTML,
+  createListItemsHTML,
+} from "../utils/dom.js"
+
 /**
  * Renders the work experience section
  * @param {Array} experiences - Work experience data
  */
 export function renderWorkExperience(experiences) {
-  const workExperienceSection = document.getElementById("work-experience")
-  workExperienceSection.innerHTML = ""
+  const section = getAndClearElement(DOM_IDS.WORK_EXPERIENCE)
+  if (!section) return
 
   for (const job of experiences) {
-    const jobElement = document.createElement("div")
-    jobElement.className = "job"
+    const jobElement = createElement("div", "job")
 
-    // Create responsibilities list items
-    const responsibilitiesHTML = job.responsibilities
-      .map((responsibility) => `<li>${responsibility}</li>`)
-      .join("")
-
-    // Create skills HTML
-    const techStackHTML = job.tech_stack.length
-      ? `<div class="tech-stack">
-          <span class="tech-stack-label">Tech Stack:</span>
-          <span class="tech-stack-items">${job.tech_stack.join(", ")}</span>
-        </div>`
-      : ""
+    const responsibilitiesHTML = createListItemsHTML(job.responsibilities)
+    const techStackHTML = createTechStackHTML(job.techStack)
 
     jobElement.innerHTML = `
-      <div class="job-header"> 
-      <div>
-      <div class="position">${job.position}</div> 
-      <div class="company">${job.company}</div> 
-      </div>
+      <div class="job-header">
+        <div>
+          <div class="position">${job.position}</div>
+          <div class="company">${job.company}</div>
+        </div>
         <div>
           <div class="period">${job.period}</div>
           <div class="location">${job.location}</div>
         </div>
-      </div>  
+      </div>
       <ul>
         ${responsibilitiesHTML}
       </ul>
       ${techStackHTML}
     `
 
-    workExperienceSection.appendChild(jobElement)
+    section.appendChild(jobElement)
   }
 }
