@@ -59,7 +59,7 @@ body {
   margin: 0 auto;
   padding: 1rem;
   background-color: var(--color-bg-body);
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .container {
@@ -77,11 +77,11 @@ header {
 }
 
 h1 {
-  font-size: 38px;
+  font-size: 2rem;
   color: var(--color-text-primary);
 }
 h3 {
-  font-size: 19px;
+  font-size: 1.25rem;
   color: var(--color-text-secondary);
 }
 .social-links {
@@ -90,7 +90,7 @@ h3 {
   justify-content: center;
   gap: 0.25rem;
   justify-content: space-between;
-  font: 12px;
+  font-size: 12px;
 }
 
 .social-link {
@@ -111,14 +111,14 @@ h3 {
 }
 
 .section-heading {
-  font-size: 22px;
+  font-size: 1rem;
   font-weight: 500;
   margin-top: 0.5rem; 
   color: var(--color-text-primary);
 }
 
 .job {
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .job-header {
@@ -128,25 +128,24 @@ h3 {
 }
 
 .company {
-  font-size: 1rem;
-  /* font-size: 14px; */
+  font-size: 0.875rem; 
   font-weight: 500;
   color: var(--color-text-highlight);
 }
 
 .position {
-  font-size: 18px;
+  font-size: 1rem;
   color: var(--color-text-tertiary);
 }
 
 .period {
-  font-size: 14px;
+  font-size: 10px;
   text-align: right;
   color: var(--color-text-alternate);
 }
 
 .location {
-  font-size: 12px;
+  font-size: 10px;
   text-align: right;
   color: var(--color-text-tertiary);
 }
@@ -165,7 +164,7 @@ ul {
 }
 
 .tech-category-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--color-text-primary);
   /* margin-bottom: 0.5rem; */
@@ -255,8 +254,8 @@ ul {
 }
 
 .project-name {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: .8rem;
+  font-weight: 500;
   color: var(--color-text-secondary);
 }
 
@@ -265,7 +264,7 @@ ul {
 }
 
 .tech-stack {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   margin-top: 0.25rem;
   padding-left: 1rem;
 }

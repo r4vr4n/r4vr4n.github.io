@@ -24,7 +24,7 @@ export const CERTIFICATIONS = [
 
 export const EDUCATION = [
   {
-    degree: "Bachelor in Computer Science & Engineering",
+    degree: "B.Tech in Computer Science & Engineering",
     institution: "Biju Patnaik University of Technology",
     location: "Bhubaneswar, OD",
     period: "03/2015 - 03/2019",
