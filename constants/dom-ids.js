@@ -4,6 +4,9 @@
  */
 
 export const DOM_IDS = {
+  // Layout
+  CONTAINER: "resume-container",
+
   // Header
   PERSONAL_INFO: "personal-info",
   SUMMARY: "summary",
