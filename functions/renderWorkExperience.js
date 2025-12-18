@@ -1,10 +1,5 @@
 import { DOM_IDS } from "../constants/dom-ids.js"
-import {
-  getAndClearElement,
-  createElement,
-  createTechStackHTML,
-  createListItemsHTML,
-} from "../utils/dom.js"
+import { getAndClearElement, createElement } from "../utils/dom.js"
 
 /**
  * Renders the work experience section
@@ -17,9 +12,6 @@ export function renderWorkExperience(experiences) {
   for (const job of experiences) {
     const jobElement = createElement("div", "job")
 
-    const responsibilitiesHTML = createListItemsHTML(job.responsibilities)
-    const techStackHTML = createTechStackHTML(job.techStack)
-
     jobElement.innerHTML = `
       <div class="job-header">
         <div>
@@ -31,10 +23,7 @@ export function renderWorkExperience(experiences) {
           <div class="location">${job.location}</div>
         </div>
       </div>
-      <ul>
-        ${responsibilitiesHTML}
-      </ul>
-      ${techStackHTML}
+      <p class="job-summary">${job.summary}</p>
     `
 
     section.appendChild(jobElement)

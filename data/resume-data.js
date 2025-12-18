@@ -34,117 +34,40 @@ export const RESUME_DATA = {
       position: "Senior Frontend Engineer",
       period: "11/2024 - 06/2025",
       location: "Jaipur, RJ · Remote",
-      description:
-        "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
-      responsibilities: [
-        "Set up CI pipeline eliminating ~5 mins. of pre-commit hook processing per commit, saving ~8 hrs. of devs' time weekly.",
-        "Launched an activity feed that enhanced client follow-ups & increased support team efficiency by 70%.",
-        "Reduced bundle size by 40% using vanilla JS & Tailwind CSS, enhancing performance & UX for <strong>Conversation Plugin</strong>.",
-      ],
-      techStack: [
-        "ReactJS v19",
-        "MUI v5",
-        "React Query v3",
-        "Nx",
-        "Jest",
-        "Cypress",
-        "Docker",
-        "React Hook Form",
-        "React Table",
-        "CI/CD",
-        "Socket.io",
-      ],
+      summary:
+        "Worked on the core ad campaign management platform, contributing to the Activity Feed module that bridged clients and internal operations team for seamless onboarding. Implemented real-time features and data visualizations to enhance platform usability.",
     },
     {
       company: "Reconect.ai",
       position: "Contract Engineer",
       period: "08/2024 - 11/2024",
       location: "Bengaluru, KA · On-site",
-      description:
-        "Reconect.ai is a fintech firm focused on debt collection using digital channels.",
-      responsibilities: [
-        "Programmed campaign management system eliminating 20+ hours of manual trigger setup & monitoring each week.",
-        "Built real-time analytics dashboards using <strong>Recharts</strong> for tracking debt collection performance metrics.",
-        "Implemented automated testing with <strong>Playwright</strong>, achieving 85%+ code coverage for critical workflows.",
-      ],
-      techStack: [
-        "ReactJS v18",
-        "Mantine UI",
-        "React Query v5",
-        "Playwright",
-        "Recharts",
-        "React Table",
-      ],
+      summary:
+        "Built the Recollect Agent platform enabling users to create interactive chat agents for automated debt collection. Developed real-time monitoring dashboards for tracking collection progress, status, and estimations.",
     },
     {
       company: "Zeitview",
       position: "Senior Frontend Engineer",
       period: "03/2022 - 08/2024",
       location: "Bengaluru, KA · Remote",
-      description:
-        "Zeitview is a global leader in providing drone services for asset management, leveraging advanced technologies.",
-      responsibilities: [
-        "Crafted <strong>DEM viewer</strong> for reducing project planning time while improving site assessment accuracy by 90%.",
-        "Improved field issue tracking by 80% using coordinate-based tagging which simplified communication.",
-        "Optimized <strong>Construction Monitoring</strong> codebase, slashing re-renders & boosting performance by 75%.",
-        "Provided technical mentorship to 3 developers, resulting in 70% improvement in their PR approval rate.",
-        "Spearheaded <strong>Analysis Tool's</strong> development eliminating external dependencies, accelerating analyst workflows by 50%.",
-      ],
-      techStack: [
-        "MUI v5",
-        "MapBox",
-        "CesiumJS",
-        "React-Konva",
-        "kr-pano",
-        "Playwright",
-        "Mantine UI",
-        "Recharts",
-        "React Table",
-        "Formik",
-        "CI/CD",
-        "Vitest",
-      ],
+      summary:
+        "Led development of geospatial analysis tools for solar site assessment and construction monitoring. Built 3D visualization features using digital elevation modeling. Mentored 3 junior developers, improving their PR approval rate by 70%. Recognized as Resourceful Employee of the Year.",
     },
     {
       company: "Estate Protocol",
       position: "Frontend Engineer",
       period: "06/2021 - 02/2022",
       location: "Noida, UP · Remote",
-      description:
-        "Estate Protocol is a blockchain-based real estate platform facilitating seamless transactions & processes.",
-      responsibilities: [
-        "Integrated Airdrop system using Web3.js serving 2,000+ claimants, achieving 90% delivery success rate.",
-        "Implemented pixel-perfect landing page design achieving a 90+ Lighthouse performance score.",
-      ],
-      techStack: [
-        "NextJS",
-        "Tailwind CSS",
-        "Context API",
-        "Framer motion",
-        "Web3.js",
-      ],
+      summary:
+        "Developed an Ethereum-based blockchain dApp enabling property owners to list assets and investors to purchase fractional ownership. Launched token airdrop system serving 2,000+ claimants with 90% success rate.",
     },
     {
       company: "Solytics Partners",
       position: "Junior Frontend Engineer",
       period: "06/2020 - 06/2021",
       location: "Pune, MH · Remote",
-      description:
-        "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, & deep domain expertise.",
-      responsibilities: [
-        "Successfully delivered 8 critical modules for <strong>Nimbus Duo</strong>, completing 100% of assigned requirements on schedule.",
-        "Built <strong>Inventory Management</strong> system MVP in 2 weeks.",
-      ],
-      techStack: [
-        "ReactJS v16",
-        "Redux",
-        "Redux Saga",
-        "Material UI v4",
-        "Bootstrap v4",
-        "React Table v6",
-        "Plotly JS",
-        "Jest",
-      ],
+      summary:
+        "Built the Nimbus Duo analytics dashboard for visualizing data duplication, fraud detection, and ML model performance metrics. Delivered 8 critical modules on schedule as part of the enterprise analytics platform.",
     },
   ],
 
@@ -215,25 +138,65 @@ export const RESUME_DATA = {
   // =========================================
   projects: [
     {
-      name: "Cexdex",
-      description:
-        "Cexdex allows users to trade cryptocurrencies in a secure & efficient manner.",
-      url: "https://stake.cexdex.app",
-      techStack: [
-        "Web3.js",
-        "React",
-        "Context API",
-        "NodeJS",
-        "ExpressJS",
-        "MongoDB",
+      name: "Agency Operations Hub (DashClicks)",
+      subtitle: "White-Label Digital Marketing Platform",
+      highlights: [
+        "Built Activity Feed module bridging clients and operations team for seamless onboarding.",
+        "Implemented real-time notifications using <strong>Socket.io</strong> and campaign analytics with <strong>Chart.js</strong>.",
+        "Developed reusable data grids using <strong>React Table</strong> for campaign management views.",
       ],
+      techStack: ["ReactJS", "Material UI", "Socket.io", "Chart.js", "React Table"],
+    },
+    {
+      name: "Collect Agent (Reconect.ai)",
+      subtitle: "AI-Powered Debt Collection Platform",
+      highlights: [
+        "Built interactive chat agent builder enabling automated debt collection workflows.",
+        "Developed real-time monitoring dashboard for tracking collection progress and estimations.",
+        "Implemented UI with <strong>Mantine UI</strong>, <strong>TanStack Query</strong>, and <strong>Recharts</strong> for data visualization.",
+      ],
+      techStack: ["ReactJS", "TanStack Query", "Mantine UI", "Recharts", "Socket.io"],
+    },
+    {
+      name: "Analysis Tool (Zeitview)",
+      subtitle: "Solar Site Analysis & Report Generation Platform",
+      highlights: [
+        "Developed full-featured analysis tool enabling analysts to perform solar site assessments and generate reports.",
+        "Built interactive map annotations using <strong>MapBox</strong> and <strong>React-Konva</strong> for precise measurements.",
+        "Implemented geospatial data layers with <strong>TypeScript</strong> and <strong>React Query</strong> for efficient data fetching.",
+      ],
+      techStack: ["ReactJS", "TypeScript", "MapBox", "React-Konva", "Redux", "React Query", "Playwright"],
+    },
+    {
+      name: "Construction Monitoring (Zeitview)",
+      subtitle: "3D Drone-Based Construction Progress Tracking",
+      highlights: [
+        "Enabled clients to monitor construction progress using <strong>MapBox</strong> and <strong>CesiumJS</strong> for 3D visualization.",
+        "Built digital elevation modeling (DEM) tools for calculating solar plant construction efforts.",
+        "Developed stakeholder dashboards for effort estimation and site planning from scratch.",
+      ],
+      techStack: ["ReactJS", "CesiumJS", "MapBox", "React Query", "TypeScript"],
     },
     {
       name: "Estate Protocol",
-      description:
-        "Estate Protocol tokenizes real estate on the blockchain for crypto investment.",
       url: "https://estateprotocol.com",
-      techStack: ["Web3.js", "NextJS", "Framer motion", "Material UI"],
+      subtitle: "Ethereum Real Estate Tokenization Platform",
+      highlights: [
+        "Developed blockchain dApp allowing property owners to list assets and investors to purchase fractional ownership.",
+        "Built <strong>Web3.js</strong> integration for wallet connections and smart contract interactions.",
+        "Launched token airdrop system serving <strong>2,000+</strong> claimants with 90% success rate.",
+      ],
+      techStack: ["NextJS", "Web3.js", "Tailwind CSS", "Framer Motion", "Context API"],
+    },
+    {
+      name: "Nimbus Duo (Solytics Partners)",
+      subtitle: "Enterprise Analytics & Fraud Detection Dashboard",
+      highlights: [
+        "Built analytics dashboard for visualizing data duplication, fraud detection, and ML model performance.",
+        "Implemented interactive charts using <strong>Plotly JS</strong> and data tables with <strong>React Table</strong>.",
+        "Managed complex async data flows with <strong>Redux Saga</strong> for real-time metric updates.",
+      ],
+      techStack: ["ReactJS", "Redux", "Redux Saga", "Plotly JS", "React Table", "Material UI"],
     },
   ],
 

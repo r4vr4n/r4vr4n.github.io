@@ -163,12 +163,22 @@ h3 {
   font-size: 0.625rem;
   text-align: right;
   color: var(--color-text-alternate);
+  white-space: nowrap;
 }
 
 .location {
   font-size: 0.625rem;
   text-align: right;
   color: var(--color-text-tertiary);
+  white-space: nowrap;
+}
+
+.job-summary {
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: var(--color-text-tertiary);
+  margin-top: 0.25rem;
+  text-align: justify;
 }
 
 /* ===========================================
@@ -191,7 +201,7 @@ h3 {
 
 .tech-badge {
   color: var(--color-text-tertiary);
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   margin-right: 0.25rem;
 }
 
@@ -261,25 +271,51 @@ h3 {
   8. Projects Section
    =========================================== */
 
-.project-item {
-  margin-bottom: 0.5rem;
+.detailed-project-item {
+  margin-bottom: 0.75rem;
 }
 
-.project-header {
+.detailed-project-header {
   display: flex;
-  gap: 0.005rem;
   align-items: center;
+  gap: 0.5rem;
 }
 
-.project-name {
-  font-size: 0.8rem;
+.detailed-project-name {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-highlight);
+}
+
+.detailed-project-link {
+  font-size: 0.7rem;
+  color: var(--color-text-tertiary);
+  font-style: italic;
+}
+
+.detailed-project-subtitle {
+  font-size: 0.65rem;
   font-weight: 500;
   color: var(--color-text-secondary);
+  margin-top: 0.1rem;
 }
 
-.project-description {
-  font-size: 0.75rem;
+.detailed-project-highlights {
+  margin-left: 1.25rem;
+  margin-top: 0.2rem;
 }
+
+.detailed-project-highlights li {
+  font-size: 0.65rem;
+  color: var(--color-text-tertiary);
+  margin-bottom: 0.1rem;
+  line-height: 1.4;
+}
+
+/* .detailed-project-highlights li strong {
+  font-weight: 600;
+  color: var(--color-text-secondary);
+} */
 
 /* ===========================================
   9. Education Section
@@ -381,19 +417,50 @@ h3 {
 }
 
 @media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
   body {
     margin: 0;
     padding: 0;
-    background: none;
+    background: white;
+    font-size: 9px;
+    max-width: 100%;
   }
 
   .container {
     box-shadow: none;
-    padding: 0;
-    background-color: transparent;
+    padding: 10px;
+    background-color: white;
+    max-width: 100%;
+    width: 100%;
   }
 
   .download-btn {
-    display: none;
+    display: none !important;
+  }
+
+  /* Prevent page breaks inside elements */
+  .job,
+  .detailed-project-item,
+  .achievement-item,
+  .education-item,
+  .certification-item,
+  .tech-category {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Ensure sections stay together when possible */
+  section {
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 }
