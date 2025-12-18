@@ -50,6 +50,10 @@ a:hover {
   text-decoration: underline;
 }
 
+strong {
+  font-weight: 500;
+}
+
 body {
   font-family: "Rubik", Helvetica, sans-serif;
   line-height: 1.4;
@@ -180,7 +184,7 @@ ul {
   content: "•";
   margin-left: 0.25rem;
   color: var(--color-text-primary);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .download-btn {
@@ -212,13 +216,13 @@ ul {
 }
 
 .degree {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--color-text-secondary);
 }
 
 .institution {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-style: italic;
   color: var(--color-text-tertiary);
 }
@@ -235,13 +239,13 @@ ul {
 }
 
 .cert-name {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--color-text-secondary);
 }
 
 .cert-issuer {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-style: italic;
   color: var(--color-text-tertiary);
 }
@@ -270,7 +274,7 @@ ul {
 }
 
 .tech-stack-label {
-  font-weight: bold;
+  font-weight: 500;
   color: var(--color-text-primary);
 }
 
@@ -308,7 +312,7 @@ ul {
 
 .achievement-title {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 500;
   color: var(--color-text-secondary);
 }
 

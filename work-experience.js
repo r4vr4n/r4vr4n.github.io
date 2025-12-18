@@ -1,7 +1,7 @@
 export const WORK_EXPERIENCE = [
   {
     company: "DashClicks",
-    position: "Senior Frontend Engineer",
+    position: "Sr. Frontend Engineer",
     period: "11/2024 - 06/2025",
     location: "Jaipur, RJ · Remote",
     description:
@@ -46,7 +46,7 @@ export const WORK_EXPERIENCE = [
   },
   {
     company: "Zeitview",
-    position: "Senior Frontend Engineer",
+    position: "Sr. Frontend Engineer",
     period: "03/2022 - 08/2024",
     location: "Bengaluru, KA · Remote",
     description:
