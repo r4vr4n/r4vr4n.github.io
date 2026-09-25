@@ -10,15 +10,20 @@
   DAG view with WebSocket (Centrifugo) updates, column lineage, and a virtualized data catalog.
 - Designed human-in-the-loop approval workflows (tag review, mart-table mapping, PR review) that handle
   10k+ tables through virtualization, wired to Temporal signal-based approval gates.
-- Delivered backend features end to end: moved report generation to Temporal, Excel data-model
-  import/export with SSE progress, RBAC permission enforcement, and API-key and user management APIs.
+- Delivered backend features end to end in FastAPI: moved executive report generation onto Temporal
+  workflows, built the KPI and reporting services with an Excel report renderer, and built Excel
+  data-model import/export (openpyxl) with single-transaction writes and SSE progress.
+- Built per-user Snowflake access through Auth0 OAuth (token service, warehouse user provisioning) for
+  the data-exploration module, and a backend integration with the company's AI platform (Astradis) for
+  developer environments.
 - Led a platform-wide API redesign migration (nested to flat resource model) across frontend and backend.
 - Rebuilt the Playwright E2E suite and unified Postgres/Neo4j seeding for local, CI and E2E, and ran E2E in
   parallel in CI.
 
 **Skills:** TypeScript, React 19, TanStack (Router, Query, Table, Form, Virtual), Zustand, React Flow, ELK.js,
-Monaco, Recharts, Zod, Python 3.12, FastAPI, SQLAlchemy, Alembic, PostgreSQL, Neo4j, Temporal, Centrifugo
-(WebSockets), SSE, Snowflake, OpenAI, OAuth2/Auth0, Playwright, Vitest, GitHub Actions, Doppler, MCP.
+Monaco, Recharts, Zod, Python 3.12, FastAPI, SQLAlchemy, Alembic, Pydantic, pytest, openpyxl, PostgreSQL,
+Neo4j, Temporal, Centrifugo (WebSockets), SSE, Snowflake, OpenAI, OAuth2/Auth0, Playwright, Vitest,
+GitHub Actions, Doppler, MCP.
 
 ---
 
@@ -30,8 +35,8 @@ Monaco, Recharts, Zod, Python 3.12, FastAPI, SQLAlchemy, Alembic, PostgreSQL, Ne
   Cut re-renders and deferred expensive fields.
 - **Consolidating shared logic.** Extract shared components, centralize data-fetching patterns, and put
   scattered setup (such as database seeding) behind one verified entry point.
-- **Growing into full-stack.** Moved from frontend into Temporal workflows, transactional imports,
-  access control and database migrations.
+- **Growing into full-stack.** Moved from frontend into Temporal workflows, OAuth integrations,
+  transactional imports, access control and database migrations.
 - **Raising team standards.** Introduced git hooks, CI improvements, a coding rule book and a rebuilt E2E
   suite, and moved the team toward commit messages that explain why a change was made.
 - **Ownership.** Top committer on the project, with work across almost every area of the product.
@@ -101,19 +106,49 @@ UI in real time over Centrifugo WebSockets. An MCP server exposes every stage's 
 
 ### Backend and platform (FastAPI, Temporal, PostgreSQL)
 
-- **Moved report generation to Temporal** workflows and activities (87 files), with real-time progress
-  events.
-- **Excel data-model import and export:** downloadable templates generated with openpyxl (dynamic column
-  widths, cell validation, instruction sheet, row banding). Uploads are parsed into concepts and
-  relationships in a single transaction, with progress streamed over SSE. Added a streaming workbook
-  export endpoint.
-- **Role-based access control:** enforced permissions on routes and actions end to end, and repaired the
-  role migration chain.
-- REST APIs and Alembic migrations for API keys, user management, canvas comments, KPIs, EDA, the catalog
-  (table type, deferred column counts) and workflow-run history.
-- **API redesign migration:** moved the frontend and endpoints from entity-nested routes to a flat
-  resource model covering data models, workflows, approvals, real-time channels, EDA and reporting.
-- Health checks for PostgreSQL and Temporal.
+#### Workflows and reporting
+
+- **Moved executive report generation onto Temporal:** a new workflow and activities, a reports service
+  (about 1,100 lines), report APIs and real-time progress events (87 files in total).
+- **KPI and reporting backend:** KPI service and APIs, a KPI-to-concept mapping repository, Alembic migrations for the KPI schema, and a report export API with an Excel report
+  renderer (about 1,200 lines).
+- **Workflow control:** API to load a past workflow run, guards that block rebuilds on non-live versions
+  or while a stage is still running, and an endpoint to re-profile a single table without a full run.
+
+#### Integrations and security
+
+- **Per-user Snowflake access for the EDA module:** Auth0 OAuth and token services, warehouse user
+  provisioning, Snowflake repository queries, and the EDA and warehouse-auth APIs.
+- **Astradis integration:** service, API client, endpoints and error handling for provisioning developer
+  environments from the SQL IDE.
+- **Role-based access control:** enforced permissions on routes and actions, with route-permission tests.
+  Fixed role permissions and repaired the role migration chain.
+- User bulk-delete endpoint.
+
+#### Data model import and export
+
+- **Excel templates** generated with openpyxl: current concepts and attributes, dynamic column widths,
+  cell validation (such as criticality), an instruction sheet and row banding.
+- **Import:** a parser and import service that turn uploaded sheets into concepts and relationships in a
+  single database transaction, with partial import and progress streamed over SSE. Covered by about
+  1,700 lines of pytest tests for the renderer, parser, import service and API.
+- A streaming workbook export endpoint.
+
+#### APIs, data layer and tooling
+
+- **Catalog and profiling services:** catalog listing with backend sorting and filtering, table-type and
+  row-count propagation, data-preview logic moved from the frontend into the backend, and explore and
+  overview statistics in the profile and transform services.
+- **Canvas comments:** approval-service logic, request APIs and an Alembic migration for comments pinned
+  to the graph, with service and API tests.
+- **Schema and migrations:** Alembic migrations (concept category, message anchors, KPI fields, user
+  roles), a deferred `n_columns_count` column to speed up table listings, and moving the Pydantic adapter
+  layer from the API into schemas.
+- **API redesign migration:** moved endpoints from entity-nested routes to a flat resource model covering
+  requests, users, files, code references, WebSocket channels, EDA and reporting, then fixed the fallout.
+- **Seeding and verification:** unified Postgres and Neo4j seeding, a seed verification script, a
+  generator for a 10k-table load test, and a database diagram generator.
+- Docker health checks for PostgreSQL and Temporal in the dev environment.
 
 ### Quality, testing and developer experience
 
