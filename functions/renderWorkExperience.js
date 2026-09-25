@@ -28,11 +28,15 @@ export function renderWorkExperience(experiences) {
         </div>`
       : ""
 
+    const companyHTML = job.companyUrl
+      ? `<a href="${job.companyUrl}" target="_blank" rel="noopener noreferrer" class="company">${job.company}</a>`
+      : `<div class="company">${job.company}</div>`
+
     jobElement.innerHTML = `
       <div class="job-header">
         <div>
           <div class="position">${job.position}</div>
-          <div class="company">${job.company}</div>
+          ${companyHTML}
         </div>
         ${createPeriodLocationHTML(job.period, job.location)}
       </div>

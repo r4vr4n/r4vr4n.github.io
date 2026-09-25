@@ -31,6 +31,7 @@ export const RESUME_DATA = {
   workExperience: [
     {
       company: "Teragonia",
+      companyUrl: "https://teragonia.com/",
       position: "Software Engineer (Full-Stack)",
       period: "09/2025 - Present",
       location: "Bengaluru, KA · On-site",
@@ -62,6 +63,7 @@ export const RESUME_DATA = {
     },
     {
       company: "DashClicks",
+      companyUrl: "https://www.dashclicks.com",
       position: "Senior Frontend Engineer",
       period: "11/2024 - 06/2025",
       location: "Jaipur, RJ · Remote",
@@ -88,6 +90,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Reconect.ai",
+      companyUrl: "https://www.reconect.ai",
       position: "Contract Engineer",
       period: "08/2024 - 11/2024",
       location: "Bengaluru, KA · On-site",
@@ -109,6 +112,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Zeitview",
+      companyUrl: "https://www.zeitview.com",
       position: "Senior Frontend Engineer",
       period: "03/2022 - 08/2024",
       location: "Bengaluru, KA · Remote",
@@ -143,6 +147,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Estate Protocol",
+      companyUrl: "https://www.estateprotocol.com",
       position: "Frontend Engineer",
       period: "06/2021 - 02/2022",
       location: "Noida, UP · Remote",
@@ -162,6 +167,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Solytics Partners",
+      companyUrl: "https://www.solytics-partners.com",
       position: "Junior Frontend Engineer",
       period: "06/2020 - 06/2021",
       location: "Pune, MH · Remote",
