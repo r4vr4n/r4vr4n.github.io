@@ -27,9 +27,24 @@
 
   /* Typography */
   --font-family: "Rubik", Helvetica, sans-serif;
-  --font-size-base: 0.625rem;
-  --line-height: 1.4;
+  --font-size-base: 0.6rem;
+  --line-height: 1.28;
   --letter-spacing: 0.3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text-primary: rgb(189, 156, 219);
+    --color-text-secondary: rgb(230, 230, 230);
+    --color-text-tertiary: rgb(200, 200, 200);
+    --color-text-alternate: rgb(140, 175, 220);
+    --color-text-highlight: rgb(150, 180, 250);
+
+    --color-bg-body: #121212;
+    --color-bg-container: rgba(255, 255, 255, 0.05);
+
+    --color-shadow: rgba(0, 0, 0, 0.4);
+  }
 }
 
 /* ===========================================
@@ -68,7 +83,20 @@ body {
 }
 
 ul {
-  margin-left: 1.25rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  position: relative;
+  padding-left: 0.85rem;
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0.1rem;
+  color: var(--color-text-primary);
 }
 
 /* ===========================================
@@ -77,20 +105,20 @@ ul {
 
 .container {
   background-color: var(--color-bg-container);
-  padding: 1rem;
+  padding: 0.85rem;
   box-shadow: 0 0.125rem 0.625rem var(--color-shadow);
 }
 
 .divider {
   height: 2px;
   background-color: var(--color-border);
-  margin: 0.125rem 0;
+  margin: 0.1rem 0;
 }
 
 .section-heading {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   color: var(--color-text-primary);
 }
 
@@ -103,16 +131,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.375rem;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--color-text-primary);
 }
 
-h3 {
-  font-size: 1.25rem;
+.title-heading {
+  font-size: 1.1rem;
+  font-weight: 400;
   color: var(--color-text-secondary);
 }
 
@@ -139,7 +168,7 @@ h3 {
    =========================================== */
 
 .job {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .job-header {
@@ -155,7 +184,7 @@ h3 {
 }
 
 .position {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   color: var(--color-text-tertiary);
 }
 
@@ -175,8 +204,8 @@ h3 {
   display: flex;
   align-items: baseline;
   gap: 0.375rem;
-  margin: 0.25rem 0;
-  padding: 0.25rem 0.5rem;
+  margin: 0.15rem 0;
+  padding: 0.15rem 0.5rem;
   background: linear-gradient(90deg, rgba(117, 77, 152, 0.15), transparent);
   border-left: 2px solid var(--color-text-primary);
   border-radius: 0 0.25rem 0.25rem 0;
@@ -215,36 +244,28 @@ h3 {
    =========================================== */
 
 .technologies-list {
-  margin: 0.3125rem 0 0.625rem;
+  margin: 0.25rem 0 0.25rem;
 }
 
 .tech-category {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.15rem;
 }
 
 .tech-category-title {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 500;
   color: var(--color-text-primary);
 }
 
 .tech-badge {
   color: var(--color-text-tertiary);
-  font-size: 0.75rem;
-  margin-right: 0.25rem;
+  font-size: 0.7rem;
 }
 
-.tech-badge:not(:last-child)::after {
-  content: "•";
-  margin-left: 0.25rem;
-  color: var(--color-text-primary);
-  font-weight: 500;
-}
-
-/* Tech stack (used in Experience & Projects) */
+/* Tech stack (used in Experience) */
 .tech-stack {
-  font-size: 0.6rem;
-  margin-top: 0.25rem;
+  font-size: 0.55rem;
+  margin-top: 0.15rem;
   padding-left: 1rem;
 }
 
@@ -259,73 +280,11 @@ h3 {
 }
 
 /* ===========================================
-  7. Achievements Section
-   =========================================== */
-
-.achievement-item {
-  margin-bottom: 0.5rem;
-}
-
-.achievement-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.125rem;
-}
-
-.achievement-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.achievement-title {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--color-text-highlight);
-}
-
-.achievement-description {
-  font-size: 0.65rem;
-  color: var(--color-text-tertiary);
-  padding-left: 0.5rem;
-}
-
-.achievement-date {
-  font-size: 0.7rem;
-  font-style: italic;
-  color: var(--color-text-alternate);
-}
-
-/* ===========================================
-  8. Projects Section
-   =========================================== */
-
-.project-item {
-  margin-bottom: 0.5rem;
-}
-
-.project-header {
-  display: flex;
-  gap: 0.005rem;
-  align-items: center;
-}
-
-.project-name {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--color-text-secondary);
-}
-
-.project-description {
-  font-size: 0.75rem;
-}
-
-/* ===========================================
-  9. Education Section
+  7. Education Section
    =========================================== */
 
 .education-item {
-  margin-bottom: 0.875rem;
+  margin-bottom: 0.4rem;
 }
 
 .education-header {
@@ -347,7 +306,7 @@ h3 {
 }
 
 /* ===========================================
-  10. Certifications Section
+  8. Certifications Section
    =========================================== */
 
 .certification-item {
@@ -378,7 +337,7 @@ h3 {
 }
 
 /* ===========================================
-  11. Interactive Elements
+  9. Interactive Elements
    =========================================== */
 
 .download-btn {
@@ -400,7 +359,7 @@ h3 {
 }
 
 /* ===========================================
-  12. Error State
+  10. Error State
    =========================================== */
 
 .error {
@@ -411,15 +370,56 @@ h3 {
 }
 
 /* ===========================================
-  13. Print Styles
+  11. Responsive (Mobile)
+   =========================================== */
+
+@media (max-width: 40rem) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .download-btn {
+    position: static;
+    display: block;
+    margin: 0 0 0.75rem auto;
+  }
+
+  header,
+  .job-header,
+  .education-header,
+  .certification-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .period,
+  .location {
+    text-align: left;
+  }
+}
+
+/* ===========================================
+  12. Print Styles
    =========================================== */
 
 @page {
   size: auto;
-  margin: 5mm;
+  margin: 4mm;
 }
 
 @media print {
+  /* Always print with the light palette, regardless of OS dark-mode preference */
+  :root {
+    --color-text-primary: rgb(117, 77, 152);
+    --color-text-secondary: rgb(51, 51, 51);
+    --color-text-tertiary: rgb(62, 62, 62);
+    --color-text-alternate: rgb(13, 52, 97);
+    --color-text-highlight: hsl(232, 95%, 23%);
+    --color-bg-body: #f9f9f9;
+    --color-bg-container: hsla(90, 23%, 95%, 0.506);
+  }
+
   body {
     margin: 0;
     padding: 0;

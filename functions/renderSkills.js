@@ -14,7 +14,7 @@ export function renderSkills(skills) {
 
     const skillsHTML = skillList
       .map((skill) => `<span class="tech-badge">${skill}</span>`)
-      .join("")
+      .join(", ")
 
     categoryElement.innerHTML = `
       <span class="tech-category-title">${category}:</span>

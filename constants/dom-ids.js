@@ -14,7 +14,6 @@ export const DOM_IDS = {
   // Main sections
   WORK_EXPERIENCE: "work-experience",
   SKILLS: "technologies-list",
-  PROJECTS: "projects",
   EDUCATION: "education",
   CERTIFICATIONS: "certifications",
 

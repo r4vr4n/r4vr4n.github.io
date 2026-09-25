@@ -4,6 +4,7 @@ import {
   createElement,
   createTechStackHTML,
   createListItemsHTML,
+  createPeriodLocationHTML,
 } from "../utils/dom.js"
 
 /**
@@ -33,10 +34,7 @@ export function renderWorkExperience(experiences) {
           <div class="position">${job.position}</div>
           <div class="company">${job.company}</div>
         </div>
-        <div>
-          <div class="period">${job.period}</div>
-          <div class="location">${job.location}</div>
-        </div>
+        ${createPeriodLocationHTML(job.period, job.location)}
       </div>
       ${achievementHTML}
       <ul>

@@ -1,5 +1,9 @@
 import { DOM_IDS } from "../constants/dom-ids.js"
-import { getAndClearElement, createElement } from "../utils/dom.js"
+import {
+  getAndClearElement,
+  createElement,
+  createPeriodLocationHTML,
+} from "../utils/dom.js"
 
 /**
  * Renders the certifications section
@@ -17,12 +21,9 @@ export function renderCertifications(certifications) {
         <div>
           <div class="cert-name">${cert.name}</div>
           <div class="cert-issuer">${cert.issuer}</div>
-          <div class="cert-id">Credential ID: <a href="${cert.url}" target="_blank">${cert.id}</a></div>
+          <div class="cert-id">Credential ID: <a href="${cert.url}" target="_blank" rel="noopener noreferrer">${cert.id}</a></div>
         </div>
-        <div>
-          <div class="period">${cert.period}</div>
-          <div class="location">${cert.location}</div>
-        </div>
+        ${createPeriodLocationHTML(cert.period, cert.location)}
       </div>
     `
 

@@ -9,7 +9,7 @@ export const RESUME_DATA = {
   // =========================================
   personalInfo: {
     name: "Rajeev Ranjan",
-    title: "Senior Frontend Engineer",
+    title: "Full-Stack Engineer",
     contact: {
       email: "rajeevranjan19@outlook.com",
       phone: "+91 7543898325",
@@ -23,12 +23,43 @@ export const RESUME_DATA = {
   // Professional Summary
   // =========================================
   summary:
-    "Senior Frontend Engineer with 5+ years of experience building scalable web applications using React, Next.js, and TypeScript. Proven track record in full-stack development with Node.js, MongoDB, and Web3 technologies. Passionate about performance optimization, mentoring developers, and delivering high-impact solutions that drive business results.",
+    "Full-Stack Engineer with 5+ years of experience shipping production web applications end to end, from React/TypeScript frontends to Python/FastAPI services orchestrated with Temporal, PostgreSQL, and Neo4j. Currently building the core UI and backend workflows for an LLM-powered data platform at scale. Proven track record in performance optimization, distributed systems, and mentoring developers, with a consistent focus on delivering high-impact solutions that drive business results.",
 
   // =========================================
   // Work Experience
   // =========================================
   workExperience: [
+    {
+      company: "Teragonia",
+      position: "Software Engineer (Full-Stack)",
+      period: "09/2025 - Present",
+      location: "Bengaluru, KA · On-site",
+      description:
+        "Teragonia builds an LLM-powered platform that automates Kimball/dbt data warehouse modeling directly from raw Snowflake sources.",
+      responsibilities: [
+        "Built the core product UI (<strong>React Flow + ELK.js</strong> graph editor, live pipeline DAG, virtualized data catalog), cutting p95 drag latency from 333ms to 50-100ms.",
+        "Designed human-in-the-loop approval workflows for 10,000+ tables, wired to <strong>Temporal</strong> signal-based approval gates.",
+        "Delivered backend features in <strong>FastAPI</strong>: Temporal-based report generation and Excel data-model import/export with atomic transactions & real-time SSE progress.",
+        "Built per-user Snowflake access via <strong>Auth0 OAuth</strong> and led a platform-wide API redesign from a nested to a flat resource model.",
+        "Rebuilt the <strong>Playwright</strong> E2E suite into six parallel CI legs, each backed by a deterministic seed dataset.",
+      ],
+      techStack: [
+        "TypeScript",
+        "React 19",
+        "TanStack Query/Table/Router",
+        "Zustand",
+        "React Flow",
+        "Python",
+        "FastAPI",
+        "SQLAlchemy",
+        "Temporal",
+        "PostgreSQL",
+        "Neo4j",
+        "Snowflake",
+        "Auth0",
+        "Playwright",
+      ],
+    },
     {
       company: "DashClicks",
       position: "Senior Frontend Engineer",
@@ -106,7 +137,7 @@ export const RESUME_DATA = {
       ],
       achievement: {
         title: "Resourceful Employee Of The Year",
-        description: "Awarded for innovative problem-solving & delivering high-impact solutions with limited resources.",
+        description: "Awarded for high-impact problem-solving with limited resources.",
         date: "12/2024",
       },
     },
@@ -137,7 +168,7 @@ export const RESUME_DATA = {
       description:
         "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, & deep domain expertise.",
       responsibilities: [
-        "Successfully delivered 8 critical modules for <strong>Nimbus Duo</strong>, completing 100% of assigned requirements on schedule.",
+        "Delivered 8 core modules for <strong>Nimbus Duo</strong> on schedule.",
         "Built <strong>Inventory Management</strong> system MVP in 2 weeks.",
       ],
       techStack: [
@@ -158,7 +189,7 @@ export const RESUME_DATA = {
   // =========================================
   skills: {
     Core: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3"],
-    Frameworks: ["ReactJS", "NextJS", "NodeJS", "ExpressJS"],
+    Frameworks: ["ReactJS", "NextJS", "NodeJS", "ExpressJS", "FastAPI"],
     "State Management": [
       "Redux",
       "MobX",
@@ -193,52 +224,30 @@ export const RESUME_DATA = {
       "Vite",
       "Sentry",
       "Figma",
-    ],
-    "Databases & APIs": ["MongoDB", "REST APIs", "WebSockets", "Socket.io"],
-    Other: [
-      "Performance Optimization",
-      "Cross-Browser Compatibility",
-      "Web Security",
-      "Web Accessibility (a11y)",
-      "i18n",
-      "PWA",
-      "SPA",
       "AWS",
     ],
-    Methodologies: [
+    "Backend & Data": [
+      "Python",
+      "SQLAlchemy",
+      "Alembic",
+      "Pydantic",
+      "Temporal",
+      "PostgreSQL",
+      "Neo4j",
+      "MongoDB",
+      "REST APIs",
+      "WebSockets",
+      "Socket.io",
+      "OAuth2/Auth0",
+    ],
+    Other: [
+      "Performance Optimization",
+      "Web Security",
+      "Web Accessibility (a11y)",
       "Agile/Scrum",
-      "Code Review",
-      "Technical Documentation",
       "System Design",
     ],
   },
-
-  // =========================================
-  // Projects
-  // =========================================
-  projects: [
-    {
-      name: "Cexdex",
-      description:
-        "Cexdex allows users to trade cryptocurrencies in a secure & efficient manner.",
-      url: "https://stake.cexdex.app",
-      techStack: [
-        "Web3.js",
-        "React",
-        "Context API",
-        "NodeJS",
-        "ExpressJS",
-        "MongoDB",
-      ],
-    },
-    {
-      name: "Estate Protocol",
-      description:
-        "Estate Protocol tokenizes real estate on the blockchain for crypto investment.",
-      url: "https://estateprotocol.com",
-      techStack: ["Web3.js", "NextJS", "Framer motion", "Material UI"],
-    },
-  ],
 
   // =========================================
   // Education
