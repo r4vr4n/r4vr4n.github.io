@@ -4,6 +4,7 @@ import {
   createElement,
   createTechStackHTML,
   createListItemsHTML,
+  createPeriodLocationHTML,
 } from "../utils/dom.js"
 
 /**
@@ -27,16 +28,25 @@ export function renderWorkExperience(experiences) {
         </div>`
       : ""
 
+    const companyHTML = job.companyUrl
+      ? `<a href="${job.companyUrl}" target="_blank" rel="noopener noreferrer" class="company">${job.company}</a>`
+      : `<span class="company">${job.company}</span>`
+
+    const clientHTML = job.client
+      ? `<span class="client">· Client: ${
+          job.clientUrl
+            ? `<a href="${job.clientUrl}" target="_blank" rel="noopener noreferrer">${job.client}</a>`
+            : job.client
+        }</span>`
+      : ""
+
     jobElement.innerHTML = `
       <div class="job-header">
         <div>
           <div class="position">${job.position}</div>
-          <div class="company">${job.company}</div>
+          <div class="company-line">${companyHTML}${clientHTML}</div>
         </div>
-        <div>
-          <div class="period">${job.period}</div>
-          <div class="location">${job.location}</div>
-        </div>
+        ${createPeriodLocationHTML(job.period, job.location)}
       </div>
       ${achievementHTML}
       <ul>

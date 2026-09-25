@@ -1,5 +1,9 @@
 import { DOM_IDS } from "../constants/dom-ids.js"
-import { getAndClearElement, createElement } from "../utils/dom.js"
+import {
+  getAndClearElement,
+  createElement,
+  createPeriodLocationHTML,
+} from "../utils/dom.js"
 
 /**
  * Renders the education section
@@ -18,10 +22,7 @@ export function renderEducation(education) {
           <div class="degree">${edu.degree}</div>
           <div class="institution">${edu.institution}</div>
         </div>
-        <div>
-          <div class="period">${edu.period}</div>
-          <div class="location">${edu.location}</div>
-        </div>
+        ${createPeriodLocationHTML(edu.period, edu.location)}
       </div>
     `
 

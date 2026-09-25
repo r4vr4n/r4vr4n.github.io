@@ -1,66 +1,12 @@
 import { DOM_IDS } from "../constants/dom-ids.js"
 
 /**
- * PDF generation options
- * Configured to fit all content on a single A4 page
+ * Triggers the browser's native print-to-PDF, which keeps the resume's
+ * text selectable/searchable (ATS parsers read a rasterized PDF as an
+ * image with no extractable text).
  */
-const PDF_OPTIONS = {
-  margin: 5,
-  filename: "Rajeev_Ranjan_Resume.pdf",
-  image: { type: "jpeg", quality: 0.98 },
-  html2canvas: {
-    scale: 2,
-    useCORS: true,
-    letterRendering: true,
-  },
-  jsPDF: {
-    unit: "mm",
-    format: "a4",
-    orientation: "portrait",
-  },
-  pagebreak: { mode: "avoid-all" },
-}
-
-/**
- * Generates and downloads PDF from the resume container
- */
-async function generatePDF() {
-  const container = document.getElementById(DOM_IDS.CONTAINER)
-  const downloadBtn = document.getElementById(DOM_IDS.DOWNLOAD_BTN)
-
-  if (!container) {
-    console.error("Resume container not found")
-    return
-  }
-
-  // Update button state
-  const originalText = downloadBtn.textContent
-  downloadBtn.textContent = "Generating..."
-  downloadBtn.disabled = true
-
-  // Add PDF export class for print-friendly styles
-  container.classList.add("pdf-export")
-
-  try {
-    // Check if html2pdf is available
-    if (typeof html2pdf === "undefined") {
-      console.warn("html2pdf not loaded, falling back to print")
-      window.print()
-      return
-    }
-
-    // Generate PDF
-    await html2pdf().set(PDF_OPTIONS).from(container).save()
-  } catch (error) {
-    console.error("PDF generation failed:", error)
-    // Fallback to browser print
-    window.print()
-  } finally {
-    // Remove PDF export class and restore button state
-    container.classList.remove("pdf-export")
-    downloadBtn.textContent = originalText
-    downloadBtn.disabled = false
-  }
+function generatePDF() {
+  window.print()
 }
 
 /**

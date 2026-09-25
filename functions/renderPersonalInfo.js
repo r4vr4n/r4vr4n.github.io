@@ -1,12 +1,13 @@
 import { DOM_IDS } from "../constants/dom-ids.js"
 import { ICONS } from "../utils/icons.js"
+import { getAndClearElement } from "../utils/dom.js"
 
 /**
  * Renders the personal information section
  * @param {Object} personalInfo - Personal information data
  */
 export function renderPersonalInfo(personalInfo) {
-  const section = document.getElementById(DOM_IDS.PERSONAL_INFO)
+  const section = getAndClearElement(DOM_IDS.PERSONAL_INFO)
   if (!section) return
 
   const { name, title, contact } = personalInfo
@@ -14,7 +15,7 @@ export function renderPersonalInfo(personalInfo) {
   section.innerHTML = `
     <div>
       <h1>${name}</h1>
-      <h3>${title}</h3>
+      <h2 class="title-heading">${title}</h2>
     </div>
     <div class="social-links">
       <div>
