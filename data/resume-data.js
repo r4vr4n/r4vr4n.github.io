@@ -30,13 +30,15 @@ export const RESUME_DATA = {
   // =========================================
   workExperience: [
     {
-      company: "Teragonia",
-      companyUrl: "https://teragonia.com/",
+      company: "Appiness Interactive",
+      companyUrl: "https://www.appinessworld.com/",
+      client: "Teragonia",
+      clientUrl: "https://teragonia.com/",
       position: "Software Engineer (Full-Stack)",
       period: "09/2025 - Present",
       location: "Bengaluru, KA · On-site",
       description:
-        "Teragonia builds an LLM-powered platform that automates Kimball/dbt data warehouse modeling directly from raw Snowflake sources.",
+        "Placed by Appiness Interactive with client Teragonia, which builds an LLM-powered platform that automates Kimball/dbt data warehouse modeling directly from raw Snowflake sources.",
       responsibilities: [
         "Built the core product UI (<strong>React Flow + ELK.js</strong> graph editor, live pipeline DAG, virtualized data catalog), cutting p95 drag latency from 333ms to 50-100ms.",
         "Designed human-in-the-loop approval workflows for 10,000+ tables, wired to <strong>Temporal</strong> signal-based approval gates.",

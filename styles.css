@@ -190,6 +190,20 @@ h1 {
   color: var(--color-text-highlight);
 }
 
+.company-line .company {
+  display: inline-block;
+}
+
+.client {
+  margin-left: 0.3rem;
+  font-size: 0.7rem;
+  color: var(--color-text-tertiary);
+}
+
+.client a {
+  color: var(--color-text-highlight);
+}
+
 .position {
   font-size: 0.8rem;
   color: var(--color-text-tertiary);

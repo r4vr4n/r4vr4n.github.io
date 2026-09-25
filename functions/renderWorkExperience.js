@@ -30,13 +30,21 @@ export function renderWorkExperience(experiences) {
 
     const companyHTML = job.companyUrl
       ? `<a href="${job.companyUrl}" target="_blank" rel="noopener noreferrer" class="company">${job.company}</a>`
-      : `<div class="company">${job.company}</div>`
+      : `<span class="company">${job.company}</span>`
+
+    const clientHTML = job.client
+      ? `<span class="client">· Client: ${
+          job.clientUrl
+            ? `<a href="${job.clientUrl}" target="_blank" rel="noopener noreferrer">${job.client}</a>`
+            : job.client
+        }</span>`
+      : ""
 
     jobElement.innerHTML = `
       <div class="job-header">
         <div>
           <div class="position">${job.position}</div>
-          ${companyHTML}
+          <div class="company-line">${companyHTML}${clientHTML}</div>
         </div>
         ${createPeriodLocationHTML(job.period, job.location)}
       </div>
