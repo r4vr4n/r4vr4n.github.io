@@ -23,7 +23,7 @@ export const RESUME_DATA = {
   // Professional Summary
   // =========================================
   summary:
-    "Full-Stack Engineer with 5+ years of experience shipping production web applications end to end, from React/TypeScript frontends to Python/FastAPI services orchestrated with Temporal, PostgreSQL, and Neo4j. Currently building the core UI and backend workflows for an LLM-powered data platform at scale. Proven track record in performance optimization, distributed systems, and mentoring developers, with a consistent focus on delivering high-impact solutions that drive business results.",
+    "Full-Stack Engineer with 6+ years of experience shipping production web applications end to end, from React/TypeScript frontends to Python/FastAPI services orchestrated with Temporal, PostgreSQL, and Neo4j. Currently building the core UI and backend workflows for an LLM-powered data platform at scale. Proven track record in performance optimization, distributed systems, and mentoring developers, with a consistent focus on delivering high-impact solutions that drive business results.",
 
   // =========================================
   // Work Experience
@@ -35,7 +35,7 @@ export const RESUME_DATA = {
       client: "Teragonia",
       clientUrl: "https://teragonia.com/",
       position: "Software Engineer (Full-Stack)",
-      period: "09/2025 - Present",
+      period: "08/2025 - Present",
       location: "Bengaluru, KA · On-site",
       description:
         "Placed by Appiness Interactive with client Teragonia, which builds an LLM-powered platform that automates Kimball/dbt data warehouse modeling directly from raw Snowflake sources.",
