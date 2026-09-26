@@ -97,8 +97,9 @@ export const RESUME_DATA = {
       period: "08/2024 - 11/2024",
       location: "Bengaluru, KA · On-site",
       description:
-        "Reconect.ai is a fintech firm focused on debt collection using digital channels.",
+        "Reconect.ai is a fintech firm building autonomous agents for debt collection.",
       responsibilities: [
+        "Contributed to an autonomous debt collection agent, supporting digital collection workflows.",
         "Programmed campaign management system eliminating 20+ hours of manual trigger setup & monitoring each week.",
         "Built real-time analytics dashboards using <strong>Recharts</strong> for tracking debt collection performance metrics.",
         "Implemented automated testing with <strong>Playwright</strong>, achieving 85%+ code coverage for critical workflows.",
@@ -119,7 +120,7 @@ export const RESUME_DATA = {
       period: "03/2022 - 08/2024",
       location: "Bengaluru, KA · Remote",
       description:
-        "Zeitview is a global leader in providing drone services for asset management, leveraging advanced technologies.",
+        "Worked across Zeitview's Analysis Tool and Construction Monitoring products for drone-based asset assessment.",
       responsibilities: [
         "Crafted <strong>DEM viewer</strong> for reducing project planning time while improving site assessment accuracy by 90%.",
         "Improved field issue tracking by 80% using coordinate-based tagging which simplified communication.",
@@ -157,6 +158,7 @@ export const RESUME_DATA = {
         "Estate Protocol is a blockchain-based real estate platform facilitating seamless transactions & processes.",
       responsibilities: [
         "Integrated Airdrop system using Web3.js serving 2,000+ claimants, achieving 90% delivery success rate.",
+        "Built property store features for creating listings and supporting property bidding and leasing.",
         "Implemented pixel-perfect landing page design achieving a 90+ Lighthouse performance score.",
       ],
       techStack: [
@@ -170,11 +172,11 @@ export const RESUME_DATA = {
     {
       company: "Solytics Partners",
       companyUrl: "https://www.solytics-partners.com",
-      position: "Junior Frontend Engineer",
-      period: "06/2020 - 06/2021",
+      position: "Frontend Engineer (Intern → Full-time)",
+      period: "09/2020 - 06/2021",
       location: "Pune, MH · Remote",
       description:
-        "Solytics Partners is analytics firm focused on solving client problems through an amalgamation of advanced analytics, new-age technologies, & deep domain expertise.",
+        "Joined as an intern in September 2020 and converted to full-time employment in February 2021. Developed features for Nimbus Duo, an analytics and fraud detection platform for banks.",
       responsibilities: [
         "Delivered 8 core modules for <strong>Nimbus Duo</strong> on schedule.",
         "Built <strong>Inventory Management</strong> system MVP in 2 weeks.",
@@ -283,4 +285,3 @@ export const RESUME_DATA = {
     },
   ],
 }
-
