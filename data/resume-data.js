@@ -23,7 +23,7 @@ export const RESUME_DATA = {
   // Professional Summary
   // =========================================
   summary:
-    "Full-Stack Engineer with 6+ years building production web apps, specializing in complex, high-performance React/TypeScript frontends (design-system components, data-dense tables and graph editors, real-time UIs), backed by hands-on Python/FastAPI, Temporal, PostgreSQL and Neo4j services. Currently shipping the core UI and backend workflows of an LLM-powered data platform. Known for measurable performance wins, a strong testing culture (Playwright/Cypress), and mentoring developers.",
+    "Full-Stack Engineer (frontend-focused) with 6+ years building production React/TypeScript apps, from greenfield products to full rewrites of legacy frontends. Built 3D/map tools for drone data (CesiumJS, Mapbox), real-time collaborative graph editors and data-dense dashboards, with hands-on backend work in Node.js and Python/FastAPI. Currently building the data-modeling canvas and approval workflows for an AI data platform.",
 
   // =========================================
   // Work Experience
@@ -38,7 +38,7 @@ export const RESUME_DATA = {
       period: "08/2025 - Present",
       location: "Bengaluru, KA · On-site",
       description:
-        "Placed by Appiness Interactive with client Teragonia, which builds an LLM-powered platform that automates Kimball/dbt data warehouse modeling directly from raw Snowflake sources.",
+        "Placed with Teragonia, which builds Astradis, an AI operating system that ingests, cleans and consolidates business data from databases, spreadsheets, emails and meeting notes into a modeled warehouse (Kimball/dbt on Snowflake) for insight generation.",
       responsibilities: [
         "Built a <strong>React Flow + ELK.js</strong> data-model canvas with real-time collaboration (remote cursors, pinned comments) over <strong>Centrifugo</strong> WebSockets.",
         "Cut p95 drag latency 333ms → &lt;100ms & worst mount frame 8.9s → 2.1s on 50-node graphs via <strong>Zustand</strong> slice selectors & render isolation.",
@@ -70,14 +70,14 @@ export const RESUME_DATA = {
       period: "11/2024 - 06/2025",
       location: "Jaipur, RJ · Remote",
       description:
-        "DashClicks is a technology company focused on providing software solutions that enhance business operations.",
+        "DashClicks is a white-label marketing and fulfillment platform for digital agencies.",
       responsibilities: [
-        "Launched a client + admin <strong>activity feed</strong> (infinite scroll, filters, 18 event types) that increased support team efficiency by 70%.",
+        "Built the client + admin <strong>activity feed</strong> end to end (UI + API): infinite scroll, filters, 18 event types, giving the internal team one place to manage client onboarding.",
         "Migrated server state from <strong>Redux Toolkit to React Query</strong> with typed query hooks & a query-key registry, eliminating redundant API calls.",
         "Built <strong>DCTable</strong> on <strong>TanStack Table + Virtual</strong> (server pagination, sorting, selection, resizing, virtualized infinite scroll), reused app-wide.",
         "Built a <strong>Lexical</strong> rich-text editor with an <strong>AI rephrase</strong> action for project approvals & requests.",
         "Cut <strong>Conversation Plugin</strong> bundle size by 40% (vanilla JS + Tailwind CSS) & set up an <strong>Nx monorepo</strong> for embeddable plugins.",
-        "Moved pre-commit checks to CI (~8 hrs/week saved), bootstrapped <strong>Cypress</strong> E2E, migrated to <strong>React Router v6</strong> & fixed ESLint issues in 1,000+ files.",
+        "Moved pre-commit checks to CI (~8 hrs/week saved), bootstrapped <strong>Cypress</strong> E2E, migrated to <strong>React Router v6</strong> & cleaned up ESLint issues across 1,000+ files for maintainability.",
       ],
       techStack: [
         "React 17 → 19",
@@ -102,12 +102,12 @@ export const RESUME_DATA = {
       period: "08/2024 - 11/2024",
       location: "Bengaluru, KA · On-site",
       description:
-        "Reconect.ai is a fintech firm building autonomous agents for debt collection.",
+        "Early-stage fintech startup automating debt collection over digital channels, using conversation context to drive follow-ups.",
       responsibilities: [
-        "Contributed to an autonomous debt collection agent, supporting digital collection workflows.",
-        "Programmed campaign management system eliminating 20+ hours of manual trigger setup & monitoring each week.",
-        "Built real-time analytics dashboards using <strong>Recharts</strong> for tracking debt collection performance metrics.",
-        "Implemented automated testing with <strong>Playwright</strong>, achieving 85%+ code coverage for critical workflows.",
+        "Owned the frontend of the collections app: dashboards, analytics and campaign workflows.",
+        "Built a campaign management system that eliminated 20+ hours/week of manual trigger setup & monitoring.",
+        "Built analytics dashboards in <strong>Recharts</strong> tracking amount recovered and collection performance.",
+        "Wrote <strong>Playwright</strong> E2E suites covering the critical collection workflows.",
       ],
       techStack: [
         "React 18",
@@ -125,13 +125,13 @@ export const RESUME_DATA = {
       period: "03/2022 - 08/2024",
       location: "Bengaluru, KA · Remote",
       description:
-        "Worked across Zeitview's Analysis Tool and Construction Monitoring products for drone-based asset assessment.",
+        "Led two web products for Zeitview's drone-based asset inspection: the internal Analysis Tool and client-facing Construction Monitoring.",
       responsibilities: [
-        "Crafted <strong>DEM viewer</strong> for reducing project planning time while improving site assessment accuracy by 90%.",
-        "Improved field issue tracking by 80% using coordinate-based tagging which simplified communication.",
-        "Optimized <strong>Construction Monitoring</strong> codebase, slashing re-renders & boosting performance by 75%.",
-        "Provided technical mentorship to 3 developers, resulting in 70% improvement in their PR approval rate.",
-        "Spearheaded <strong>Analysis Tool's</strong> development eliminating external dependencies, accelerating analyst workflows by 50%.",
+        "Built the <strong>Analysis Tool</strong> from the ground up as sole engineer, leading 3 interns for a year. Worked directly with the analyst team to replace external tools and cut analysis and report-generation time.",
+        "Rewrote the <strong>Construction Monitoring</strong> frontend from scratch in 6 months, replacing an unmaintainable codebase (components with 500+ line useEffects) with a modular React/TypeScript architecture.",
+        "Shipped live map comments with @mentions and notifications, so teams could discuss issues pinned to exact site locations.",
+        "Rendered LiDAR point clouds as 3D elevation terrain in <strong>CesiumJS</strong>, and added on-map length/area measurement tools.",
+        "Integrated 360° panoramic site imagery with <strong>krpano</strong>.",
       ],
       techStack: [
         "React",
@@ -149,11 +149,6 @@ export const RESUME_DATA = {
         "CI/CD",
         "Vitest",
       ],
-      achievement: {
-        title: "Resourceful Employee Of The Year",
-        description: "Awarded for high-impact problem-solving with limited resources.",
-        date: "12/2024",
-      },
     },
     {
       company: "Estate Protocol",
@@ -162,14 +157,16 @@ export const RESUME_DATA = {
       period: "06/2021 - 02/2022",
       location: "Noida, UP · Remote",
       description:
-        "Estate Protocol is a blockchain-based real estate platform facilitating seamless transactions & processes.",
+        "Blockchain real estate platform where users list, bid on and stake in properties to earn revenue.",
       responsibilities: [
-        "Integrated Airdrop system using Web3.js serving 2,000+ claimants, achieving 90% delivery success rate.",
-        "Built property store features for creating listings and supporting property bidding and leasing.",
-        "Implemented pixel-perfect landing page design achieving a 90+ Lighthouse performance score.",
+        "Built the token airdrop end to end (<strong>Node.js</strong> backend + React/<strong>Web3.js</strong> frontend); 2,000+ users claimed across MetaMask, Coinbase Wallet and other wallets.",
+        "Built the property marketplace full-stack: listing, bidding and staking flows.",
+        "Built the marketing landing page in <strong>Next.js</strong> with Framer Motion (Lighthouse 90+).",
       ],
       techStack: [
+        "React",
         "NextJS",
+        "Node.js",
         "Tailwind CSS",
         "Context API",
         "Framer Motion",
@@ -183,10 +180,10 @@ export const RESUME_DATA = {
       period: "09/2020 - 06/2021",
       location: "Pune, MH · Remote",
       description:
-        "Joined as an intern in September 2020 and converted to full-time employment in February 2021. Developed features for Nimbus Duo, an analytics and fraud detection platform for banks.",
+        "Analytics and fraud-detection software for banks. Joined as an intern in Sept 2020; converted to full-time in Feb 2021.",
       responsibilities: [
-        "Delivered 8 core modules for <strong>Nimbus Duo</strong> on schedule.",
-        "Built <strong>Inventory Management</strong> system MVP in 2 weeks.",
+        "Delivered 8 core modules on schedule for <strong>Nimbus Duo</strong>, the company's fraud detection and analytics platform.",
+        "Built an <strong>Inventory Management</strong> system MVP from scratch in 2 weeks.",
       ],
       techStack: [
         "React 16",
@@ -220,7 +217,6 @@ export const RESUME_DATA = {
       "TanStack Query",
       "Redux Toolkit",
       "Zustand",
-      "MobX",
       "React Hook Form",
       "Formik",
     ],
@@ -228,8 +224,6 @@ export const RESUME_DATA = {
       "Material UI",
       "Mantine UI",
       "Tailwind CSS",
-      "Emotion",
-      "Styled Components",
       "Sass/SCSS",
       "Framer Motion",
       "Storybook",
@@ -239,7 +233,6 @@ export const RESUME_DATA = {
       "React Flow",
       "ELK.js",
       "Recharts",
-      "Highcharts",
       "Mapbox",
       "CesiumJS",
       "React-Konva",
