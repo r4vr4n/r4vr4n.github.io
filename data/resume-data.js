@@ -38,7 +38,7 @@ export const RESUME_DATA = {
       period: "08/2025 - Present",
       location: "Bengaluru, KA · On-site",
       description:
-        "Placed with Teragonia, which builds Astradis, an AI operating system that ingests, cleans and consolidates business data from databases, spreadsheets, emails and meeting notes into a modeled warehouse (Kimball/dbt on Snowflake) for insight generation.",
+        "Placed with Teragonia to build Data Modeling Autopilot (DMA), an LLM-powered platform that turns 10k+ raw Snowflake tables into a reviewed Kimball/dbt star schema, part of Teragonia's AI operating system, Astradis.",
       responsibilities: [
         "Built a <strong>React Flow + ELK.js</strong> data-model canvas with real-time collaboration (remote cursors, pinned comments) over <strong>Centrifugo</strong> WebSockets.",
         "Cut p95 drag latency 333ms → &lt;100ms & worst mount frame 8.9s → 2.1s on 50-node graphs via <strong>Zustand</strong> slice selectors & render isolation.",
@@ -46,6 +46,7 @@ export const RESUME_DATA = {
         "Delivered backend features in <strong>FastAPI</strong>: Temporal-based report generation and Excel data-model import/export with atomic transactions & real-time SSE progress.",
         "Built per-user Snowflake access via <strong>Auth0 OAuth</strong> and led a platform-wide API redesign from a nested to a flat resource model.",
         "Rebuilt the <strong>Playwright</strong> E2E suite into six parallel CI legs, each backed by a deterministic seed dataset.",
+        "Brought the app to a 100 <strong>Lighthouse accessibility</strong> score with app-wide <strong>keyboard shortcuts</strong>; maintained the shared <strong>UI kit</strong> package and its <strong>Storybook</strong> docs.",
       ],
       techStack: [
         "TypeScript",
@@ -61,6 +62,7 @@ export const RESUME_DATA = {
         "Neo4j",
         "Snowflake",
         "Playwright",
+        "Storybook",
       ],
     },
     {
@@ -93,6 +95,7 @@ export const RESUME_DATA = {
         "Nx",
         "Cypress",
         "Jest",
+        "Storybook",
       ],
     },
     {
@@ -125,12 +128,12 @@ export const RESUME_DATA = {
       period: "03/2022 - 08/2024",
       location: "Bengaluru, KA · Remote",
       description:
-        "Led two web products for Zeitview's drone-based asset inspection: the internal Analysis Tool and client-facing Construction Monitoring.",
+        "Led two web products for Zeitview's drone-based asset inspection: the internal Analysis Tool and Construction Monitoring, which gives clients site progress and actionable items.",
       responsibilities: [
         "Built the <strong>Analysis Tool</strong> from the ground up as sole engineer, leading 3 interns for a year. Worked directly with the analyst team to replace external tools and cut analysis and report-generation time.",
-        "Rewrote the <strong>Construction Monitoring</strong> frontend from scratch in 6 months, replacing an unmaintainable codebase (components with 500+ line useEffects) with a modular React/TypeScript architecture.",
+        "Rewrote the <strong>Construction Monitoring</strong> frontend from scratch in 6 months so it could expand from progress tracking into pre-construction site analysis. It replaced an unmaintainable codebase (components with 500+ line useEffects) with a modular React/TypeScript architecture.",
         "Shipped live map comments with @mentions and notifications, so teams could discuss issues pinned to exact site locations.",
-        "Rendered LiDAR point clouds as 3D elevation terrain in <strong>CesiumJS</strong>, and added on-map length/area measurement tools.",
+        "Rendered LiDAR point clouds as 3D elevation terrain in <strong>CesiumJS</strong>, and shipped flood analysis showing how water moves across the site, plus on-map length/area measurement tools.",
         "Integrated 360° panoramic site imagery with <strong>krpano</strong>.",
       ],
       techStack: [
@@ -167,7 +170,7 @@ export const RESUME_DATA = {
         "React",
         "NextJS",
         "Node.js",
-        "Tailwind CSS",
+        "Material UI",
         "Context API",
         "Framer Motion",
         "Web3.js",
@@ -294,7 +297,7 @@ export const RESUME_DATA = {
   // =========================================
   certifications: [
     {
-      name: "Certified MERN stack developer",
+      name: "Certified MERN Stack Developer",
       issuer: "AttainU - Online Bootcamp",
       period: "07/2019 - 05/2020",
       id: "AUFS004052",

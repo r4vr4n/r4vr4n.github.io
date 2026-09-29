@@ -17,6 +17,8 @@ Personal resume site, published via GitHub Pages. Static HTML/CSS/vanilla JS —
 
 Update `data/resume-data.js` — the page re-renders entirely from that file, no HTML edits needed.
 
+Then run `node scripts/sync-profile.mjs` to regenerate the GitHub profile repo (`../r4vr4n`: `README.md` and `resumecontent.js`) from the same data. `node scripts/sync-profile.mjs --check` exits non-zero if the profile repo is out of date.
+
 ## Running locally
 
 Just open `index.html` in a browser, or serve the folder with any static file server (e.g. `npx serve .`).
