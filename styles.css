@@ -27,8 +27,8 @@
 
   /* Typography */
   --font-family: "Rubik", Helvetica, sans-serif;
-  --font-size-base: 0.6rem;
-  --line-height: 1.28;
+  --font-size-base: 0.68rem;
+  --line-height: 1.4;
   --letter-spacing: 0.3px;
 }
 
@@ -118,7 +118,7 @@ li::before {
 .section-heading {
   font-size: 0.9rem;
   font-weight: 500;
-  margin-top: 0.25rem;
+  margin-top: 0.6rem;
   color: var(--color-text-primary);
 }
 
@@ -174,13 +174,14 @@ h1 {
    =========================================== */
 
 .job {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .job-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 0.15rem;
 }
 
 .company {
@@ -254,7 +255,7 @@ h1 {
 }
 
 .tech-category {
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.25rem;
 }
 
 .tech-category-title {

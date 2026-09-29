@@ -75,8 +75,8 @@ const wrapLongStrings = (source) =>
     (_, indent, key, str) => `${indent}${key}:\n${indent}  ${str},`,
   )
 
-const jobs = data.workExperience.map(
-  ({ techStack, achievement, ...job }) => ({ ...job, tech_stack: techStack }),
+const jobs = data.workExperience.map(({ techStack, achievement, ...job }) =>
+  techStack?.length ? { ...job, tech_stack: techStack } : job,
 )
 
 const resumeContent = `// Synced from r4vr4n.github.io/data/resume-data.js (scripts/sync-profile.mjs)
@@ -136,10 +136,8 @@ const jobSections = data.workExperience.map((job) => {
     "",
   ]
   if (job.description) lines.push(toMarkdown(job.description), "")
-  lines.push(
-    ...job.responsibilities.map((item) => `- ${toMarkdown(item)}`),
-    `- **Stack:** ${job.techStack.join(", ")}`,
-  )
+  lines.push(...job.responsibilities.map((item) => `- ${toMarkdown(item)}`))
+  if (job.techStack?.length) lines.push(`- **Stack:** ${job.techStack.join(", ")}`)
   return lines.join("\n")
 })
 
