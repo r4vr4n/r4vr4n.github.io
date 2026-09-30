@@ -40,7 +40,7 @@ export const RESUME_DATA = {
       description:
         "Placed with Teragonia to build Data Modeling Autopilot (DMA), an LLM-powered platform that turns 10k+ raw Snowflake tables into a reviewed Kimball/dbt star schema, part of Teragonia's AI operating system, Astradis.",
       responsibilities: [
-        "Built a <strong>React Flow + ELK.js</strong> data-model canvas with real-time collaboration (remote cursors, pinned comments) over <strong>Centrifugo</strong> WebSockets.",
+        "Built DMA's <strong>React Flow + ELK.js</strong> data-model canvas with real-time collaboration (remote cursors, pinned comments) over <strong>Centrifugo</strong> WebSockets.",
         "Cut p95 drag latency 333ms → &lt;100ms & worst mount frame 8.9s → 2.1s on 50-node graphs via <strong>Zustand</strong> slice selectors & render isolation.",
         "Designed human-in-the-loop approval workflows for 10,000+ tables, wired to <strong>Temporal</strong> signal-based approval gates.",
         "Built <strong>FastAPI</strong> features (Temporal report generation, atomic Excel import/export, per-user Snowflake OAuth) & led a platform-wide API redesign.",
