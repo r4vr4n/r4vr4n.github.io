@@ -8,6 +8,8 @@ Thumbs.db
 # Personal working notes (not for public repo)
 data.md
 interview-prep.md
+crash-courses/
 
 # Dependencies (if tooling is added later)
 node_modules/
+dump.md

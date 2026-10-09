@@ -48,9 +48,20 @@ Personal resume site (static HTML/CSS/vanilla JS, no build step). See [README.md
 - Bullets use `<strong>` for key tech and `&lt;` for `<`. The site renders them as HTML, and the sync
   script converts them to Markdown.
 
+## Long-form journey
+
+- `journey.md` (public) is the in-depth version of the resume for anyone who wants detail. It may hold
+  more than the one-page resume, but every claim must stay consistent with `data/resume-data.js` and
+  follow the content rules above. Keep private material (prep answers, ticket numbers, co-author names,
+  background-check notes) out of it. `<!-- -->` comments in it are the user's notes for details to add.
+- When a resume claim changes, update the matching section of `journey.md` too.
+
 ## Interview prep
 
 - `interview-prep.md` (gitignored, never publish it) has the likely cross-questions and answers for
   every resume bullet.
 - When a resume claim is added, changed or removed, update the matching section of `interview-prep.md`
   in the same change.
+- `crash-courses/` (gitignored, with its own local git repo) holds a senior-level crash course per
+  technology. When a technology is added to the resume, add it to the backlog in
+  `crash-courses/README.md`.

@@ -23,7 +23,7 @@ export const RESUME_DATA = {
   // Professional Summary
   // =========================================
   summary:
-    "Full-Stack Engineer (frontend-focused) with 6+ years building production React/TypeScript apps, from greenfield products to full rewrites of legacy frontends. Built 3D/map tools for drone data (CesiumJS, Mapbox), real-time collaborative graph editors & data-dense dashboards, with hands-on backend work in Node.js & Python/FastAPI. Currently building the data-modeling canvas & approval workflows for an AI data platform.",
+    "Full-Stack Engineer (frontend-focused) with 6+ years building production React/TypeScript apps, from greenfield products to full rewrites of legacy frontends. Built 3D/map tools for drone data (CesiumJS, Mapbox), real-time collaborative graph editors & data-dense dashboards, with hands-on backend work in Node.js & Python/FastAPI. Most recently built the data-modeling canvas & approval workflows for an AI data platform.",
 
   // =========================================
   // Work Experience
@@ -40,11 +40,11 @@ export const RESUME_DATA = {
       description:
         "Placed with Teragonia to build Data Modeling Autopilot (DMA), an LLM-powered platform that turns 10k+ raw Snowflake tables into a reviewed Kimball/dbt star schema, part of Teragonia's AI operating system, Astradis.",
       responsibilities: [
-        "Built DMA's <strong>React Flow + ELK.js</strong> data-model canvas with real-time collaboration (remote cursors, pinned comments) over <strong>Centrifugo</strong> WebSockets.",
+        "Built DMA's <strong>React Flow + ELK.js</strong> data-model canvas with real-time cursors & pinned comments over <strong>Centrifugo</strong> WebSockets.",
         "Cut p95 drag latency 333ms → &lt;100ms & worst mount frame 8.9s → 2.1s on 50-node graphs via <strong>Zustand</strong> slice selectors & render isolation.",
-        "Designed human-in-the-loop approval workflows for 10,000+ tables, wired to <strong>Temporal</strong> signal-based approval gates.",
-        "Built <strong>FastAPI</strong> features (Temporal report generation, atomic Excel import/export, per-user Snowflake OAuth) & led a platform-wide API redesign.",
-        "Rebuilt <strong>Playwright</strong> E2E into 6 parallel CI legs, reached a 100 Lighthouse accessibility score & maintained the <strong>Storybook</strong> UI kit.",
+        "Built the human-in-the-loop approval UI (tag review, mart mapping, PR review) for 10,000+ tables, wired to <strong>Temporal</strong> signals.",
+        "Built <strong>FastAPI</strong> features (Temporal reports, atomic Excel import/export, per-user Snowflake OAuth) & led an app-wide API redesign.",
+        "Rebuilt <strong>Playwright</strong> E2E into 6 parallel CI legs, cut a 3.5-min pre-test CI wait & hit a 100 Lighthouse accessibility score.",
       ],
     },
     {
