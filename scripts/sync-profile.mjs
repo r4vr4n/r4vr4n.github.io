@@ -172,6 +172,8 @@ const readme = `# ${name}
 
 **${title}**
 
+📄 **[Download resume (PDF)](https://r4vr4n.github.io/)**
+
 ## Contact Information
 
 - **Email:** [${contact.email}](mailto:${contact.email})
